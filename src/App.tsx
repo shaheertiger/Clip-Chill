@@ -764,8 +764,8 @@ const Footer = () => {
             >
               <h4 className="text-gold uppercase tracking-[0.4em] text-[10px] font-bold mb-10">Hours</h4>
               <div className="space-y-4 text-sm text-white/40 font-light">
-                <p>Mon - Sat: 11:00 - 20:00</p>
-                <p>Sunday: 11:00 - 20:00</p>
+                <p>Mon - Sat: 10:00 - 20:00</p>
+                <p>Sunday: 11:00 - 19:00</p>
               </div>
             </motion.div>
             <motion.div
