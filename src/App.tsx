@@ -48,14 +48,17 @@ const Navbar = () => {
         
         {/* Left Side (Desktop Links) */}
         <div className="hidden md:flex flex-1 items-center gap-12">
-          {leftLinks.map((link) => (
-            <a 
+          {leftLinks.map((link, i) => (
+            <motion.a 
               key={link.name} 
               href={link.href} 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: i * 0.1 + 0.5, ease: [0.16, 1, 0.3, 1] }}
               className="text-[9px] font-bold uppercase tracking-[0.4em] text-white/40 hover:text-gold transition-all duration-500"
             >
               {link.name}
-            </a>
+            </motion.a>
           ))}
         </div>
 
@@ -63,7 +66,12 @@ const Navbar = () => {
         <div className="md:hidden flex-1" />
 
         {/* Center Logo */}
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-50">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8, y: -20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-50"
+        >
           <a href="#" className="flex items-center gap-4 group">
             <img 
               src="https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg" 
@@ -72,27 +80,33 @@ const Navbar = () => {
               referrerPolicy="no-referrer"
             />
           </a>
-        </div>
+        </motion.div>
 
         {/* Right Side (Desktop Links + Button) */}
         <div className="hidden md:flex flex-1 items-center justify-end gap-12">
-          {rightLinks.map((link) => (
-            <a 
+          {rightLinks.map((link, i) => (
+            <motion.a 
               key={link.name} 
               href={link.href} 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: i * 0.1 + 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="text-[9px] font-bold uppercase tracking-[0.4em] text-white/40 hover:text-gold transition-all duration-500"
             >
               {link.name}
-            </a>
+            </motion.a>
           ))}
-          <a 
+          <motion.a 
             href={bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 1, ease: [0.16, 1, 0.3, 1] }}
             className="btn-luxury"
           >
             <span>Book Now</span>
-          </a>
+          </motion.a>
         </div>
 
         {/* Mobile Toggle (Right) */}
@@ -130,7 +144,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="btn-luxury mt-8"
               >
-                <span>Book Appointment</span>
+                <span>Book a Haircut</span>
               </a>
             </div>
           </motion.div>
@@ -146,11 +160,11 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-dark">
+    <section className="relative min-h-screen flex items-center justify-center overflow-x-hidden bg-dark">
       {/* Background Image */}
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=2000" 
+          src="https://i.postimg.cc/wMfhtjbn/DSC04689.jpg" 
           alt="Atmospheric Barbershop" 
           className="w-full h-full object-cover opacity-40 scale-105"
           referrerPolicy="no-referrer"
@@ -159,40 +173,51 @@ const Hero = () => {
       </motion.div>
 
       <div className="relative z-10 text-center px-8 max-w-5xl">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-          className="pt-52 md:pt-64"
-        >
-          <span className="sub-label mb-8">Established 2024</span>
-          <h1 className="font-serif text-5xl md:text-9xl font-medium mb-10 leading-[1.1] tracking-tight text-glow">
-            The Art of <br />
-            <span className="italic text-white/40">Refinement.</span>
-          </h1>
+        <div className="py-20 md:py-0 pb-32 md:pb-0">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <span className="sub-label mb-8 block">Established 2024</span>
+            <h1 className="font-serif text-4xl md:text-8xl lg:text-9xl font-medium mb-6 md:mb-10 leading-[1.1] tracking-tight text-glow">
+              Modern Haircuts & <br />
+              <span className="italic text-white/40">Classic Shaves.</span>
+            </h1>
+          </motion.div>
           
-          <p className="text-white/50 text-lg md:text-xl mb-14 max-w-2xl mx-auto leading-relaxed font-light">
-            Experience a masterclass in grooming. We blend heritage techniques with modern aesthetics to define your unique character.
-          </p>
+          <motion.p 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="text-white/50 text-base md:text-xl mb-10 md:mb-14 max-w-2xl mx-auto leading-relaxed font-light"
+          >
+            Get a professional haircut in a relaxed atmosphere. We combine classic techniques with modern styles to keep you looking your best.
+          </motion.p>
           
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col sm:flex-row gap-8 justify-center items-center"
+          >
             <a 
               href="https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-luxury px-12 py-5 inline-flex items-center justify-center"
             >
-              <span>Secure Your Seat</span>
+              <span>Book a Haircut</span>
             </a>
             <a 
               href="#services" 
               className="group flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.4em] text-white/30 hover:text-gold transition-all"
             >
-              Explore Services
+              See Haircuts
               <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
             </a>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
@@ -211,65 +236,148 @@ const Hero = () => {
 const Services = () => {
   const categories = [
     {
-      title: "The Cuts",
+      title: "Haircuts",
       items: [
-        { name: "Standard Haircut", price: "$30", time: "30m" },
-        { name: "Long Haircut", price: "$35", time: "45m" },
-        { name: "Kid's Cut", price: "$25", time: "30m" },
-        { name: "Senior Cut", price: "$25", time: "30m" },
+        { name: "Standard Haircut", price: "$30", time: "30m", description: "A clean, professional cut that fits your style." },
+        { name: "Long Haircut", price: "$35", time: "45m", description: "For longer hair or more detailed styles." },
+        { name: "Kid's Cut", price: "$25", time: "30m", description: "A great haircut experience for kids." },
+        { name: "Senior Cut", price: "$25", time: "30m", description: "Traditional haircuts for seniors." },
       ]
     },
     {
-      title: "The Grooming",
+      title: "Beard & Shaves",
       items: [
-        { name: "Haircut + Beard", price: "$50", time: "60m" },
-        { name: "Beard Trim", price: "$25", time: "20m" },
-        { name: "Hot Towel Shave", price: "$25", time: "30m" },
-        { name: "Full Package", price: "$110", time: "90m" },
+        { name: "Haircut + Beard", price: "$50", time: "60m", description: "A fresh haircut combined with a professional beard trim." },
+        { name: "Beard Trim", price: "$25", time: "20m", description: "Keep your beard looking sharp and well-maintained." },
+        { name: "Hot Towel Shave", price: "$25", time: "30m", description: "A classic straight-razor shave with a relaxing hot towel." },
+        { name: "Full Package", price: "$110", time: "90m", description: "The full experience: haircut, beard trim, and a hot towel shave." },
       ]
     }
   ];
 
   return (
-    <section id="services" className="py-40 bg-dark relative overflow-hidden">
+    <section id="services" className="py-24 md:py-40 bg-dark relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
       
       <div className="max-w-7xl mx-auto px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-32 gap-12">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-32 gap-12">
           <div className="max-w-2xl">
-            <span className="sub-label">Our Menu</span>
-            <h2 className="section-title">Crafted Services</h2>
+            <span className="sub-label">Our Haircuts</span>
+            <h2 className="section-title">Our Services</h2>
             <p className="text-white/40 text-lg font-light leading-relaxed">
-              Every appointment begins with a professional consultation to ensure your style matches your lifestyle.
+              We take the time to understand exactly how you want your hair to look before we start.
             </p>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-32">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-32">
           {categories.map((cat, i) => (
             <motion.div 
               key={cat.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2 }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: { staggerChildren: 0.15 }
+                }
+              }}
             >
-              <h3 className="text-[11px] uppercase tracking-[0.8em] text-gold/40 font-bold mb-16 flex items-center gap-6">
+              <motion.h3 
+                variants={{
+                  hidden: { opacity: 0, x: -30 },
+                  visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } }
+                }}
+                className="text-[11px] uppercase tracking-[0.8em] text-gold/40 font-bold mb-16 flex items-center gap-6"
+              >
                 {cat.title}
-                <div className="h-px flex-grow bg-white/5" />
-              </h3>
+                <motion.div 
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  transition={{ duration: 1.5, ease: "easeInOut", delay: 0.5 }}
+                  className="h-px flex-grow bg-gradient-to-r from-gold/20 to-transparent origin-left" 
+                />
+              </motion.h3>
+              
               <div className="space-y-16">
-                {cat.items.map((item) => (
-                  <div key={item.name} className="group relative">
-                    <div className="flex justify-between items-baseline mb-4">
-                      <h4 className="font-serif text-3xl font-medium group-hover:text-gold transition-colors duration-700">{item.name}</h4>
-                      <span className="font-mono text-gold text-sm">{item.price}</span>
+                {cat.items.map((item, idx) => (
+                  <motion.div 
+                    key={item.name}
+                    variants={{
+                      hidden: { 
+                        opacity: 0, 
+                        y: 30,
+                        filter: 'blur(10px)',
+                        clipPath: 'inset(0 100% 0 0)'
+                      },
+                      visible: { 
+                        opacity: 1, 
+                        y: 0,
+                        filter: 'blur(0px)',
+                        clipPath: 'inset(0 0% 0 0)',
+                        transition: { 
+                          duration: 1.2, 
+                          ease: [0.16, 1, 0.3, 1],
+                          delay: idx * 0.05 // Extra stagger layer
+                        } 
+                      }
+                    }}
+                    whileHover={{ x: 10 }}
+                    className="group relative cursor-default"
+                  >
+                    <div className="flex justify-between items-baseline mb-2">
+                      <h4 className="font-serif text-3xl font-medium group-hover:text-gold transition-all duration-700 flex items-center gap-4">
+                        <motion.span 
+                          variants={{
+                            hidden: { width: 0 },
+                            visible: { width: '2rem', transition: { delay: 0.5 + idx * 0.1, duration: 0.8 } }
+                          }}
+                          className="h-px bg-gold group-hover:w-12 transition-all duration-700" 
+                        />
+                        {item.name}
+                      </h4>
+                      <motion.span 
+                        variants={{
+                          hidden: { opacity: 0, x: 10 },
+                          visible: { opacity: 0.6, x: 0, transition: { delay: 0.8 + idx * 0.1 } }
+                        }}
+                        className="font-mono text-gold text-sm group-hover:opacity-100 transition-opacity duration-700"
+                      >
+                        {item.price}
+                      </motion.span>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <span className="text-[9px] uppercase tracking-[0.4em] text-white/20 font-bold">{item.time}</span>
-                      <div className="h-px w-0 group-hover:w-16 bg-gold/30 transition-all duration-700" />
+                    
+                    <motion.p 
+                      variants={{
+                        hidden: { opacity: 0, y: 10 },
+                        visible: { opacity: 1, y: 0, transition: { delay: 0.6 + idx * 0.1 } }
+                      }}
+                      className="text-white/30 text-xs mb-4 font-light leading-relaxed max-w-sm group-hover:text-white/60 transition-colors duration-700 pl-12"
+                    >
+                      {item.description}
+                    </motion.p>
+                    
+                    <div className="flex items-center gap-4 pl-12">
+                      <motion.span 
+                        variants={{
+                          hidden: { opacity: 0 },
+                          visible: { opacity: 1, transition: { delay: 0.9 + idx * 0.1 } }
+                        }}
+                        className="text-[9px] uppercase tracking-[0.4em] text-white/20 font-bold group-hover:text-gold/40 transition-colors duration-700"
+                      >
+                        {item.time}
+                      </motion.span>
+                      <motion.div 
+                        variants={{
+                          hidden: { width: 0 },
+                          visible: { width: '6rem', transition: { delay: 1 + idx * 0.1, duration: 1 } }
+                        }}
+                        className="h-px bg-gradient-to-r from-gold/40 to-transparent transition-all duration-1000 group-hover:w-32" 
+                      />
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
@@ -289,21 +397,25 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="py-40 bg-dark">
+    <section id="gallery" className="py-24 md:py-40 bg-dark">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="text-center mb-24">
+        <div className="text-center mb-16 md:mb-24">
           <span className="sub-label">The Showcase</span>
-          <h2 className="section-title">Visual Identity</h2>
+          <h2 className="section-title">Our Work</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {images.map((src, i) => (
             <motion.div 
               key={i}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              initial={{ opacity: 0, y: 50, x: i % 2 === 0 ? -20 : 20 }}
+              whileInView={{ opacity: 1, y: 0, x: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ 
+                duration: 1, 
+                delay: i * 0.1,
+                ease: [0.16, 1, 0.3, 1]
+              }}
               className="img-reveal aspect-[4/5] glass-panel"
             >
               <img 
@@ -322,32 +434,97 @@ const Gallery = () => {
 
 const Team = () => {
   const barbers = [
-    { name: "Clark R.", role: "Master Artisan", rating: "5.0 ★ (4 Reviews)" },
-    { name: "Ahmad F.", role: "Senior Barber", rating: "5.0 ★ (19 Reviews)" },
-    { name: "Sido", role: "Specialist", rating: "Available Tomorrow" },
+    { 
+      name: "Clark R.", 
+      role: "Senior Barber", 
+      rating: "5.0 ★ (4 Reviews)",
+      image: "https://i.postimg.cc/Hs0mC8FD/Clark-R.jpg"
+    },
+    { 
+      name: "Ahmad F.", 
+      role: "Senior Barber", 
+      rating: "5.0 ★ (19 Reviews)",
+      image: "https://i.postimg.cc/y8vzD4VG/Ahmad_F.jpg"
+    },
+    { 
+      name: "Sido", 
+      role: "Senior Barber", 
+      rating: "",
+      image: "https://i.postimg.cc/D0LT0SZG/Sido.jpg"
+    },
   ];
 
   return (
-    <section id="team" className="py-40 bg-dark relative overflow-hidden">
+    <section id="team" className="py-24 md:py-40 bg-dark relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="mb-24">
-          <span className="sub-label">The Artisans</span>
-          <h2 className="section-title">The Team</h2>
+        <div className="mb-16 md:mb-24">
+          <span className="sub-label">The Experts</span>
+          <h2 className="section-title">Our Barbers</h2>
         </div>
         
         <div className="grid md:grid-cols-3 gap-12">
           {barbers.map((barber, i) => (
             <motion.div 
               key={barber.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2 }}
-              className="glass-panel p-12 group hover:border-gold/30 transition-all duration-700"
+              initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50, y: 20 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ 
+                duration: 1.2, 
+                delay: i * 0.2,
+                ease: [0.16, 1, 0.3, 1]
+              }}
+              className="glass-panel group hover:border-gold/30 transition-all duration-700 overflow-hidden flex flex-col"
             >
-              <h3 className="font-serif text-4xl font-medium mb-4 group-hover:text-gold transition-colors duration-700">{barber.name}</h3>
-              <p className="text-[10px] uppercase tracking-[0.4em] text-gold/60 font-bold mb-4">{barber.role}</p>
-              <p className="text-[9px] uppercase tracking-[0.2em] text-white/20 font-bold">{barber.rating}</p>
+              <div className="aspect-[4/5] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
+                <img 
+                  src={barber.image} 
+                  alt={barber.name} 
+                  className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-1000"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: { staggerChildren: 0.1, delayChildren: 0.5 }
+                  }
+                }}
+                className="p-12"
+              >
+                <motion.h3 
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                  }}
+                  className="font-serif text-4xl font-medium mb-4 group-hover:text-gold transition-colors duration-700"
+                >
+                  {barber.name}
+                </motion.h3>
+                <motion.p 
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                  }}
+                  className="text-[10px] uppercase tracking-[0.4em] text-gold/60 font-bold mb-4"
+                >
+                  {barber.role}
+                </motion.p>
+                <motion.p 
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                  }}
+                  className="text-[9px] uppercase tracking-[0.2em] text-white/20 font-bold"
+                >
+                  {barber.rating}
+                </motion.p>
+              </motion.div>
             </motion.div>
           ))}
         </div>
@@ -356,11 +533,44 @@ const Team = () => {
   );
 };
 
+const MapSection = () => {
+  return (
+    <section id="location" className="py-24 md:py-40 bg-dark relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="text-center mb-16 md:mb-24">
+          <span className="sub-label">Find Us</span>
+          <h2 className="section-title">The Location</h2>
+        </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="glass-panel overflow-hidden aspect-[16/9] md:aspect-[21/9] relative group"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.42239634568!2d-79.6976644!3d43.5352458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b439506666667%3A0x6666666666666666!2s4099%20Erin%20Mills%20Pkwy%20%234%2C%20Mississauga%2C%20ON%20L5L%203P9!5e0!3m2!1sen!2sca!4v1710000000000!5m2!1sen!2sca"
+            width="100%"
+            height="100%"
+            style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="opacity-60 group-hover:opacity-100 transition-opacity duration-1000"
+          />
+          <div className="absolute inset-0 pointer-events-none border border-white/5" />
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
 const Footer = () => {
   return (
-    <footer className="bg-dark pt-40 pb-12 border-t border-white/5 relative overflow-hidden">
+    <footer className="bg-dark pt-24 md:pt-40 pb-24 md:pb-12 border-t border-white/5 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 relative z-10">
-        <div className="flex flex-col items-center text-center mb-32">
+        <div className="flex flex-col items-center text-center mb-16 md:mb-32">
           <a href="#" className="mb-12">
             <img 
               src="https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg" 
@@ -370,36 +580,51 @@ const Footer = () => {
             />
           </a>
           <p className="text-white/40 text-sm leading-relaxed font-light max-w-xl mb-12">
-            Redefining the modern grooming experience. We combine timeless techniques with contemporary aesthetics to define your character.
+            A modern barbershop focused on quality haircuts and classic service. We help you look your best every day.
           </p>
-          <div className="flex gap-8 mb-24">
+          <div className="flex gap-8 mb-12 md:mb-24">
             <a href="https://www.instagram.com/clip.and.chill/" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-gold transition-colors"><Instagram size={20} /></a>
             <a href="https://www.facebook.com/profile.php?id=61571956989946" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-gold transition-colors"><Facebook size={20} /></a>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-24 w-full pt-24 border-t border-white/5">
-            <div>
+          <div className="grid md:grid-cols-3 gap-12 md:gap-24 w-full pt-24 border-t border-white/5">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            >
               <h4 className="text-gold uppercase tracking-[0.4em] text-[10px] font-bold mb-10">Visit</h4>
               <div className="space-y-6 text-sm text-white/40 font-light">
                 <p>4099 Erin Mills Pkwy #4<br />Mississauga, ON L5L 3P9</p>
                 <p>(905) 606-2212</p>
               </div>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            >
               <h4 className="text-gold uppercase tracking-[0.4em] text-[10px] font-bold mb-10">Hours</h4>
               <div className="space-y-4 text-sm text-white/40 font-light">
                 <p>Mon - Sat: 11:00 - 20:00</p>
                 <p>Sunday: 11:00 - 20:00</p>
               </div>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            >
               <h4 className="text-gold uppercase tracking-[0.4em] text-[10px] font-bold mb-10">Newsletter</h4>
-              <p className="text-white/40 text-sm mb-8 font-light">Join our inner circle for grooming tips.</p>
+              <p className="text-white/40 text-sm mb-8 font-light">Join our inner circle for haircut tips.</p>
               <div className="relative max-w-xs mx-auto">
                 <input type="email" placeholder="Email Address" className="w-full bg-white/5 border border-white/5 px-6 py-4 outline-none focus:border-gold/30 text-sm font-light transition-all" />
                 <button className="absolute right-2 top-2 bottom-2 bg-gold/10 text-gold px-6 font-bold uppercase text-[9px] tracking-widest hover:bg-gold hover:text-dark transition-all">Join</button>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
@@ -417,6 +642,46 @@ const Footer = () => {
   );
 };
 
+const MobileStickyBook = () => {
+  return (
+    <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] p-6 pointer-events-none">
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-dark to-transparent opacity-90" />
+      <motion.div 
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        className="pointer-events-auto relative z-10"
+      >
+        <motion.a 
+          href="https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileTap={{ scale: 0.95 }}
+          animate={{ 
+            boxShadow: [
+              "0 0 0 0 rgba(212, 175, 55, 0)",
+              "0 0 20px 10px rgba(212, 175, 55, 0.2)",
+              "0 0 0 0 rgba(212, 175, 55, 0)"
+            ]
+          }}
+          transition={{ 
+            boxShadow: {
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }
+          }}
+          className="w-full bg-gold py-5 rounded-none flex items-center justify-center gap-3 group relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+          <span className="font-bold uppercase tracking-[0.3em] text-[11px] text-dark relative z-10">Book a Haircut</span>
+          <ArrowRight size={14} className="text-dark relative z-10 group-hover:translate-x-1 transition-transform" />
+        </motion.a>
+      </motion.div>
+    </div>
+  );
+};
+
 // --- Main App ---
 
 export default function App() {
@@ -425,13 +690,13 @@ export default function App() {
       <Navbar />
       <Hero />
       
-      <section id="about" className="py-40 bg-dark relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-32 items-center">
+      <section id="about" className="py-24 md:py-40 bg-dark relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 md:gap-32 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="img-reveal glass-panel"
           >
             <img 
@@ -443,28 +708,74 @@ export default function App() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.15 }
+              }
+            }}
           >
-            <span className="sub-label">Our Story</span>
-            <h2 className="section-title mb-10">Heritage Meets <br /><span className="italic text-white/40">Modernity.</span></h2>
-            <p className="text-white/50 text-lg mb-8 leading-relaxed font-light">
-              Clip & Chill was founded on a simple principle: every man deserves a sanctuary where he can recharge and leave looking his absolute best. 
-            </p>
-            <p className="text-white/30 mb-12 leading-relaxed font-light">
-              We've combined the timeless atmosphere of a classic barbershop with the precision of modern grooming. Our master artisans don't just cut hair; they craft styles that reflect your character.
-            </p>
+            <motion.span 
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+              }}
+              className="sub-label"
+            >
+              Our Story
+            </motion.span>
+            <motion.h2 
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+              }}
+              className="section-title mb-10"
+            >
+              Classic Style, <br /><span className="italic text-white/40">Modern Cuts.</span>
+            </motion.h2>
+            <motion.p 
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+              }}
+              className="text-white/50 text-lg mb-8 leading-relaxed font-light"
+            >
+              Clip & Chill was built for one reason: to give you a great place to relax and get a high-quality haircut.
+            </motion.p>
+            <motion.p 
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+              }}
+              className="text-white/30 mb-12 leading-relaxed font-light"
+            >
+              We offer the feel of a traditional barbershop with the skill of modern styling. Our barbers focus on giving you a look that fits you perfectly.
+            </motion.p>
             <div className="grid grid-cols-2 gap-12">
-              <div className="space-y-4">
+              <motion.div 
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                }}
+                className="space-y-4"
+              >
                 <span className="text-4xl font-serif font-medium text-gold">5.0</span>
                 <p className="text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">Google Rating</p>
-              </div>
-              <div className="space-y-4">
+              </motion.div>
+              <motion.div 
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                }}
+                className="space-y-4"
+              >
                 <span className="text-4xl font-serif font-medium text-gold">404</span>
                 <p className="text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">Total Reviews</p>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -475,7 +786,7 @@ export default function App() {
       <Team />
       
       {/* CTA Section */}
-      <section className="py-40 bg-dark relative overflow-hidden">
+      <section className="py-24 md:py-40 bg-dark relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=2000" 
@@ -487,25 +798,58 @@ export default function App() {
         
         <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.2 }
+              }
+            }}
           >
-            <h2 className="section-title mb-10">Ready for the <br />Experience?</h2>
-            <p className="text-white/40 text-lg mb-16 font-light">Join the hundreds of gentlemen who trust us with their style.</p>
-            <a 
-              href="https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-luxury px-16 py-6 inline-flex items-center justify-center"
+            <motion.h2 
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
+              }}
+              className="section-title mb-10"
             >
-              <span>Book Your Appointment</span>
-            </a>
+              Ready for a <br />Fresh Cut?
+            </motion.h2>
+            <motion.p 
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
+              }}
+              className="text-white/40 text-lg mb-16 font-light"
+            >
+              Join the many clients who trust us for their regular haircuts.
+            </motion.p>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, scale: 0.9 },
+                visible: { opacity: 1, scale: 1, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
+              }}
+            >
+              <a 
+                href="https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-luxury px-16 py-6 inline-flex items-center justify-center"
+              >
+                <span>Book Your Appointment</span>
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
+      <MapSection />
+
       <Footer />
+      <MobileStickyBook />
     </div>
   );
 }
