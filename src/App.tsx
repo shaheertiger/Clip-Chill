@@ -607,7 +607,7 @@ const Reviews = () => {
               <div className="flex text-gold mb-1">
                 {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="currentColor" stroke="none" />)}
               </div>
-              <div className="text-[10px] text-dark/40 uppercase tracking-[0.3em] font-bold">884 reviews</div>
+              <div className="text-[10px] text-dark/40 uppercase tracking-[0.3em] font-bold">406 reviews</div>
             </div>
           </div>
           <a 
@@ -803,14 +803,17 @@ export default function App() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="img-reveal glass-panel"
+            className="glass-panel overflow-hidden"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=80&w=1000" 
-              alt="Barber craftsmanship at Clip & Chill Barbershop Mississauga"
-              className="w-full h-auto grayscale"
-              referrerPolicy="no-referrer"
-            />
+            <div className="aspect-[9/16] w-full">
+              <iframe
+                src="https://www.youtube.com/embed/xmD6GAVkI54"
+                title="Clip & Chill Barbershop - Our Story"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            </div>
           </motion.div>
 
           <motion.div
@@ -861,28 +864,6 @@ export default function App() {
             >
               We offer the feel of a traditional barbershop with the skill of modern styling. Our barbers focus on giving you a look that fits you perfectly.
             </motion.p>
-            <div className="grid grid-cols-2 gap-12">
-              <motion.div 
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
-                }}
-                className="space-y-4"
-              >
-                <span className="text-4xl font-serif font-medium text-gold">5.0</span>
-                <p className="text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">Google Rating</p>
-              </motion.div>
-              <motion.div 
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
-                }}
-                className="space-y-4"
-              >
-                <span className="text-4xl font-serif font-medium text-gold">884</span>
-                <p className="text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">Total Reviews</p>
-              </motion.div>
-            </div>
           </motion.div>
         </div>
       </section>
