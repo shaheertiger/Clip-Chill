@@ -165,7 +165,7 @@ const Hero = () => {
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <img 
           src="https://i.postimg.cc/wMfhtjbn/DSC04689.jpg" 
-          alt="Atmospheric Barbershop" 
+          alt="Clip & Chill Barbershop interior in Mississauga"
           className="w-full h-full object-cover opacity-40 scale-105"
           referrerPolicy="no-referrer"
         />
@@ -242,7 +242,11 @@ const Services = () => {
     { name: "Haircut + Beard", price: "$50", time: "60m", description: "A fresh haircut combined with a professional beard trim." },
     { name: "Beard Trim", price: "$25", time: "20m", description: "Keep your beard looking sharp and well-maintained." },
     { name: "Hot Towel Shave", price: "$25", time: "30m", description: "A classic straight-razor shave with a relaxing hot towel." },
-    { name: "Clip and Chill Package", price: "$110", time: "90m", description: "The full experience: haircut, beard trim, hot towel shave, facial, and waxing." },
+    { name: "Skin Care & Facial", price: "$40", time: "45m", description: "Rejuvenating facial treatment with a relaxing shoulder massage." },
+    { name: "Face Wax", price: "$20", time: "20m", description: "Complete face, ear, and nose waxing for a clean, polished look." },
+    { name: "Face Threading", price: "$15", time: "15m", description: "Precise threading for perfectly shaped brows and a clean face." },
+    { name: "Hair Wash & Styling", price: "$20", time: "20m", description: "A refreshing hair wash followed by professional styling." },
+    { name: "Clip and Chill Package", price: "$110", time: "120m", description: "The full experience: haircut, beard trim, hot towel shave, skin care, facial, shoulder massage, face wax, face threading, and hair wash & styling." },
   ];
 
   const renderServiceItem = (item: typeof services[0], idx: number) => (
@@ -349,7 +353,7 @@ const Services = () => {
             }}
           >
             <div className="space-y-16">
-              {services.slice(0, 4).map((item, idx) => renderServiceItem(item, idx))}
+              {services.slice(0, 6).map((item, idx) => renderServiceItem(item, idx))}
             </div>
           </motion.div>
 
@@ -363,7 +367,7 @@ const Services = () => {
             }}
           >
             <div className="space-y-16">
-              {services.slice(4).map((item, idx) => renderServiceItem(item, idx))}
+              {services.slice(6).map((item, idx) => renderServiceItem(item, idx))}
             </div>
           </motion.div>
         </div>
@@ -374,10 +378,13 @@ const Services = () => {
 
 const Gallery = () => {
   const images = [
-    "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&q=80&w=800",
+    "https://i.postimg.cc/PrCTsKZW/0b56f814_0303_4bd9_9946_66768e49f495.jpg",
+    "https://i.postimg.cc/5ND1xvqL/213b9583_0fc3_4c76_bcf1_63b6e74bddbe.jpg",
+    "https://i.postimg.cc/658tJzRV/25563b0a_a068_4adb_ae17_de88b11e9a41.jpg",
+    "https://i.postimg.cc/SNnkFV8C/7a5159e7_3675_43b8_bbcb_6d9b5d031314.jpg",
+    "https://i.postimg.cc/fT1ZwXj9/b380c194_9ed1_470a_8b51_d9ba39318eac.jpg",
+    "https://i.postimg.cc/sDbyVS9G/d234214d_eae2_4220_be5e_1a625047ff5d.jpg",
+    "https://i.postimg.cc/c4v0yTYf/D23B18A6_E7F2_425B_BEC3_40F071CC7364.jpg",
   ];
 
   return (
@@ -388,7 +395,7 @@ const Gallery = () => {
           <h2 className="section-title">Our Work</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {images.map((src, i) => (
             <motion.div 
               key={i}
@@ -404,7 +411,7 @@ const Gallery = () => {
             >
               <img 
                 src={src} 
-                alt={`Gallery ${i}`} 
+                alt={`Clip & Chill Barbershop customer haircut ${i + 1}`}
                 className="w-full h-full object-cover opacity-60 hover:opacity-100 grayscale hover:grayscale-0"
                 referrerPolicy="no-referrer"
               />
@@ -460,7 +467,7 @@ const Team = () => {
               <div className="aspect-[4/5] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
                 <img 
                   src={barber.image} 
-                  alt={barber.name} 
+                  alt={`${barber.name} - ${barber.role} at Clip & Chill Barbershop`}
                   className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-1000"
                   referrerPolicy="no-referrer"
                 />
@@ -600,7 +607,7 @@ const Reviews = () => {
               <div className="flex text-gold mb-1">
                 {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="currentColor" stroke="none" />)}
               </div>
-              <div className="text-[10px] text-dark/40 uppercase tracking-[0.3em] font-bold">884 reviews</div>
+              <div className="text-[10px] text-dark/40 uppercase tracking-[0.3em] font-bold">406 reviews</div>
             </div>
           </div>
           <a 
@@ -729,7 +736,7 @@ const Footer = () => {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-[9px] text-white/20 uppercase tracking-[0.4em] font-bold">
-            © 2024 Clip & Chill Barbershop. All Rights Reserved.
+            © 2024–2026 Clip & Chill Barbershop. All Rights Reserved.
           </p>
           <div className="flex gap-10 text-[9px] text-white/20 uppercase tracking-[0.4em] font-bold">
             <a href="#" className="hover:text-gold transition-colors">Privacy</a>
@@ -796,14 +803,17 @@ export default function App() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="img-reveal glass-panel"
+            className="glass-panel overflow-hidden"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=80&w=1000" 
-              alt="Craftsmanship" 
-              className="w-full h-auto grayscale"
-              referrerPolicy="no-referrer"
-            />
+            <div className="aspect-[9/16] w-full">
+              <iframe
+                src="https://www.youtube.com/embed/xmD6GAVkI54"
+                title="Clip & Chill Barbershop - Our Story"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            </div>
           </motion.div>
 
           <motion.div
@@ -854,28 +864,6 @@ export default function App() {
             >
               We offer the feel of a traditional barbershop with the skill of modern styling. Our barbers focus on giving you a look that fits you perfectly.
             </motion.p>
-            <div className="grid grid-cols-2 gap-12">
-              <motion.div 
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
-                }}
-                className="space-y-4"
-              >
-                <span className="text-4xl font-serif font-medium text-gold">5.0</span>
-                <p className="text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">Google Rating</p>
-              </motion.div>
-              <motion.div 
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
-                }}
-                className="space-y-4"
-              >
-                <span className="text-4xl font-serif font-medium text-gold">884</span>
-                <p className="text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">Total Reviews</p>
-              </motion.div>
-            </div>
           </motion.div>
         </div>
       </section>
