@@ -247,18 +247,15 @@ const Hero = () => {
 
 const Services = () => {
   const services = [
-    { name: "Standard Haircut", price: "$30", time: "30m", description: "A clean, professional cut that fits your style." },
-    { name: "Long Haircut", price: "$35", time: "45m", description: "For longer hair or more detailed styles." },
-    { name: "Kid's Cut", price: "$25", time: "30m", description: "A great haircut experience for kids." },
-    { name: "Senior Cut", price: "$25", time: "30m", description: "Traditional haircuts for seniors." },
-    { name: "Haircut + Beard", price: "$50", time: "60m", description: "A fresh haircut combined with a professional beard trim." },
-    { name: "Beard Trim", price: "$25", time: "20m", description: "Keep your beard looking sharp and well-maintained." },
-    { name: "Hot Towel Shave", price: "$25", time: "30m", description: "A classic straight-razor shave with a relaxing hot towel." },
-    { name: "Skin Care & Facial", price: "$40", time: "45m", description: "Rejuvenating facial treatment with a relaxing shoulder massage." },
-    { name: "Face Wax", price: "$20", time: "20m", description: "Complete face, ear, and nose waxing for a clean, polished look." },
-    { name: "Face Threading", price: "$15", time: "15m", description: "Precise threading for perfectly shaped brows and a clean face." },
-    { name: "Hair Wash & Styling", price: "$20", time: "20m", description: "A refreshing hair wash followed by professional styling." },
-    { name: "Clip and Chill Package", price: "$110", time: "120m", description: "The full experience: haircut, beard trim, hot towel shave, skin care, facial, shoulder massage, face wax, face threading, and hair wash & styling." },
+    { name: "Haircut", price: "$30", time: "30min", description: "A clean, professional cut that fits your style." },
+    { name: "Beard Trim", price: "$25", time: "15min", description: "Keep your beard looking sharp and well-maintained." },
+    { name: "Haircut and Beard", price: "$50", time: "45min", description: "A fresh haircut combined with a professional beard trim." },
+    { name: "Long Haircut", price: "$35", time: "30min", description: "For longer hair or more detailed styles." },
+    { name: "Kid's Cut (Under 10 Years)", price: "$25", time: "30min", description: "A great haircut experience for kids." },
+    { name: "Senior Haircut", price: "$25", time: "30min", description: "Traditional haircuts for seniors." },
+    { name: "Hot Towel Shave", price: "$25", time: "30min", description: "A classic straight-razor shave with a relaxing hot towel." },
+    { name: "Face Wax", price: "$10", time: "15min", description: "Complete face, ear, and nose waxing for a clean, polished look." },
+    { name: "Clip & Chill Package", price: "$110", time: "1h 30min", description: "The full experience: haircut, beard trim, hot towel shave, skin care, facial, shoulder massage, face wax, face threading, and hair wash & styling." },
   ];
 
   const renderServiceItem = (item: typeof services[0], idx: number) => (
@@ -342,8 +339,8 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-32 gap-12">
           <div className="max-w-2xl">
-            <span className="sub-label">Our Haircuts</span>
-            <h2 className="section-title">Our Services</h2>
+            <span className="sub-label">What We Offer</span>
+            <h2 className="section-title">Services & Pricing</h2>
             <p className="text-white/40 text-lg font-light leading-relaxed">
               We take the time to understand exactly how you want your hair to look before we start.
             </p>
@@ -361,7 +358,7 @@ const Services = () => {
             }}
           >
             <div className="space-y-16">
-              {services.slice(0, 6).map((item, idx) => renderServiceItem(item, idx))}
+              {services.slice(0, 5).map((item, idx) => renderServiceItem(item, idx))}
             </div>
           </motion.div>
 
@@ -375,7 +372,7 @@ const Services = () => {
             }}
           >
             <div className="space-y-16">
-              {services.slice(6).map((item, idx) => renderServiceItem(item, idx))}
+              {services.slice(5).map((item, idx) => renderServiceItem(item, idx))}
             </div>
           </motion.div>
         </div>
@@ -420,7 +417,7 @@ const Gallery = () => {
               <img
                 src={src}
                 alt={`Clip & Chill Barbershop customer haircut ${i + 1}`}
-                className="w-full h-full object-cover opacity-60 hover:opacity-100 grayscale hover:grayscale-0"
+                className="w-full h-full object-cover md:opacity-60 md:hover:opacity-100 md:grayscale md:hover:grayscale-0 transition-all duration-500"
                 loading="lazy"
                 decoding="async"
                 referrerPolicy="no-referrer"
@@ -474,7 +471,7 @@ const Team = () => {
               }}
               className="glass-panel group hover:border-gold/30 transition-all duration-700 overflow-hidden flex flex-col"
             >
-              <div className="aspect-[4/5] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
+              <div className="aspect-[4/5] overflow-hidden md:grayscale md:group-hover:grayscale-0 transition-all duration-1000">
                 <img
                   src={barber.image}
                   alt={`${barber.name} - ${barber.role} at Clip & Chill Barbershop`}
