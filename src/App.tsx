@@ -378,10 +378,13 @@ const Services = () => {
 
 const Gallery = () => {
   const images = [
-    "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&q=80&w=800",
+    "https://i.postimg.cc/PrCTsKZW/0b56f814_0303_4bd9_9946_66768e49f495.jpg",
+    "https://i.postimg.cc/5ND1xvqL/213b9583_0fc3_4c76_bcf1_63b6e74bddbe.jpg",
+    "https://i.postimg.cc/658tJzRV/25563b0a_a068_4adb_ae17_de88b11e9a41.jpg",
+    "https://i.postimg.cc/SNnkFV8C/7a5159e7_3675_43b8_bbcb_6d9b5d031314.jpg",
+    "https://i.postimg.cc/fT1ZwXj9/b380c194_9ed1_470a_8b51_d9ba39318eac.jpg",
+    "https://i.postimg.cc/sDbyVS9G/d234214d_eae2_4220_be5e_1a625047ff5d.jpg",
+    "https://i.postimg.cc/c4v0yTYf/D23B18A6_E7F2_425B_BEC3_40F071CC7364.jpg",
   ];
 
   return (
@@ -392,7 +395,7 @@ const Gallery = () => {
           <h2 className="section-title">Our Work</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {images.map((src, i) => (
             <motion.div 
               key={i}
