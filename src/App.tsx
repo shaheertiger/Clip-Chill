@@ -242,7 +242,11 @@ const Services = () => {
     { name: "Haircut + Beard", price: "$50", time: "60m", description: "A fresh haircut combined with a professional beard trim." },
     { name: "Beard Trim", price: "$25", time: "20m", description: "Keep your beard looking sharp and well-maintained." },
     { name: "Hot Towel Shave", price: "$25", time: "30m", description: "A classic straight-razor shave with a relaxing hot towel." },
-    { name: "Clip and Chill Package", price: "$110", time: "90m", description: "The full experience: haircut, beard trim, hot towel shave, facial, and waxing." },
+    { name: "Skin Care & Facial", price: "$40", time: "45m", description: "Rejuvenating facial treatment with a relaxing shoulder massage." },
+    { name: "Face Wax", price: "$20", time: "20m", description: "Complete face, ear, and nose waxing for a clean, polished look." },
+    { name: "Face Threading", price: "$15", time: "15m", description: "Precise threading for perfectly shaped brows and a clean face." },
+    { name: "Hair Wash & Styling", price: "$20", time: "20m", description: "A refreshing hair wash followed by professional styling." },
+    { name: "Clip and Chill Package", price: "$110", time: "120m", description: "The full experience: haircut, beard trim, hot towel shave, skin care, facial, shoulder massage, face wax, face threading, and hair wash & styling." },
   ];
 
   const renderServiceItem = (item: typeof services[0], idx: number) => (
@@ -349,7 +353,7 @@ const Services = () => {
             }}
           >
             <div className="space-y-16">
-              {services.slice(0, 4).map((item, idx) => renderServiceItem(item, idx))}
+              {services.slice(0, 6).map((item, idx) => renderServiceItem(item, idx))}
             </div>
           </motion.div>
 
@@ -363,7 +367,7 @@ const Services = () => {
             }}
           >
             <div className="space-y-16">
-              {services.slice(4).map((item, idx) => renderServiceItem(item, idx))}
+              {services.slice(6).map((item, idx) => renderServiceItem(item, idx))}
             </div>
           </motion.div>
         </div>
