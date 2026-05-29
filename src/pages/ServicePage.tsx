@@ -14,6 +14,12 @@ import {
 import { motion } from 'motion/react';
 import { services } from '../data/services';
 import { trackBookingConversion } from '../analytics';
+import { useSeo, type SeoConfig } from '../lib/seo';
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
 
 const BOOKING_URL = 'https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services';
 
@@ -47,7 +53,7 @@ const REVIEWS = [
 
 // ─── Structured data ─────────────────────────────────────────────────────────
 
-function useServiceSchema(slug: string, h1: string, metaDescription: string) {
+function useServiceSchema(slug: string, h1: string, metaDescription: string, faqs: FAQ[]) {
   useEffect(() => {
     const schema = {
       '@context': 'https://schema.org',
@@ -96,7 +102,17 @@ function useServiceSchema(slug: string, h1: string, metaDescription: string) {
       ],
     };
 
-    const schemas = [schema, breadcrumb];
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      })),
+    };
+
+    const schemas = faqs.length ? [schema, breadcrumb, faqSchema] : [schema, breadcrumb];
     const ids = schemas.map((_, i) => `service-ld-${i}`);
 
     schemas.forEach((s, i) => {
@@ -111,7 +127,7 @@ function useServiceSchema(slug: string, h1: string, metaDescription: string) {
     });
 
     return () => ids.forEach((id) => document.getElementById(id)?.remove());
-  }, [slug, h1, metaDescription]);
+  }, [slug, h1, metaDescription, faqs]);
 }
 
 // ─── FAQ Accordion ───────────────────────────────────────────────────────────
@@ -145,31 +161,18 @@ export default function ServicePage() {
   const { slug } = useParams<{ slug: string }>();
   const data = slug ? services[slug] : undefined;
 
-  useEffect(() => {
-    if (!data) return;
-    document.title = data.metaTitle;
-
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.setAttribute('name', 'description');
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.setAttribute('content', data.metaDescription);
-
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://clipandchill.ca/${data.slug}`;
-  }, [data]);
+  const seoConfig: SeoConfig = {
+    title: data?.metaTitle ?? 'Clip & Chill Barbershop | Mississauga',
+    description: data?.metaDescription ?? 'Premium haircuts and grooming in Mississauga.',
+    path: data ? `/${data.slug}` : '/',
+  };
+  useSeo(seoConfig);
 
   useServiceSchema(
     data?.slug ?? '',
     data?.h1 ?? '',
     data?.metaDescription ?? '',
+    data?.faqs ?? [],
   );
 
   useEffect(() => {

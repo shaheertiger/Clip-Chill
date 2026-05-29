@@ -20,6 +20,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import { trackBookingConversion } from './analytics';
+import { useSeo } from './lib/seo';
 
 const LOCATION_PAGES = [
   { label: 'Barber in Erin Mills', slug: 'barber-erin-mills' },
@@ -1077,6 +1078,13 @@ const MobileStickyBook = () => {
 
 
 export default function App() {
+  useSeo({
+    title: 'Clip & Chill Barbershop | Premium Haircuts & Grooming in Mississauga',
+    description:
+      'Clip & Chill Barbershop in Mississauga offers premium haircuts, beard trims, hot towel shaves, facials, waxing, threading, and full grooming packages. Book your appointment today.',
+    path: '/',
+  });
+
   return (
     <div className="min-h-screen bg-dark">
       <Navbar />

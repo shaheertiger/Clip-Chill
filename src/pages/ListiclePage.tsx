@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { listicles, bestBarberErinMills as fallbackData, type Barbershop, type ListicleData } from '../data/listicles';
 import { trackBookingConversion } from '../analytics';
+import { useSeo, type SeoConfig } from '../lib/seo';
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -333,28 +334,13 @@ export default function ListiclePage() {
   const { slug } = useParams<{ slug: string }>();
   const data = slug ? listicles[slug] : undefined;
 
-  // Set page title + meta description
-  useEffect(() => {
-    if (!data) return;
-    document.title = data.metaTitle;
-
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.setAttribute('name', 'description');
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.setAttribute('content', data.metaDescription);
-
-    // Canonical
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://clipandchill.ca/${data.slug}`;
-  }, [data]);
+  const seoConfig: SeoConfig = {
+    title: data?.metaTitle ?? 'Clip & Chill Barbershop | Mississauga',
+    description: data?.metaDescription ?? 'Premium haircuts and grooming in Mississauga.',
+    path: data ? `/${data.slug}` : '/',
+    type: 'article',
+  };
+  useSeo(seoConfig);
 
   useStructuredData(data ?? fallbackData);
 
