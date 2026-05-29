@@ -5,7 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import { Analytics } from '@vercel/analytics/react';
 import { trackBookingConversion } from '../analytics';
 import { blogs } from '../data/blogs';
-import { useSeo, useJsonLd, SITE_URL, DEFAULT_OG_IMAGE } from '../lib/seo';
+import { useSeo, useJsonLd } from '../lib/seo';
+import { blogPostingSchemas } from '../lib/schema';
 
 const BOOKING_URL = 'https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services';
 
@@ -86,34 +87,7 @@ export default function BlogPostPage() {
     type: 'article',
   });
 
-  useJsonLd('blog-ld', [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
-      headline: blogMeta.title,
-      description: blogMeta.description,
-      image: DEFAULT_OG_IMAGE,
-      datePublished: blogMeta.date,
-      dateModified: blogMeta.date,
-      articleSection: blogMeta.category,
-      mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/${slug}` },
-      author: { '@type': 'Organization', name: 'Clip & Chill Barbershop', url: SITE_URL },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Clip & Chill Barbershop',
-        logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE },
-      },
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
-        { '@type': 'ListItem', position: 3, name: blogMeta.title, item: `${SITE_URL}/${slug}` },
-      ],
-    },
-  ]);
+  useJsonLd('blog-ld', blogPostingSchemas(blogMeta));
 
   useEffect(() => {
     fetch(`/${slug}.md`)

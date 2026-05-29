@@ -14,12 +14,8 @@ import {
 import { motion } from 'motion/react';
 import { services } from '../data/services';
 import { trackBookingConversion } from '../analytics';
-import { useSeo, type SeoConfig } from '../lib/seo';
-
-interface FAQ {
-  question: string;
-  answer: string;
-}
+import { useSeo, useJsonLd, type SeoConfig } from '../lib/seo';
+import { serviceSchemas } from '../lib/schema';
 
 const BOOKING_URL = 'https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services';
 
@@ -50,85 +46,6 @@ const REVIEWS = [
     text: 'Got a great cut from Ahmad at a great price. The hours are great too as they work with my hectic schedule. The place is clean and modern. Will definitely be back.',
   },
 ];
-
-// ─── Structured data ─────────────────────────────────────────────────────────
-
-function useServiceSchema(slug: string, h1: string, metaDescription: string, faqs: FAQ[]) {
-  useEffect(() => {
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      '@id': 'https://clipandchill.ca',
-      name: 'Clip & Chill Barbershop',
-      description: metaDescription,
-      url: `https://clipandchill.ca/${slug}`,
-      telephone: '+19056062212',
-      priceRange: '$$',
-      image: 'https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '4099 Erin Mills Pkwy #4',
-        addressLocality: 'Mississauga',
-        addressRegion: 'ON',
-        postalCode: 'L5L 3P9',
-        addressCountry: 'CA',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 43.5352458,
-        longitude: -79.6976644,
-      },
-      openingHoursSpecification: [
-        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '10:00', closes: '20:00' },
-        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '11:00', closes: '19:00' },
-      ],
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '406',
-      },
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: h1,
-      },
-    };
-
-    const breadcrumb = {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://clipandchill.ca/' },
-        { '@type': 'ListItem', position: 2, name: h1, item: `https://clipandchill.ca/${slug}` },
-      ],
-    };
-
-    const faqSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faqs.map((faq) => ({
-        '@type': 'Question',
-        name: faq.question,
-        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-      })),
-    };
-
-    const schemas = faqs.length ? [schema, breadcrumb, faqSchema] : [schema, breadcrumb];
-    const ids = schemas.map((_, i) => `service-ld-${i}`);
-
-    schemas.forEach((s, i) => {
-      let el = document.getElementById(ids[i]) as HTMLScriptElement | null;
-      if (!el) {
-        el = document.createElement('script');
-        el.id = ids[i];
-        el.type = 'application/ld+json';
-        document.head.appendChild(el);
-      }
-      el.textContent = JSON.stringify(s);
-    });
-
-    return () => ids.forEach((id) => document.getElementById(id)?.remove());
-  }, [slug, h1, metaDescription, faqs]);
-}
 
 // ─── FAQ Accordion ───────────────────────────────────────────────────────────
 
@@ -167,13 +84,7 @@ export default function ServicePage() {
     path: data ? `/${data.slug}` : '/',
   };
   useSeo(seoConfig);
-
-  useServiceSchema(
-    data?.slug ?? '',
-    data?.h1 ?? '',
-    data?.metaDescription ?? '',
-    data?.faqs ?? [],
-  );
+  useJsonLd('service-ld', data ? serviceSchemas(data) : []);
 
   useEffect(() => {
     window.scrollTo(0, 0);

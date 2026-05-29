@@ -3,7 +3,8 @@ import { ArrowLeft, ArrowRight, Clock, Calendar } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 import { trackBookingConversion } from '../analytics';
 import { blogList } from '../data/blogs';
-import { useSeo, useJsonLd, SITE_URL } from '../lib/seo';
+import { useSeo, useJsonLd } from '../lib/seo';
+import { blogIndexSchemas } from '../lib/schema';
 
 const BOOKING_URL = 'https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services';
 
@@ -39,31 +40,7 @@ export default function BlogPage() {
     path: '/blog',
   });
 
-  useJsonLd('blog-index-ld', [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Blog',
-      name: 'Clip & Chill Barbershop Blog',
-      url: `${SITE_URL}/blog`,
-      publisher: { '@type': 'Organization', name: 'Clip & Chill Barbershop', url: SITE_URL },
-      blogPost: blogList.map((post) => ({
-        '@type': 'BlogPosting',
-        headline: post.title,
-        description: post.description,
-        datePublished: post.date,
-        articleSection: post.category,
-        url: `${SITE_URL}/${post.slug}`,
-      })),
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
-      ],
-    },
-  ]);
+  useJsonLd('blog-index-ld', blogIndexSchemas(blogList));
 
   return (
     <div className="min-h-screen bg-dark">
