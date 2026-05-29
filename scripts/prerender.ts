@@ -106,6 +106,12 @@ function renderRoute(base: string, route: Route): string {
   html = replaceMeta(html, 'name', 'twitter:title', route.title);
   html = replaceMeta(html, 'name', 'twitter:description', route.description);
   html = replaceCanonical(html, url);
+  // The hero image is only rendered on the homepage; drop its preload here so
+  // sub-pages don't fetch an image they never display (avoids "unused preload").
+  html = html.replace(
+    /\s*<link\s+rel="preload"\s+as="image"[\s\S]*?\/>/,
+    '',
+  );
   // Replace the homepage's BarberShop JSON-LD with this route's structured data.
   html = stripJsonLd(html);
   html = html.replace('</head>', `${jsonLdBlock(route.ldPrefix, route.schemas)}\n  </head>`);

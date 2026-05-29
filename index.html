@@ -19,8 +19,22 @@
     <!-- Preconnect to speed up external resource loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://i.postimg.cc" />
+    <link rel="preconnect" href="https://i.postimg.cc" crossorigin />
     <link rel="dns-prefetch" href="https://getsquire.com" />
+
+    <!-- Fonts: loaded via <link> (non-blocking, parallel) instead of CSS @import -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap"
+    />
+
+    <!-- Preload the hero LCP image so it starts downloading immediately -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://i.postimg.cc/wMfhtjbn/DSC04689.jpg"
+      fetchpriority="high"
+    />
 
     <!-- Primary Meta Tags -->
     <title>Clip & Chill Barbershop | Premium Haircuts & Grooming in Mississauga</title>

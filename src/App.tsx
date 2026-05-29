@@ -324,6 +324,8 @@ const Hero = () => {
           alt="Clip & Chill Barbershop interior in Mississauga"
           className="w-full h-full object-cover opacity-40 scale-105"
           referrerPolicy="no-referrer"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/20 to-dark" />
       </motion.div>
