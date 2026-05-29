@@ -11,7 +11,7 @@ import {
   Calendar,
   ArrowRight,
 } from 'lucide-react';
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import { services } from '../data/services';
 import { trackBookingConversion } from '../analytics';
 import { useSeo, useJsonLd, type SeoConfig } from '../lib/seo';
@@ -186,7 +186,7 @@ export default function ServicePage() {
       <main className="max-w-5xl mx-auto px-6 md:px-8 pb-20">
 
         {/* Intro */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -196,10 +196,10 @@ export default function ServicePage() {
           <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-3xl">
             {data.intro}
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Key Features */}
-        <motion.section
+        <m.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -213,7 +213,7 @@ export default function ServicePage() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {data.keyFeatures.map((feature, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -223,10 +223,10 @@ export default function ServicePage() {
               >
                 <CheckCircle2 size={16} className="text-gold/70 mt-0.5 shrink-0" />
                 <span className="text-sm text-white/60 leading-relaxed">{feature}</span>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.section>
+        </m.section>
 
         {/* Gallery */}
         <section className="mb-16 md:mb-24" aria-labelledby="gallery-heading">
@@ -236,7 +236,7 @@ export default function ServicePage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {GALLERY.map((src, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -252,7 +252,7 @@ export default function ServicePage() {
                   decoding="async"
                   referrerPolicy="no-referrer"
                 />
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </section>
@@ -274,7 +274,7 @@ export default function ServicePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {REVIEWS.map((review, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -299,7 +299,7 @@ export default function ServicePage() {
                     <p className="text-[10px] text-white/25">{review.date}</p>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </section>

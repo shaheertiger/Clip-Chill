@@ -1,6 +1,7 @@
 import { StrictMode, Component, Suspense, lazy, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, useParams, Navigate } from 'react-router-dom';
+import { LazyMotion, domAnimation } from 'motion/react';
 import App from './App.tsx';
 import { listicles } from './data/listicles.ts';
 import { services } from './data/services.ts';
@@ -55,15 +56,17 @@ function SlugRouter() {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ErrorBoundary>
-      <BrowserRouter>
-        <Suspense fallback={<RouteFallback />}>
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/:slug" element={<SlugRouter />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
+      <LazyMotion features={domAnimation} strict>
+        <BrowserRouter>
+          <Suspense fallback={<RouteFallback />}>
+            <Routes>
+              <Route path="/" element={<App />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/:slug" element={<SlugRouter />} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+      </LazyMotion>
     </ErrorBoundary>
   </StrictMode>,
 );

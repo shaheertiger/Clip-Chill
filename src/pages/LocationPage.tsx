@@ -12,7 +12,7 @@ import {
   ArrowRight,
   Navigation,
 } from 'lucide-react';
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import { locations, SERVICES_LIST } from '../data/locations';
 import { trackBookingConversion } from '../analytics';
 import { useSeo, useJsonLd, type SeoConfig } from '../lib/seo';
@@ -188,7 +188,7 @@ export default function LocationPage() {
 
         {/* Intro + local context */}
         <div className="grid md:grid-cols-2 gap-10 mb-16 md:mb-24">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -201,8 +201,8 @@ export default function LocationPage() {
             <p className="text-white/50 text-sm md:text-base leading-relaxed">
               {data.intro}
             </p>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -212,11 +212,11 @@ export default function LocationPage() {
             <p className="text-white/35 text-sm md:text-base leading-relaxed">
               {data.localContext}
             </p>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Highlights */}
-        <motion.section
+        <m.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -230,7 +230,7 @@ export default function LocationPage() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {data.highlights.map((h, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -240,13 +240,13 @@ export default function LocationPage() {
               >
                 <CheckCircle2 size={16} className="text-gold/70 mt-0.5 shrink-0" />
                 <span className="text-sm text-white/60 leading-relaxed">{h}</span>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.section>
+        </m.section>
 
         {/* Services & Pricing */}
-        <motion.section
+        <m.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -260,7 +260,7 @@ export default function LocationPage() {
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SERVICES_LIST.map((service, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -273,7 +273,7 @@ export default function LocationPage() {
                   <span className="font-mono text-gold text-sm font-bold">{service.price}</span>
                 </div>
                 <span className="text-[11px] text-white/25 uppercase tracking-[0.2em]">{service.duration}</span>
-              </motion.div>
+              </m.div>
             ))}
           </div>
           <p className="mt-5 text-xs text-white/25">
@@ -287,10 +287,10 @@ export default function LocationPage() {
               getsquire.com
             </a>
           </p>
-        </motion.section>
+        </m.section>
 
         {/* Directions */}
-        <motion.section
+        <m.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -345,7 +345,7 @@ export default function LocationPage() {
               </div>
             ))}
           </div>
-        </motion.section>
+        </m.section>
 
         {/* Reviews */}
         <section className="mb-16 md:mb-24" aria-labelledby="reviews-heading">
@@ -364,7 +364,7 @@ export default function LocationPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {REVIEWS.map((review, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -389,7 +389,7 @@ export default function LocationPage() {
                     <p className="text-[10px] text-white/25">{review.date}</p>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </section>
