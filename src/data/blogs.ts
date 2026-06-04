@@ -7,6 +7,27 @@ export interface BlogMeta {
 }
 
 export const blogs: Record<string, BlogMeta> = {
+  'best-barber-shop-port-credit': {
+    slug: 'best-barber-shop-port-credit',
+    title: "Best Barber Shop Near Port Credit: A Local's Guide",
+    description: "Live in Port Credit and want a genuinely great haircut? Here's an honest guide to finding the right barber near the waterfront — and why locals make the trip to Clip & Chill.",
+    category: 'Local Guide',
+    date: '2026-06-04',
+  },
+  'best-barber-shop-meadowvale': {
+    slug: 'best-barber-shop-meadowvale',
+    title: 'Best Barber Shop Near Meadowvale: Where Locals Actually Go',
+    description: "Looking for a great barber near Meadowvale? Here's an honest local guide to what makes a barbershop worth your time — and why Meadowvale residents drive 10 minutes south to Clip & Chill.",
+    category: 'Local Guide',
+    date: '2026-06-04',
+  },
+  'best-barber-shop-streetsville': {
+    slug: 'best-barber-shop-streetsville',
+    title: "Best Barber Shop Near Streetsville: A Local's Guide",
+    description: "Live in Streetsville and tired of inconsistent cuts? Here's an honest guide to finding a great barber near the village — and why locals make the short drive to Clip & Chill.",
+    category: 'Local Guide',
+    date: '2026-06-04',
+  },
   'best-cheap-haircut-mississauga': {
     slug: 'best-cheap-haircut-mississauga',
     title: 'The Ultimate Guide to Finding the Best Cheap Haircut in Mississauga',
