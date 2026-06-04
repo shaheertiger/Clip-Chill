@@ -7,6 +7,13 @@ export interface BlogMeta {
 }
 
 export const blogs: Record<string, BlogMeta> = {
+  'best-barber-shop-streetsville': {
+    slug: 'best-barber-shop-streetsville',
+    title: "Best Barber Shop Near Streetsville: A Local's Guide",
+    description: "Live in Streetsville and tired of inconsistent cuts? Here's an honest guide to finding a great barber near the village — and why locals make the short drive to Clip & Chill.",
+    category: 'Local Guide',
+    date: '2026-06-04',
+  },
   'best-cheap-haircut-mississauga': {
     slug: 'best-cheap-haircut-mississauga',
     title: 'The Ultimate Guide to Finding the Best Cheap Haircut in Mississauga',
