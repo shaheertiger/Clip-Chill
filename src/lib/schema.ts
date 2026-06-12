@@ -47,11 +47,18 @@ export function localBusinessSchema(opts: {
     url: `${SITE_URL}/${opts.slug}`,
     telephone: '+19056062212',
     priceRange: '$$',
+    currenciesAccepted: 'CAD',
+    paymentAccepted: 'Cash, Credit Card, Debit Card',
     image: LOGO,
     address: ADDRESS,
     geo: GEO,
     openingHoursSpecification: OPENING_HOURS,
     aggregateRating: AGGREGATE_RATING,
+    knowsAbout: [
+      "Men's haircuts", 'Skin fade', 'Taper fade', 'Buzz cut', 'Beard trim',
+      'Beard lineup', 'Hot towel shave', 'Kids haircut', 'Curly hair cuts',
+    ],
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1'] },
     ...(opts.areaServed ? { areaServed: { '@type': 'Place', name: opts.areaServed } } : {}),
     ...(opts.extra ?? {}),
   };

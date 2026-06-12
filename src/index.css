@@ -18,9 +18,29 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Stop iOS Safari from auto-inflating text and breaking the mobile layout. */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
   body {
     @apply bg-dark text-white font-sans antialiased selection:bg-gold selection:text-dark overflow-x-hidden;
+    /* Avoid long words (URLs, place names) forcing horizontal scroll on phones. */
+    overflow-wrap: break-word;
+    /* Remove the grey/blue flash when tapping links & buttons on touch devices. */
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* Honour users who ask for less motion (accessibility + Lighthouse best practice). */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
