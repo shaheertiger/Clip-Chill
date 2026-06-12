@@ -55,6 +55,12 @@ const LOCATION_PAGES = [
   { label: 'Barber near Brampton', slug: 'barber-brampton' },
   { label: 'Barber near Etobicoke', slug: 'barber-etobicoke' },
   { label: 'Barber near Milton', slug: 'barber-milton' },
+  { label: 'Barber near Erindale', slug: 'barber-erindale' },
+  { label: 'Barber near Credit Valley', slug: 'barber-credit-valley' },
+  { label: 'Barber near Mineola', slug: 'barber-mineola' },
+  { label: 'Barber near Britannia', slug: 'barber-britannia' },
+  { label: 'Barber near Heartland', slug: 'barber-heartland' },
+  { label: 'Barber near Malton', slug: 'barber-malton' },
 ];
 
 const SERVICE_PAGES = [
@@ -67,6 +73,13 @@ const SERVICE_PAGES = [
   { label: 'Haircut near Erin Mills Town Centre', slug: 'haircut-erin-mills-town-centre' },
   { label: 'Walk-In Barber Mississauga', slug: 'walk-in-barber-mississauga' },
   { label: 'Barbershop near UTM', slug: 'barbershop-near-utm' },
+  { label: 'Taper Fade Mississauga', slug: 'taper-fade-mississauga' },
+  { label: 'Hot Towel Shave Mississauga', slug: 'hot-towel-shave-mississauga' },
+  { label: 'Buzz Cut Mississauga', slug: 'buzz-cut-mississauga' },
+  { label: "Men's Haircut Erin Mills", slug: 'mens-haircut-erin-mills' },
+  { label: 'Beard Lineup Mississauga', slug: 'beard-lineup-mississauga' },
+  { label: 'Curly Hair Barber Mississauga', slug: 'curly-hair-barber-mississauga' },
+  { label: 'Barber Near Me', slug: 'barber-near-me' },
 ];
 
 

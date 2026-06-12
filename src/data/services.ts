@@ -447,4 +447,340 @@ export const services: Record<string, ServicePageData> = {
       },
     ],
   },
+
+  'taper-fade-mississauga': {
+    slug: 'taper-fade-mississauga',
+    metaTitle: 'Taper Fade Mississauga | Clip & Chill Barbershop',
+    metaDescription:
+      'Clean taper fade in Mississauga at Clip & Chill — low, mid & high tapers blended by expert barbers. $30, walk-ins welcome. 406 five-star reviews. Book online.',
+    h1: 'Taper Fade in Mississauga',
+    tagline: 'A sharp, grown-out-friendly taper — blended seamlessly every time.',
+    intro:
+      "The taper fade is the most versatile cut in the chair — professional enough for the office, sharp enough for the weekend, and it grows out cleanly. At Clip & Chill our barbers blend the taper from your natural length down to the skin around the ears and neckline, leaving a gradient that looks intentional for weeks. Low, mid, or high — we dial it in to your hair type and face shape.",
+    price: '$30',
+    duration: '30 min',
+    keyFeatures: [
+      'Low, mid & high taper fades',
+      'Grows out cleaner than a full skin fade',
+      'Blended around the ears & neckline with razor detail',
+      'Pairs with scissor work, textured crops or a pompadour on top',
+      'Works on straight, wavy, curly & coily hair',
+      'Included in the standard $30 haircut — no upcharge',
+    ],
+    faqs: [
+      {
+        question: 'What is a taper fade?',
+        answer:
+          'A taper fade gradually shortens the hair around the ears and the back of the neck, blending from your longer length down to a very short length without going fully bald. It is cleaner and more conservative than a full skin fade.',
+      },
+      {
+        question: 'What is the difference between a taper fade and a skin fade?',
+        answer:
+          'A taper fade blends down to a short length but stops before the skin, while a skin fade takes the sides all the way to bare skin (zero guard). A taper is more subtle and grows out more gracefully; a skin fade is higher-contrast and sharper.',
+      },
+      {
+        question: 'How much is a taper fade at Clip & Chill?',
+        answer:
+          'A taper fade is included in our standard $30 haircut — there is no extra charge for the fade style. The Haircut & Beard Combo is $50.',
+      },
+      {
+        question: 'How often should I get a taper fade?',
+        answer:
+          'Most clients return every 2–4 weeks. A taper grows out more cleanly than a skin fade, so you can stretch it to 3–4 weeks and still look sharp.',
+      },
+      {
+        question: 'Where can I get a taper fade in Mississauga?',
+        answer:
+          'Clip & Chill at 4099 Erin Mills Pkwy #4, Mississauga specializes in taper and skin fades. We are 5.0-rated with 406 Google reviews, open 7 days, with free parking and walk-ins welcome.',
+      },
+    ],
+  },
+
+  'hot-towel-shave-mississauga': {
+    slug: 'hot-towel-shave-mississauga',
+    metaTitle: 'Hot Towel Shave Mississauga | Clip & Chill Barbershop',
+    metaDescription:
+      'Classic hot towel straight razor shave in Mississauga at Clip & Chill — $25. Hot towel prep, close shave, soothing finish. Walk-ins welcome. Book online today.',
+    h1: 'Hot Towel Shave in Mississauga',
+    tagline: 'A traditional straight-razor shave — hot towels, close finish, fully relaxing.',
+    intro:
+      "The hot towel shave is the most relaxing service in the shop. We prep your skin with a hot towel to soften the hair and open the pores, lather with warm shaving cream, and finish with a precise straight-razor shave. The result is the closest, smoothest shave you can get — paired with a soothing aftershave to leave your skin calm and fresh.",
+    price: '$25',
+    duration: '30 min',
+    keyFeatures: [
+      'Hot towel prep to soften hair & open pores',
+      'Traditional straight-razor close shave',
+      'Warm lather & soothing post-shave balm',
+      'Great as a standalone treat or add-on to a haircut',
+      'Precise neckline & cheek-line detailing',
+      'Calm, clean, relaxing atmosphere',
+    ],
+    faqs: [
+      {
+        question: 'How much is a hot towel shave in Mississauga?',
+        answer:
+          'A full hot towel straight-razor shave at Clip & Chill is $25. It takes about 30 minutes and can be added to a haircut or booked on its own.',
+      },
+      {
+        question: 'What does a hot towel shave include?',
+        answer:
+          'It includes a hot towel prep to soften the beard, warm lather, a close straight-razor shave, and a soothing aftershave balm. It is a complete face shave, not just a beard tidy-up.',
+      },
+      {
+        question: 'Is a hot towel shave good for sensitive skin?',
+        answer:
+          'Yes — the hot towel softens the hair and the razor work is done with the grain to minimise irritation. Let your barber know if your skin is sensitive and they will adjust the technique.',
+      },
+      {
+        question: 'How long does a hot towel shave last?',
+        answer:
+          'A straight-razor shave is closer than a regular shave, so most clients enjoy a smooth finish for 2–3 days before regrowth, depending on how fast your beard grows.',
+      },
+      {
+        question: 'Where can I get a hot towel shave near Erin Mills?',
+        answer:
+          'Clip & Chill at 4099 Erin Mills Pkwy #4, Mississauga offers traditional hot towel shaves 7 days a week. Walk-ins are welcome and free parking is out front.',
+      },
+    ],
+  },
+
+  'buzz-cut-mississauga': {
+    slug: 'buzz-cut-mississauga',
+    metaTitle: 'Buzz Cut Mississauga | Clip & Chill Barbershop',
+    metaDescription:
+      'Clean buzz cut in Mississauga at Clip & Chill — even, sharp, $30. Choose your guard length with expert barbers. Walk-ins welcome, 406 five-star reviews. Book now.',
+    h1: 'Buzz Cut in Mississauga',
+    tagline: 'Low-maintenance, sharp and even — the buzz cut done right.',
+    intro:
+      "A buzz cut should look effortless, but getting it perfectly even with a crisp neckline takes a skilled hand. At Clip & Chill we cut to your chosen guard length, blend any transition you want at the sides, and finish with clean lines around the ears and neck. Whether you want a uniform one-length buzz or an induction-style cut with a slight taper, we make it look intentional.",
+    price: '$30',
+    duration: '30 min',
+    keyFeatures: [
+      'Choose your guard length — from a 0.5 to a longer buzz',
+      'Optional taper or fade at the sides for contrast',
+      'Crisp, razor-clean neckline & ear detailing',
+      'Fast, low-maintenance & travel-friendly style',
+      'Great for thinning hair or a fresh reset',
+      'Standard $30 haircut pricing',
+    ],
+    faqs: [
+      {
+        question: 'How much is a buzz cut in Mississauga?',
+        answer:
+          'A buzz cut at Clip & Chill is $30 — the standard haircut rate. It includes a clean neckline and ear detailing.',
+      },
+      {
+        question: 'Can I add a fade to my buzz cut?',
+        answer:
+          'Yes — many clients pair a buzz cut on top with a taper or skin fade on the sides for added contrast. There is no extra charge for the fade.',
+      },
+      {
+        question: 'What guard length should I get for a buzz cut?',
+        answer:
+          'It depends on the look you want: a #1 (about 3mm) is very short, a #2–#3 leaves a bit more, and a #4 and up gives a fuller buzz. Your barber will recommend a length based on your hair and head shape.',
+      },
+      {
+        question: 'How often should I get a buzz cut?',
+        answer:
+          'To keep it sharp, every 2–3 weeks. Because it is so short, regrowth shows quickly, especially around the neckline.',
+      },
+      {
+        question: 'Where can I get a buzz cut near Erin Mills?',
+        answer:
+          'Clip & Chill at 4099 Erin Mills Pkwy #4, Mississauga does buzz cuts daily with walk-ins welcome and free parking out front.',
+      },
+    ],
+  },
+
+  'mens-haircut-erin-mills': {
+    slug: 'mens-haircut-erin-mills',
+    metaTitle: "Men's Haircut Erin Mills | Clip & Chill Barbershop",
+    metaDescription:
+      "Men's haircut in Erin Mills from $30 at Clip & Chill — precision cuts, fades & classic styles right on Erin Mills Pkwy. 406 five-star reviews. Walk-ins welcome.",
+    h1: "Men's Haircut in Erin Mills",
+    tagline: "Your neighbourhood men's cut — precise, consistent, right on Erin Mills Pkwy.",
+    intro:
+      "For Erin Mills residents, a great men's haircut shouldn't mean driving across the city. Clip & Chill is right on Erin Mills Pkwy, and every cut starts with a real consultation on your hair type, face shape, and how you like to style it. The result is a precise, repeatable cut you can count on — minutes from home.",
+    price: '$30',
+    duration: '30 min',
+    keyFeatures: [
+      'Right on Erin Mills Pkwy — free parking out front',
+      'Personal consultation before every cut',
+      'Scissor & clipper work for a natural, blended finish',
+      'Skin fades, taper fades & classic styles',
+      'Hot towel neck shave to finish',
+      'Walk-ins welcome 7 days a week',
+    ],
+    faqs: [
+      {
+        question: "How much is a men's haircut in Erin Mills?",
+        answer:
+          "A standard men's haircut at Clip & Chill in Erin Mills is $30. The Haircut & Beard Combo is $50 and kids' cuts (under 10) are $25.",
+      },
+      {
+        question: "Where is the best men's barber in Erin Mills?",
+        answer:
+          'Clip & Chill at 4099 Erin Mills Pkwy #4 is the highest-rated barbershop in Erin Mills — a perfect 5.0 across 406 Google reviews — and is located directly on Erin Mills Pkwy.',
+      },
+      {
+        question: 'Do I need to book or can I walk in?',
+        answer:
+          'Walk-ins are welcome every day. For a guaranteed time on weekends, booking online through Squire takes under a minute.',
+      },
+      {
+        question: 'What styles do your barbers do?',
+        answer:
+          'Skin and taper fades, scissor cuts, buzz cuts, textured crops, pompadours, and classic side-parts — for all hair textures.',
+      },
+      {
+        question: 'What are your hours in Erin Mills?',
+        answer:
+          "We're open Monday to Saturday 10am–8pm and Sunday 11am–7pm, seven days a week.",
+      },
+    ],
+  },
+
+  'beard-lineup-mississauga': {
+    slug: 'beard-lineup-mississauga',
+    metaTitle: 'Beard Lineup & Edge Up Mississauga | Clip & Chill',
+    metaDescription:
+      'Sharp beard lineup and edge up in Mississauga at Clip & Chill — razor-clean lines on cheeks & neck. From $25. Walk-ins welcome. 406 five-star reviews. Book online.',
+    h1: 'Beard Lineup & Edge Up in Mississauga',
+    tagline: 'Razor-sharp lines on the cheeks, neck and edges — definition that lasts.',
+    intro:
+      "A crisp lineup is what separates a tidy beard from a sharp one. At Clip & Chill our barbers define your cheek line, neckline, and the edges around the mustache and chin with a straight razor for clean, defined borders. Whether you want a subtle natural shape or bold, sculpted lines, we tailor the lineup to your beard and face.",
+    price: 'From $25',
+    duration: '15–30 min',
+    keyFeatures: [
+      'Straight-razor cheek line & neckline definition',
+      'Crisp edges around mustache, chin & sideburns',
+      'Hot towel prep for a smooth, irritation-free finish',
+      'Beard oil applied to finish',
+      'Pairs with a haircut for a complete fresh look',
+      'Natural or sculpted — shaped to your face',
+    ],
+    faqs: [
+      {
+        question: 'What is a beard lineup or edge up?',
+        answer:
+          'A beard lineup (also called an edge up) is the precise shaping of your beard borders — the cheek line, neckline, and edges around the mustache and chin — usually finished with a straight razor for clean definition.',
+      },
+      {
+        question: 'How much does a beard lineup cost in Mississauga?',
+        answer:
+          'A beard trim with lineup at Clip & Chill starts at $25. Combined with a haircut, the total Haircut & Beard package is $50.',
+      },
+      {
+        question: 'What is the difference between a beard trim and a lineup?',
+        answer:
+          'A trim shortens and shapes the overall beard length, while a lineup focuses on creating sharp, defined edges. Most of our beard services include both for a complete result.',
+      },
+      {
+        question: 'How long does a beard lineup last?',
+        answer:
+          'Clean lines look sharp for about a week before regrowth softens them. Most clients book a lineup every 1–2 weeks, often alongside their haircut.',
+      },
+      {
+        question: 'Where can I get a beard lineup near Erin Mills?',
+        answer:
+          'Clip & Chill at 4099 Erin Mills Pkwy #4, Mississauga offers beard lineups and edge ups daily, with walk-ins welcome and free parking.',
+      },
+    ],
+  },
+
+  'barber-near-me': {
+    slug: 'barber-near-me',
+    metaTitle: 'Barber Near Me | Clip & Chill — Mississauga & Erin Mills',
+    metaDescription:
+      'Searching for a barber near you in Mississauga? Clip & Chill on Erin Mills Pkwy is 5.0-rated with 406 reviews — open 7 days, walk-ins welcome, free parking. Book now.',
+    h1: 'Looking for a Barber Near You?',
+    tagline: "If you're in Mississauga, Clip & Chill is the barber near you worth driving to.",
+    intro:
+      "If you just searched “barber near me,” you're probably after three things: a great cut, a fair price, and somewhere close that's actually open. Clip & Chill checks all three. We're on Erin Mills Pkwy in Mississauga — central and easy to reach from across the city — open 7 days a week with walk-ins welcome and free parking right out front.",
+    price: 'From $30',
+    duration: '30 min',
+    keyFeatures: [
+      'Central Erin Mills Pkwy location — easy to reach citywide',
+      'Open 7 days: Mon–Sat 10am–8pm · Sun 11am–7pm',
+      'Walk-ins welcome — no appointment needed',
+      'Free parking directly in front of the shop',
+      '5.0 Google rating with 406 reviews',
+      'Online booking via Squire in under 60 seconds',
+    ],
+    faqs: [
+      {
+        question: 'Where is the nearest barber in Mississauga?',
+        answer:
+          'Clip & Chill is centrally located at 4099 Erin Mills Pkwy #4, Mississauga ON L5L 3P9 — easy to reach from Erin Mills, Streetsville, Meadowvale, Churchill Meadows, Square One, and beyond. It is a 10–20 minute drive from most parts of Mississauga.',
+      },
+      {
+        question: 'Is there a barber near me open today?',
+        answer:
+          'Clip & Chill is open 7 days a week — Monday to Saturday 10am–8pm and Sunday 11am–7pm — so there is a good chance we are open right now. Walk-ins are welcome.',
+      },
+      {
+        question: 'Do I need an appointment or can I just walk in?',
+        answer:
+          'You can walk in any day. To skip the wait on busy weekends, you can also book online through Squire in under a minute.',
+      },
+      {
+        question: 'How much is a haircut?',
+        answer:
+          "A haircut is $30, a beard trim is $25, the Haircut & Beard Combo is $50, and kids' cuts (under 10) are $25.",
+      },
+      {
+        question: 'Is parking available?',
+        answer:
+          'Yes — there is a free parking lot directly in front of the shop in the plaza on Erin Mills Pkwy. No meters, no time limit.',
+      },
+    ],
+  },
+
+  'curly-hair-barber-mississauga': {
+    slug: 'curly-hair-barber-mississauga',
+    metaTitle: 'Curly Hair Barber Mississauga | Clip & Chill',
+    metaDescription:
+      'Curly & textured hair barber in Mississauga at Clip & Chill. Expert cuts for curly, coily & wavy hair — fades, tapers & shape-ups. Walk-ins welcome. Book online.',
+    h1: 'Curly & Textured Hair Barber in Mississauga',
+    tagline: 'Cuts that work with your curls — not against them.',
+    intro:
+      "Curly and textured hair needs a barber who understands how it grows, shrinks, and moves. At Clip & Chill our barbers cut curly, coily, and wavy hair every day — shaping to your natural curl pattern, blending fades and tapers cleanly through texture, and finishing with the right products so your hair looks great the moment you leave and after your first wash.",
+    price: 'From $30',
+    duration: '30–45 min',
+    keyFeatures: [
+      'Experienced with curly, coily & wavy textures',
+      'Fades & tapers blended cleanly through curl',
+      'Shape-ups & defined edges without over-thinning',
+      'Cut to your natural curl pattern & shrinkage',
+      'Product recommendations for at-home styling',
+      'Great for high-top fades & textured crops',
+    ],
+    faqs: [
+      {
+        question: 'Do your barbers cut curly and coily hair?',
+        answer:
+          'Yes — our barbers work with all hair textures every day, including curly, coily, wavy, and thick hair. We cut to your natural curl pattern so the shape looks right as it grows.',
+      },
+      {
+        question: 'How much is a curly hair cut in Mississauga?',
+        answer:
+          'A curly or textured haircut at Clip & Chill is $30, the standard haircut rate. More detailed styling may take up to 45 minutes.',
+      },
+      {
+        question: 'Can I get a fade with curly hair?',
+        answer:
+          'Absolutely. Skin fades, taper fades, and drop fades all work beautifully with curly hair — including high-top fades and textured crops. Our barbers blend the fade cleanly into the curl.',
+      },
+      {
+        question: 'How should I come in for a curly haircut — washed or dry?',
+        answer:
+          'Coming in with clean, dry hair in its natural state is ideal, so your barber can see your true curl pattern and shrinkage before cutting.',
+      },
+      {
+        question: 'Where is a good curly hair barber near Erin Mills?',
+        answer:
+          'Clip & Chill at 4099 Erin Mills Pkwy #4, Mississauga specializes in textured-hair cuts, with walk-ins welcome 7 days a week and free parking.',
+      },
+    ],
+  },
 };

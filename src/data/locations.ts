@@ -1730,4 +1730,322 @@ export const locations: Record<string, LocationPageData> = {
       },
     ],
   },
+
+  'barber-erindale': {
+    slug: 'barber-erindale',
+    metaTitle: 'Barber near Erindale | Clip & Chill — 7 Min Away',
+    metaDescription:
+      'Barber near Erindale, Mississauga. Clip & Chill is about 7 minutes away on Erin Mills Pkwy — 5-star rated fades & beard trims. Walk-ins welcome. Book online today.',
+    h1: 'Barber near Erindale',
+    neighborhood: 'Erindale',
+    tagline: 'Seven minutes from Erindale — sharp, consistent cuts.',
+    driveTime: '~7 min from Erindale',
+    distanceNote: 'via Dundas St W & Erin Mills Pkwy',
+    intro:
+      "Erindale residents are just a short drive from Clip & Chill. We're on Erin Mills Pkwy, easy to reach from Dundas St W, and a popular choice for locals who want a precise, reliable cut close to home.",
+    localContext:
+      "Erindale is one of Mississauga's older, established neighbourhoods, set along the Credit River near Dundas St W and Mississauga Rd. From here it's a quick trip west and north to Clip & Chill, where the quality and consistency keep Erindale clients coming back.",
+    directions:
+      "From Erindale, take Dundas St W west to Erin Mills Pkwy, then head north toward Folkway Dr. We're at 4099 Erin Mills Pkwy #4 in the plaza just south of Folkway — about 7 minutes. Free parking is right out front.",
+    highlights: [
+      '~7 minute drive from Erindale',
+      'Easy route via Dundas St W to Erin Mills Pkwy',
+      'Free parking directly at the shop',
+      '5.0 Google rating with 406 reviews',
+      'Precision fades, beard sculpting & hot towel shaves',
+      'Open 7 days — walk-ins welcome',
+    ],
+    faqs: [
+      {
+        question: 'How far is Clip & Chill from Erindale?',
+        answer:
+          "About 7 minutes by car — take Dundas St W to Erin Mills Pkwy and head north. We're at 4099 Erin Mills Pkwy #4, Mississauga.",
+      },
+      {
+        question: 'Is there a top-rated barber near Erindale?',
+        answer:
+          'Yes — Clip & Chill, about 7 minutes away, holds a perfect 5.0 Google rating across 406 reviews and is the highest-rated barbershop in the area.',
+      },
+      {
+        question: 'Can I walk in from Erindale?',
+        answer:
+          'Yes — walk-ins are welcome every day. For weekends, booking online via Squire is the easiest way to skip any wait.',
+      },
+      {
+        question: 'What are your hours?',
+        answer:
+          'Monday to Saturday 10am–8pm and Sunday 11am–7pm — open every day.',
+      },
+      {
+        question: 'How much is a haircut near Erindale?',
+        answer:
+          "Haircuts start at $30, beard trims are $25, and the haircut and beard combo is $50.",
+      },
+    ],
+  },
+
+  'barber-credit-valley': {
+    slug: 'barber-credit-valley',
+    metaTitle: 'Barber near Credit Valley | Clip & Chill — 5 Min Away',
+    metaDescription:
+      'Barber near Credit Valley, Mississauga. Clip & Chill is about 5 minutes from Credit Valley Hospital — 5-star rated fades & cuts. Walk-ins welcome. Book online.',
+    h1: 'Barber near Credit Valley',
+    neighborhood: 'Credit Valley',
+    tagline: 'Five minutes from Credit Valley — your local barbershop on Erin Mills Pkwy.',
+    driveTime: '~5 min from Credit Valley',
+    distanceNote: 'via Erin Mills Pkwy',
+    intro:
+      "If you live or work near Credit Valley or Credit Valley Hospital, Clip & Chill is only about five minutes away on Erin Mills Pkwy. It's a quick, convenient stop for a precise cut from one of Mississauga's highest-rated barbershops.",
+    localContext:
+      "The Credit Valley area sits in central Mississauga around Credit Valley Hospital and the Erin Mills corridor. Its central location puts Clip & Chill within a few minutes' drive, making us a natural choice for residents and hospital staff who want a reliable, high-quality cut.",
+    directions:
+      "From the Credit Valley area, head to Erin Mills Pkwy and travel toward Folkway Dr. We're at 4099 Erin Mills Pkwy #4 in the plaza just south of Folkway — about 5 minutes. Free parking is available right at the shop.",
+    highlights: [
+      '~5 minute drive from Credit Valley',
+      'Minutes from Credit Valley Hospital',
+      'Free on-site parking',
+      '5.0 Google rating with 406 reviews',
+      'Skin fades, beard trims & hot towel shaves',
+      'Walk-ins welcome 7 days a week',
+    ],
+    faqs: [
+      {
+        question: 'How far is Clip & Chill from Credit Valley?',
+        answer:
+          "About 5 minutes by car along Erin Mills Pkwy. We're at 4099 Erin Mills Pkwy #4, just south of Folkway Dr — close to Credit Valley Hospital.",
+      },
+      {
+        question: 'Is there a good barber near Credit Valley Hospital?',
+        answer:
+          'Yes — Clip & Chill, about 5 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 406 Google reviews. It is a convenient stop for hospital staff and nearby residents.',
+      },
+      {
+        question: 'Can I walk in from Credit Valley?',
+        answer:
+          'Yes — walk-ins are welcome every day. Weekday mornings and early afternoons are usually the quietest times.',
+      },
+      {
+        question: 'What are your hours?',
+        answer:
+          'Monday to Saturday 10am–8pm and Sunday 11am–7pm — open seven days a week.',
+      },
+      {
+        question: 'How much is a haircut near Credit Valley?',
+        answer:
+          "Haircuts start at $30, beard trims are $25, and the haircut and beard combo is $50.",
+      },
+    ],
+  },
+
+  'barber-mineola': {
+    slug: 'barber-mineola',
+    metaTitle: 'Barber near Mineola | Clip & Chill — Top-Rated in Mississauga',
+    metaDescription:
+      'Barber near Mineola, Mississauga. Clip & Chill is a short drive west — 5-star rated precision fades, beard trims & shaves. Walk-ins welcome. Book online today.',
+    h1: 'Barber near Mineola',
+    neighborhood: 'Mineola',
+    tagline: 'A short drive west of Mineola — precision that holds up for weeks.',
+    driveTime: '~13 min from Mineola',
+    distanceNote: 'via Mississauga Rd or QEW',
+    intro:
+      "Mineola residents who want a standout haircut make the short drive west to Clip & Chill. We're on Erin Mills Pkwy in the Erin Mills area — a worthwhile trip for clients who value a precise, consistent cut from a 5.0-rated shop.",
+    localContext:
+      "Mineola is one of Mississauga's most desirable established communities, set just north of Port Credit with mature, leafy streets. Residents here have high standards, and many make the drive west to Clip & Chill for the quality and consistency they can count on.",
+    directions:
+      "From Mineola, head west on the QEW or take Mississauga Rd north, then connect to Erin Mills Pkwy toward Folkway Dr. We're at 4099 Erin Mills Pkwy #4 in the plaza just south of Folkway — about 13 minutes. Free parking on-site.",
+    highlights: [
+      '~13 minute drive west from Mineola',
+      'Easy route via Mississauga Rd or the QEW',
+      'Free parking right at the shop',
+      '5.0 Google rating with 406 reviews',
+      'Precision fades, beard sculpting & hot towel shaves',
+      'Open 7 days — walk-ins welcome',
+    ],
+    faqs: [
+      {
+        question: 'How far is Clip & Chill from Mineola?',
+        answer:
+          "About 13 minutes by car heading west via Mississauga Rd or the QEW to Erin Mills Pkwy. We're at 4099 Erin Mills Pkwy #4, Mississauga.",
+      },
+      {
+        question: 'Why do Mineola clients choose Clip & Chill?',
+        answer:
+          'Consistent, high-quality cuts, a perfect 5.0 rating across 406 reviews, and free parking make the short drive worthwhile for Mineola residents.',
+      },
+      {
+        question: 'Can I walk in from Mineola?',
+        answer:
+          'Yes — walk-ins are welcome every day. For weekends, booking via Squire ensures you avoid any wait.',
+      },
+      {
+        question: 'What styles do your barbers specialize in?',
+        answer:
+          'Skin fades, taper fades, scissor cuts, and beard sculpting — for all hair types and textures.',
+      },
+      {
+        question: 'How much is a haircut near Mineola?',
+        answer:
+          "Haircuts start at $30, beard trims are $25, and the combo is $50.",
+      },
+    ],
+  },
+
+  'barber-britannia': {
+    slug: 'barber-britannia',
+    metaTitle: 'Barber near Britannia | Clip & Chill — 8 Min Away',
+    metaDescription:
+      'Barber near Britannia, Mississauga. Clip & Chill is about 8 minutes away via Erin Mills Pkwy — 5-star rated fades & beard trims. Walk-ins welcome. Book online.',
+    h1: 'Barber near Britannia',
+    neighborhood: 'Britannia',
+    tagline: 'Eight minutes from the Britannia area — sharp cuts, simple drive.',
+    driveTime: '~8 min from Britannia',
+    distanceNote: 'via Erin Mills Pkwy',
+    intro:
+      "For residents near the Britannia Rd corridor, Clip & Chill is a quick 8-minute drive down Erin Mills Pkwy. It's a direct, easy route to a barbershop that delivers a precise, consistent cut every visit.",
+    localContext:
+      "The Britannia area runs through central-north Mississauga along Britannia Rd, connecting a range of established and growing neighbourhoods. Erin Mills Pkwy links it directly to Clip & Chill, making the trip fast and convenient for local residents.",
+    directions:
+      "From the Britannia area, head south on Erin Mills Pkwy toward Folkway Dr. We're at 4099 Erin Mills Pkwy #4 in the plaza on your right just south of Folkway — about 8 minutes. Free parking in the lot.",
+    highlights: [
+      '~8 minute drive from the Britannia corridor',
+      'Direct route south on Erin Mills Pkwy',
+      'Free parking right at the shop',
+      '5.0 Google rating with 406 reviews',
+      'Skin fades, beard trims, kids\' cuts & more',
+      'Open 7 days — walk-ins welcome',
+    ],
+    faqs: [
+      {
+        question: 'How far is Clip & Chill from Britannia?',
+        answer:
+          "About 8 minutes south on Erin Mills Pkwy. We're at 4099 Erin Mills Pkwy #4 — a simple, direct drive.",
+      },
+      {
+        question: 'Is there a highly rated barber near Britannia?',
+        answer:
+          'Yes — Clip & Chill, about 8 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 406 Google reviews.',
+      },
+      {
+        question: 'Can I walk in from the Britannia area?',
+        answer:
+          'Yes — walk-ins are welcome daily. Booking online via Squire is recommended for busy weekend slots.',
+      },
+      {
+        question: 'What are your hours?',
+        answer:
+          'Monday to Saturday 10am–8pm and Sunday 11am–7pm — open every day.',
+      },
+      {
+        question: 'How much is a haircut near Britannia?',
+        answer:
+          "Haircuts start at $30, beard trims are $25, and the haircut and beard combo is $50.",
+      },
+    ],
+  },
+
+  'barber-heartland': {
+    slug: 'barber-heartland',
+    metaTitle: 'Barber near Heartland | Clip & Chill — Top-Rated in Mississauga',
+    metaDescription:
+      'Barber near Heartland Town Centre, Mississauga. Clip & Chill is a short drive west — 5-star rated fades, beard trims & shaves. Walk-ins welcome. Book online today.',
+    h1: 'Barber near Heartland',
+    neighborhood: 'Heartland',
+    tagline: 'A short drive west of Heartland — Mississauga\'s top-rated barbershop.',
+    driveTime: '~15 min from Heartland',
+    distanceNote: 'via Britannia Rd or Hwy 403',
+    intro:
+      "Shopping or living near Heartland Town Centre and want a genuinely great cut? Clip & Chill is a short drive west on Erin Mills Pkwy — a worthwhile trip for clients who want a precise, reliable cut from a 5.0-rated barbershop.",
+    localContext:
+      "The Heartland area, anchored by Heartland Town Centre near Mavis Rd and Britannia Rd, is one of Mississauga's busiest shopping and residential hubs. For a barbershop that matches the area's convenience and standards, many residents head west to Clip & Chill.",
+    directions:
+      "From Heartland, take Britannia Rd west or Hwy 403 to Erin Mills Pkwy, then head toward Folkway Dr. We're at 4099 Erin Mills Pkwy #4 in the plaza just south of Folkway — about 15 minutes. Free parking on-site.",
+    highlights: [
+      '~15 minute drive west from Heartland',
+      'Easy route via Britannia Rd or Hwy 403',
+      'Free parking right at the shop',
+      '5.0 Google rating with 406 reviews',
+      'Precision fades, beard sculpting & hot towel shaves',
+      'Open 7 days — walk-ins welcome',
+    ],
+    faqs: [
+      {
+        question: 'How far is Clip & Chill from Heartland?',
+        answer:
+          "About 15 minutes by car heading west via Britannia Rd or Hwy 403 to Erin Mills Pkwy. We're at 4099 Erin Mills Pkwy #4, Mississauga.",
+      },
+      {
+        question: 'Is there a top-rated barber near Heartland Town Centre?',
+        answer:
+          'Yes — Clip & Chill, a short drive west, holds a perfect 5.0 rating across 406 Google reviews and is one of Mississauga\'s highest-rated barbershops.',
+      },
+      {
+        question: 'Can I walk in from Heartland?',
+        answer:
+          'Yes — walk-ins are welcome daily. If you\'re making the drive, booking ahead via Squire means no wait when you arrive.',
+      },
+      {
+        question: 'What services do you offer?',
+        answer:
+          "Haircuts ($30), beard trims ($25), the combo ($50), hot towel shaves, kids' cuts ($25), and the full Clip & Chill Package ($110).",
+      },
+      {
+        question: 'Is there free parking?',
+        answer:
+          'Yes — free parking is available directly in front of the shop in the plaza lot, with no meters or time limits.',
+      },
+    ],
+  },
+
+  'barber-malton': {
+    slug: 'barber-malton',
+    metaTitle: 'Barber near Malton | Clip & Chill — Top-Rated in Mississauga',
+    metaDescription:
+      'Barber near Malton, Mississauga. Clip & Chill is a worthwhile drive southwest — 5-star rated fades, beard trims & shaves. Walk-ins welcome. Book online today.',
+    h1: 'Barber near Malton',
+    neighborhood: 'Malton',
+    tagline: 'Worth the drive from Malton — Mississauga\'s top-rated barbershop.',
+    driveTime: '~20 min from Malton',
+    distanceNote: 'via Hwy 403 or Eglinton Ave W',
+    intro:
+      "Malton residents who want a standout haircut make the drive southwest to Clip & Chill. We're on Erin Mills Pkwy in the Erin Mills area — a worthwhile trip for clients who value a precise, consistent cut from a 5.0-rated shop.",
+    localContext:
+      "Malton is a vibrant, established community in northeast Mississauga near the airport. For a barbershop with a long track record of consistency and a perfect rating, many residents make the drive across the city to Clip & Chill.",
+    directions:
+      "From Malton, take Hwy 403 west or Eglinton Ave W toward Erin Mills, then head to Erin Mills Pkwy and Folkway Dr. We're at 4099 Erin Mills Pkwy #4 in the plaza just south of Folkway — about 20 minutes. Free parking on-site.",
+    highlights: [
+      '~20 minute drive southwest from Malton',
+      'Accessible via Hwy 403 or Eglinton Ave W',
+      'Free parking right at the shop',
+      '5.0 Google rating with 406 reviews',
+      'Precision fades, beard sculpting & hot towel shaves',
+      'Open 7 days — walk-ins welcome',
+    ],
+    faqs: [
+      {
+        question: 'How far is Clip & Chill from Malton?',
+        answer:
+          "About 20 minutes by car heading southwest via Hwy 403 or Eglinton Ave W to Erin Mills Pkwy. We're at 4099 Erin Mills Pkwy #4, Mississauga.",
+      },
+      {
+        question: 'Why do Malton clients drive to Clip & Chill?',
+        answer:
+          "Our 406 five-star reviews and consistent quality make the drive worth it for clients who want a reliable, precise cut they can count on.",
+      },
+      {
+        question: 'Can I walk in from Malton?',
+        answer:
+          'Yes — walk-ins are welcome daily. If you\'re making the drive, booking ahead via Squire means no wait when you arrive.',
+      },
+      {
+        question: 'What services do you offer?',
+        answer:
+          "Haircuts ($30), beard trims ($25), the combo ($50), hot towel shaves, kids' cuts ($25), and the full Clip & Chill Package ($110).",
+      },
+      {
+        question: 'Is there free parking?',
+        answer:
+          'Yes — free parking is available directly in front of the shop in the plaza lot.',
+      },
+    ],
+  },
 };
