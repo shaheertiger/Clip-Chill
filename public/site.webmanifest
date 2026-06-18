@@ -1,0 +1,27 @@
+{
+  "name": "Clip & Chill Barbershop",
+  "short_name": "Clip & Chill",
+  "description": "Top-rated barbershop in Erin Mills, Mississauga — haircuts, skin fades, beard trims, hot towel shaves and grooming. 5.0★ across 406+ reviews.",
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "lang": "en-CA",
+  "categories": ["lifestyle", "shopping", "personalization"],
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

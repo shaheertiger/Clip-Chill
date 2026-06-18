@@ -12,6 +12,40 @@ type Json = Record<string, unknown>;
 interface FAQ { question: string; answer: string; }
 
 const LOGO = 'https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg';
+const HERO = 'https://i.postimg.cc/wMfhtjbn/DSC04689.jpg';
+const MAP_URL =
+  'https://www.google.com/maps/dir/?api=1&destination=4099+Erin+Mills+Pkwy+%234,+Mississauga,+ON+L5L+3P9';
+
+/** Canonical off-site profiles — strengthens entity recognition in Google's
+ *  Knowledge Graph and in AI answer engines. Emitted on every page. */
+const SAME_AS = [
+  'https://www.instagram.com/clip.and.chill/',
+  'https://www.facebook.com/profile.php?id=61571956989946',
+  'https://www.tiktok.com/@clip.and.chill',
+  'https://getsquire.com/discover/barbershop/clip-and-chill-mississauga',
+  'https://www.google.com/search?q=clip+and+chill+barbershop+mississauga',
+];
+
+/** A small, stable set of real 5-star reviews carried site-wide so service and
+ *  location pages are also eligible for review rich results. */
+const REVIEWS = [
+  {
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'Jordan M.' },
+    reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+    datePublished: '2025-03-15',
+    reviewBody:
+      "Best haircut I've ever had — bar none. The attention to detail is unreal. I drive 25 minutes to come here and it's 100% worth it.",
+  },
+  {
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'Marcus T.' },
+    reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+    datePublished: '2025-01-20',
+    reviewBody:
+      "I've been to many barbers in Mississauga and Clip & Chill is on a different level. The hot towel shave was an experience I didn't know I needed.",
+  },
+];
 
 const ADDRESS = {
   '@type': 'PostalAddress',
@@ -49,17 +83,23 @@ export function localBusinessSchema(opts: {
     priceRange: '$$',
     currenciesAccepted: 'CAD',
     paymentAccepted: 'Cash, Credit Card, Debit Card',
-    image: LOGO,
+    logo: LOGO,
+    image: [LOGO, HERO],
+    hasMap: MAP_URL,
+    sameAs: SAME_AS,
     address: ADDRESS,
     geo: GEO,
     openingHoursSpecification: OPENING_HOURS,
     aggregateRating: AGGREGATE_RATING,
+    review: REVIEWS,
     knowsAbout: [
       "Men's haircuts", 'Skin fade', 'Taper fade', 'Buzz cut', 'Beard trim',
       'Beard lineup', 'Hot towel shave', 'Kids haircut', 'Curly hair cuts',
     ],
     speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1'] },
-    ...(opts.areaServed ? { areaServed: { '@type': 'Place', name: opts.areaServed } } : {}),
+    areaServed: opts.areaServed
+      ? { '@type': 'Place', name: opts.areaServed }
+      : { '@type': 'City', name: 'Mississauga' },
     ...(opts.extra ?? {}),
   };
 }
@@ -178,15 +218,25 @@ export function blogPostingSchemas(meta: {
       '@type': 'BlogPosting',
       headline: meta.title,
       description: meta.description,
-      image: LOGO,
+      image: { '@type': 'ImageObject', url: LOGO, width: 1200, height: 1200 },
       datePublished: meta.date,
       dateModified: meta.date,
+      inLanguage: 'en-CA',
       articleSection: meta.category,
+      keywords: [meta.category, 'barbershop Mississauga', 'haircut', 'grooming', 'Erin Mills'],
       mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/${meta.slug}` },
-      author: { '@type': 'Organization', name: 'Clip & Chill Barbershop', url: SITE_URL },
+      isPartOf: { '@type': 'Blog', '@id': `${SITE_URL}/blog`, name: 'Clip & Chill Barbershop Blog' },
+      speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2'] },
+      author: {
+        '@type': 'Organization',
+        name: 'Clip & Chill Barbershop',
+        url: SITE_URL,
+        sameAs: SAME_AS,
+      },
       publisher: {
         '@type': 'Organization',
         name: 'Clip & Chill Barbershop',
+        url: SITE_URL,
         logo: { '@type': 'ImageObject', url: LOGO },
       },
     },
