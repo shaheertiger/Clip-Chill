@@ -45,6 +45,10 @@ interface Route {
    *  hydration updates these tags in place instead of duplicating them. */
   ldPrefix: string;
   schemas: Array<Record<string, unknown>>;
+  /** Optional sitemap metadata. */
+  lastmod?: string;
+  priority?: number;
+  changefreq?: 'weekly' | 'monthly';
 }
 
 // ─── HTML helpers ──────────────────────────────────────────────────────────
@@ -120,6 +124,8 @@ function renderRoute(base: string, route: Route): string {
 
 // ─── Route collection ────────────────────────────────────────────────────────
 
+const TODAY = new Date().toISOString().slice(0, 10);
+
 function collectRoutes(): Route[] {
   const routes: Route[] = [];
 
@@ -132,6 +138,9 @@ function collectRoutes(): Route[] {
       type: 'website',
       ldPrefix: 'service-ld',
       schemas: serviceSchemas(data),
+      lastmod: TODAY,
+      priority: 0.8,
+      changefreq: 'monthly',
     });
   }
 
@@ -144,6 +153,9 @@ function collectRoutes(): Route[] {
       type: 'website',
       ldPrefix: 'location-ld',
       schemas: locationSchemas(data),
+      lastmod: TODAY,
+      priority: 0.7,
+      changefreq: 'monthly',
     });
   }
 
@@ -156,6 +168,9 @@ function collectRoutes(): Route[] {
       type: 'article',
       ldPrefix: 'listicle-ld',
       schemas: listicleSchemas(data),
+      lastmod: TODAY,
+      priority: 0.9,
+      changefreq: 'monthly',
     });
   }
 
@@ -168,6 +183,9 @@ function collectRoutes(): Route[] {
       type: 'article',
       ldPrefix: 'blog-ld',
       schemas: blogPostingSchemas(meta),
+      lastmod: meta.date,
+      priority: 0.7,
+      changefreq: 'monthly',
     });
   }
 
@@ -180,9 +198,38 @@ function collectRoutes(): Route[] {
     type: 'website',
     ldPrefix: 'blog-index-ld',
     schemas: blogIndexSchemas(blogList),
+    lastmod: TODAY,
+    priority: 0.8,
+    changefreq: 'weekly',
   });
 
   return routes;
+}
+
+/** Generate a complete, fresh sitemap.xml from the same route table that drives
+ *  prerendering — so it can never drift out of sync with the pages that exist. */
+function writeSitemap(routes: Route[]): void {
+  const urls = [
+    { loc: `${SITE_URL}/`, lastmod: TODAY, priority: 1.0, changefreq: 'weekly' as const },
+    ...routes.map((r) => ({
+      loc: `${SITE_URL}${r.path}`,
+      lastmod: r.lastmod ?? TODAY,
+      priority: r.priority ?? 0.7,
+      changefreq: r.changefreq ?? 'monthly',
+    })),
+  ];
+
+  const body = urls
+    .map(
+      (u) =>
+        `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n` +
+        `    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority.toFixed(1)}</priority>\n  </url>`,
+    )
+    .join('\n');
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
+  writeFileSync(join(DIST, 'sitemap.xml'), xml, 'utf8');
+  console.log(`Wrote sitemap.xml with ${urls.length} URLs (lastmod ${TODAY}).`);
 }
 
 // ─── Main ──────────────────────────────────────────────────────────────────
@@ -194,6 +241,8 @@ function main() {
   for (const route of routes) {
     writeFileSync(join(DIST, route.file), renderRoute(base, route), 'utf8');
   }
+
+  writeSitemap(routes);
 
   console.log(`Prerendered ${routes.length} routes into dist/ (+ index.html homepage).`);
 }

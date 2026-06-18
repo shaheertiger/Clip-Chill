@@ -73,9 +73,13 @@
     <meta name="geo.position" content="43.5352458;-79.6976644" />
     <meta name="ICBM" content="43.5352458, -79.6976644" />
 
-    <!-- Favicon -->
+    <!-- Favicon & PWA -->
     <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg" />
     <link rel="apple-touch-icon" href="https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Clip & Chill" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <!-- Structured Data / JSON-LD -->
     <script type="application/ld+json">
@@ -84,9 +88,17 @@
       "@type": "BarberShop",
       "@id": "https://clipandchill.ca/#barbershop",
       "name": "Clip & Chill Barbershop",
+      "alternateName": "Clip and Chill",
       "description": "A modern barbershop focused on quality haircuts, beard trims, hot towel shaves, facials, and full grooming packages in Mississauga.",
-      "image": "https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg",
+      "slogan": "Classic style, modern cuts.",
+      "foundingDate": "2024",
+      "logo": "https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg",
+      "image": [
+        "https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg",
+        "https://i.postimg.cc/wMfhtjbn/DSC04689.jpg"
+      ],
       "url": "https://clipandchill.ca/",
+      "hasMap": "https://www.google.com/maps/dir/?api=1&destination=4099+Erin+Mills+Pkwy+%234,+Mississauga,+ON+L5L+3P9",
       "telephone": "+1-905-606-2212",
       "address": {
         "@type": "PostalAddress",
@@ -180,6 +192,29 @@
           "reviewBody": "I've been to many barbers in Mississauga and Clip & Chill is on a different level. The hot towel shave was an experience I didn't know I needed. Booked my next appointment before I even left."
         }
       ],
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Clark R.",
+          "jobTitle": "Senior Barber",
+          "image": "https://i.postimg.cc/Hs0mC8FD/Clark-R.jpg",
+          "knowsAbout": ["Skin fades", "Classic cuts"]
+        },
+        {
+          "@type": "Person",
+          "name": "Ahmad F.",
+          "jobTitle": "Senior Barber",
+          "image": "https://i.postimg.cc/y8vzD4VG/Ahmad_F.jpg",
+          "knowsAbout": ["Beard sculpting", "Precision fades"]
+        },
+        {
+          "@type": "Person",
+          "name": "Sido",
+          "jobTitle": "Senior Barber",
+          "image": "https://i.postimg.cc/D0LT0SZG/Sido.jpg",
+          "knowsAbout": ["Textured cuts", "Hot towel shaves"]
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Barbershop Services",
@@ -258,6 +293,78 @@
           }
         ]
       }
+    }
+    </script>
+
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://clipandchill.ca/#website",
+      "url": "https://clipandchill.ca/",
+      "name": "Clip & Chill Barbershop",
+      "description": "Top-rated barbershop in Erin Mills, Mississauga — haircuts, skin fades, beard trims, hot towel shaves and grooming.",
+      "inLanguage": "en-CA",
+      "publisher": { "@id": "https://clipandchill.ca/#barbershop" }
+    }
+    </script>
+
+    <!-- Structured Data: FAQPage (mirrors the on-page FAQ section) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best barbershop in Mississauga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By Google rating and review count, Clip & Chill at 4099 Erin Mills Pkwy #4 is the top-rated barbershop in Mississauga — a perfect 5.0 stars across 406+ reviews. It serves Erin Mills, Central Erin Mills, Streetsville, Meadowvale and the wider Mississauga area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a haircut cost at Clip & Chill?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A men's haircut is $30, and skin or taper fades are included at no extra charge. A beard trim is $25, the Haircut & Beard combo is $50, kids' cuts (under 10) and senior cuts are $25, and the full Clip & Chill Package is $110."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you accept walk-ins, or do I need an appointment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Walk-ins are welcome every day based on availability. To guarantee your spot — especially on weekends — book online through Squire at getsquire.com/discover/barbershop/clip-and-chill-mississauga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Clip & Chill located and is there parking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clip & Chill is at 4099 Erin Mills Pkwy #4, Mississauga, ON L5L 3P9 — about 2 minutes from Erin Mills Town Centre. There is free parking in the plaza lot directly out front, with no meter or time limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are your hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are open 7 days a week: Monday to Saturday 10:00am–8:00pm, and Sunday 11:00am–7:00pm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cut kids' hair and curly or textured hair?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We do kids' haircuts (under 10) for $25, and our senior barbers specialise in curly, coily and textured hair as well as classic and modern men's styles."
+          }
+        }
+      ]
     }
     </script>
   </head>
