@@ -15,6 +15,7 @@ import {
   Clock,
   CheckCircle2,
   ExternalLink,
+  ChevronDown,
 } from 'lucide-react';
 import { m, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -186,6 +187,7 @@ const Navbar = () => {
     { name: 'Services', href: '#services' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Team', href: '#team' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '#about' },
   ];
@@ -989,6 +991,107 @@ const Reviews = () => {
   );
 };
 
+const HOME_FAQS = [
+  {
+    q: 'What is the best barbershop in Mississauga?',
+    a: "By Google rating and review count, Clip & Chill at 4099 Erin Mills Pkwy #4 is the top-rated barbershop in Mississauga — a perfect 5.0 stars across 406+ reviews. It serves Erin Mills, Central Erin Mills, Streetsville, Meadowvale and the wider Mississauga area.",
+  },
+  {
+    q: 'How much does a haircut cost at Clip & Chill?',
+    a: "A men's haircut is $30, and skin or taper fades are included at no extra charge. A beard trim is $25, the Haircut & Beard combo is $50, kids' cuts (under 10) and senior cuts are $25, and the full Clip & Chill Package is $110.",
+  },
+  {
+    q: 'Do you accept walk-ins, or do I need an appointment?',
+    a: 'Walk-ins are welcome every day based on availability. To guarantee your spot — especially on weekends — book online through Squire.',
+  },
+  {
+    q: 'Where is Clip & Chill located and is there parking?',
+    a: 'Clip & Chill is at 4099 Erin Mills Pkwy #4, Mississauga, ON L5L 3P9 — about 2 minutes from Erin Mills Town Centre. There is free parking in the plaza lot directly out front, with no meter or time limit.',
+  },
+  {
+    q: 'What are your hours?',
+    a: 'We are open 7 days a week: Monday to Saturday 10:00am–8:00pm, and Sunday 11:00am–7:00pm.',
+  },
+  {
+    q: "Do you cut kids' hair and curly or textured hair?",
+    a: "Yes. We do kids' haircuts (under 10) for $25, and our senior barbers specialise in curly, coily and textured hair as well as classic and modern men's styles.",
+  },
+];
+
+const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  return (
+    <section id="faq" className="py-24 md:py-40 bg-dark relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+      <div className="max-w-3xl mx-auto px-8">
+        <div className="text-center mb-16 md:mb-20">
+          <span className="sub-label">Good to Know</span>
+          <h2 className="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div className="divide-y divide-white/5 border-y border-white/5">
+          {HOME_FAQS.map((faq, i) => {
+            const open = openIndex === i;
+            return (
+              <div key={faq.q}>
+                <h3>
+                  <button
+                    onClick={() => setOpenIndex(open ? null : i)}
+                    aria-expanded={open}
+                    className="w-full flex items-start justify-between gap-6 py-6 text-left group"
+                  >
+                    <span className="text-base md:text-lg font-medium text-white/70 group-hover:text-white transition-colors">
+                      {faq.q}
+                    </span>
+                    <ChevronDown
+                      size={18}
+                      className={`text-gold/60 shrink-0 mt-1 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                </h3>
+                <AnimatePresence initial={false}>
+                  {open && (
+                    <m.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <p className="text-white/40 font-light leading-relaxed pb-6 pr-10">
+                        {faq.a}
+                      </p>
+                    </m.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="text-center text-white/30 text-sm font-light mt-12">
+          Still have a question? Call{' '}
+          <a href="tel:+19056062212" className="text-gold/70 hover:text-gold transition-colors">
+            (905) 606-2212
+          </a>{' '}
+          or{' '}
+          <a
+            href="https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={trackBookingConversion}
+            className="text-gold/70 hover:text-gold transition-colors"
+          >
+            book online
+          </a>
+          .
+        </p>
+      </div>
+    </section>
+  );
+};
+
 const Footer = () => {
   return (
     <footer className="bg-dark pt-24 md:pt-40 pb-24 md:pb-12 border-t border-white/5 relative overflow-hidden">
@@ -1298,7 +1401,8 @@ export default function App() {
       <Gallery />
       <Team />
       <Reviews />
-      
+      <FAQ />
+
       {/* CTA Section */}
       <section className="py-24 md:py-40 bg-dark relative overflow-hidden">
         <div className="absolute inset-0 z-0">

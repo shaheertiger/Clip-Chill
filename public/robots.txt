@@ -1,12 +1,67 @@
 # Clip & Chill Barbershop — https://clipandchill.ca
-# All reputable crawlers, including AI answer engines, are welcome to index the site.
+# All reputable crawlers — search engines AND AI answer engines — are welcome to
+# crawl, index, and cite this site. We explicitly opt in to AI training and
+# retrieval so our hours, pricing, and location stay accurate in AI answers.
 
 User-agent: *
 Allow: /
 
-# Sitemap
+# ─── AI answer engines & LLM crawlers (explicitly welcomed) ──────────────────
+# OpenAI (ChatGPT / SearchGPT)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+
+# Google (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Copilot / Bing
+User-agent: bingbot
+Allow: /
+
+# Amazon, Meta, Common Crawl, Mistral, You.com, DuckDuckGo
+User-agent: Amazonbot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+
+# ─── Sitemap ─────────────────────────────────────────────────────────────────
 Sitemap: https://clipandchill.ca/sitemap.xml
 
-# LLM / AI answer-engine summary (https://llmstxt.org)
+# ─── LLM / AI answer-engine summary (https://llmstxt.org) ────────────────────
 # A concise, factual business profile for AI crawlers:
 # https://clipandchill.ca/llms.txt
