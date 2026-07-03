@@ -23,8 +23,15 @@ jobs:
         with:
           node-version: 20
 
-      # scripts/indexnow.mjs reads public/sitemap.xml and POSTs to
-      # api.indexnow.org using only Node built-ins (global fetch + fs), so no
-      # dependency install is needed.
+      # Build so scripts/prerender.ts regenerates dist/sitemap.xml with the
+      # current route table and canonical domain before we submit it.
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (generates dist/sitemap.xml)
+        run: npm run build
+
+      # scripts/indexnow.mjs reads dist/sitemap.xml and POSTs to
+      # api.indexnow.org using only Node built-ins (global fetch + fs).
       - name: Submit URLs to IndexNow
         run: node scripts/indexnow.mjs
