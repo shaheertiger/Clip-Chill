@@ -1,4 +1,4 @@
-# Clip & Chill Barbershop — https://clipandchill.ca
+# Clip & Chill Barbershop — https://www.clipandchill.com
 # All reputable crawlers — search engines AND AI answer engines — are welcome to
 # crawl, index, and cite this site. We explicitly opt in to AI training and
 # retrieval so our hours, pricing, and location stay accurate in AI answers.
@@ -60,8 +60,8 @@ User-agent: DuckAssistBot
 Allow: /
 
 # ─── Sitemap ─────────────────────────────────────────────────────────────────
-Sitemap: https://clipandchill.ca/sitemap.xml
+Sitemap: https://www.clipandchill.com/sitemap.xml
 
 # ─── LLM / AI answer-engine summary (https://llmstxt.org) ────────────────────
 # A concise, factual business profile for AI crawlers:
-# https://clipandchill.ca/llms.txt
+# https://www.clipandchill.com/llms.txt

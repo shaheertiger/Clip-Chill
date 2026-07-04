@@ -9,7 +9,7 @@ import { useEffect } from 'react';
  * AI crawlers see the correct per-page metadata instead of the homepage's.
  */
 
-export const SITE_URL = 'https://clipandchill.ca';
+export const SITE_URL = 'https://www.clipandchill.com';
 export const SITE_NAME = 'Clip & Chill Barbershop';
 export const DEFAULT_OG_IMAGE = 'https://i.postimg.cc/gJWNVrk0/Company_logo_page_0001.jpg';
 
