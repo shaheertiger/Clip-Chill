@@ -87,6 +87,8 @@ The combo isn't automatically the right choice for everyone:
 - **Bring a reference photo** if you want a specific fade height and beard shape together.
 - **Book your next combo before you leave.** It keeps the cycle from drifting to five or six weeks.
 
+**Related reading:** [the Clip & Chill Package](/clip-and-chill-package-explained).
+
 ## Frequently Asked Questions
 
 **How much is a haircut and beard combo in Mississauga?**

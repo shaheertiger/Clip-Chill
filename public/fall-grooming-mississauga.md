@@ -91,6 +91,8 @@ The simplest way to stay ahead of it:
 - **Book your December appointments in November.** If you know you have an event on a specific date, put the cut in the calendar early.
 - **Use weekday daytime slots** when you can. They stay much easier to get into than evenings and weekends, even in December.
 
+**Related reading:** [holiday haircut season](/holiday-haircut-rush-mississauga) and [dandruff or dry scalp](/dandruff-dry-scalp-men).
+
 ## Frequently Asked Questions
 
 **Do I need to cut my hair shorter to get rid of sun damage?**

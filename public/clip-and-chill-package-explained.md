@@ -91,6 +91,8 @@ If you're curious what the shave part involves, our guide to [what to expect fro
 
 Tipping in Ontario is customary at 15 to 20 percent, and it's calculated on the total. On a $110 package that's roughly $16 to $22. More on the norms in our [barbershop tipping etiquette guide](/barbershop-tipping-etiquette-ontario).
 
+**Related reading:** [the haircut and beard combo](/haircut-and-beard-combo-worth-it).
+
 ## Frequently Asked Questions
 
 **How long does the Clip & Chill Package take?**
