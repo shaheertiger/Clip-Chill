@@ -7,6 +7,62 @@ export interface BlogMeta {
 }
 
 export const blogs: Record<string, BlogMeta> = {
+  'mens-facial-barbershop': {
+    slug: 'mens-facial-barbershop',
+    title: "Facial at the Barbershop: What a Men's Facial Actually Involves",
+    description: "A barbershop facial isn't a spa day. Here's what a men's facial at the barber actually involves, who it helps, how often to get one, and what to do afterwards.",
+    category: 'Grooming Guide',
+    date: '2026-10-16',
+  },
+  'head-and-beard-shave-guide': {
+    slug: 'head-and-beard-shave-guide',
+    title: "Head and Beard Shave: A Barber's Guide to Going Bald With a Beard",
+    description: "Thinking about a head and beard shave? Razor vs clippers, barber vs at home, scalp care, bumps, upkeep, and how to keep a beard balanced with a bald head.",
+    category: 'Grooming Guide',
+    date: '2026-10-16',
+  },
+  'barber-for-black-hair-mississauga': {
+    slug: 'barber-for-black-hair-mississauga',
+    title: "Black Barber Shops in Mississauga: Finding a Barber Who Knows Afro-Textured Hair",
+    description: "Searching for a black barber shop in Mississauga? Here's what actually matters for Afro-textured and 4c hair: fades, line-ups, waves, bumps, and vetting a barber.",
+    category: 'Local Guide',
+    date: '2026-10-16',
+  },
+  'moustache-trim-guide': {
+    slug: 'moustache-trim-guide',
+    title: "Moustache Trim Guide: Styles, the Lip Line, and When to See a Barber",
+    description: "A practical moustache trim guide: chevron, pencil, horseshoe, handlebar and walrus styles, trimming the lip line, scissors vs trimmer, wax, and growing one out.",
+    category: 'Grooming Guide',
+    date: '2026-10-16',
+  },
+  'best-barber-shop-lorne-park': {
+    slug: 'best-barber-shop-lorne-park',
+    title: "Lorne Park Barbershop Guide: Where Locals Go for a Great Cut",
+    description: "Looking for a Lorne Park barbershop you can rely on? An honest local guide to choosing a barber near Lorne Park, and why families drive 12 minutes to Erin Mills.",
+    category: 'Local Guide',
+    date: '2026-10-16',
+  },
+  'barber-shop-near-square-one': {
+    slug: 'barber-shop-near-square-one',
+    title: "Barber Shop Near Square One: A Guide for City Centre Locals",
+    description: "Live, work or shop near Square One? An honest guide to finding a barber shop near Square One, mall barbers vs a dedicated shop, parking, and timing your cut.",
+    category: 'Local Guide',
+    date: '2026-10-16',
+  },
+  'mens-hair-salon-mississauga': {
+    slug: 'mens-hair-salon-mississauga',
+    title: "Men's Hair Salon in Mississauga: What to Look For and When to Go Elsewhere",
+    description: "Searching for a mens hair salon in Mississauga? Here's what a full men's grooming menu should cover, how to choose one, and when a colour salon is the better call.",
+    category: 'Local Guide',
+    date: '2026-10-16',
+  },
+  'barbershop-open-now-mississauga': {
+    slug: 'barbershop-open-now-mississauga',
+    title: "Barbershop Near Me Open Now: How to Actually Get a Cut Today in Mississauga",
+    description: "A barbershop near me open now search shows who's open, not who can take you. How to read listings, check the real wait, and still get cut today in Mississauga.",
+    category: 'Local Guide',
+    date: '2026-10-16',
+  },
   'best-barber-shop-port-credit': {
     slug: 'best-barber-shop-port-credit',
     title: "Best Barber Shop Near Port Credit: A Local's Guide",
