@@ -57,7 +57,7 @@ const clipAndChill: Barbershop = {
   rating: 5.0,
   reviewCount: 406,
   priceRange: '$$',
-  hours: 'Mon–Fri 10am–8pm · Sat 9am–7pm · Sun 10am–6pm',
+  hours: 'Mon–Sat 10am–8pm · Sun 11am–7pm',
   specialties: ['Precision Fades', 'Beard Sculpting', 'Hot Towel Shave', 'Skin Fade', 'Kids Cuts', 'Facials'],
   description:
     "Clip & Chill is Erin Mills' standout barbershop — a modern, premium studio where every cut is treated as craft. With 400+ five-star Google reviews and a team of skilled barbers, it consistently ranks as Mississauga's top-rated barbershop.",
@@ -524,7 +524,7 @@ export const bestBarberStreetsville: ListicleData = {
     {
       question: 'Is there a barber open on Sundays near Streetsville?',
       answer:
-        'Yes — Clip & Chill is open Sundays 10am–6pm, making it one of the few premium barbershops in the Mississauga west end with Sunday availability.',
+        'Yes — Clip & Chill is open Sundays 11am–7pm, making it one of the few premium barbershops in the Mississauga west end with Sunday availability.',
     },
   ],
   shops: [
