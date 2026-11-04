@@ -643,22 +643,22 @@ const Gallery = () => {
 const Team = () => {
   const barbers = [
     {
-      name: "Clark R.",
-      role: "Senior Barber",
-      specialty: "Skin Fades · Classic Cuts",
-      image: "https://i.postimg.cc/Hs0mC8FD/Clark-R.jpg"
-    },
-    {
-      name: "Ahmad F.",
-      role: "Senior Barber",
+      name: "Ahmad",
+      role: "Owner & Master Barber",
       specialty: "Beard Sculpting · Precision Fades",
-      image: "https://i.postimg.cc/y8vzD4VG/Ahmad_F.jpg"
+      image: "/team/ahmad.webp"
     },
     {
-      name: "Sido",
+      name: "Cherif",
       role: "Senior Barber",
-      specialty: "Textured Cuts · Hot Towel Shaves",
-      image: "https://i.postimg.cc/D0LT0SZG/Sido.jpg"
+      specialty: "Skin Fades · Textured Cuts",
+      image: "/team/cherif.webp"
+    },
+    {
+      name: "Yaya",
+      role: "Senior Barber",
+      specialty: "Curly Cuts · Tapers",
+      image: "/team/yaya.webp"
     },
   ];
 
@@ -669,7 +669,7 @@ const Team = () => {
           <div>
             <span className="sub-label">The Experts</span>
             <h2 className="section-title mb-4">Our Barbers</h2>
-            <p className="text-white/30 font-light max-w-md">Three senior barbers — each with deep expertise in cuts, fades, and grooming. Every client gets a proper consultation before the scissors come out.</p>
+            <p className="text-white/30 font-light max-w-md">Led by owner Ahmad, our three barbers each bring deep expertise in cuts, fades, and grooming. Every client gets a proper consultation before the scissors come out.</p>
           </div>
           <a
             href="https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services"
@@ -700,7 +700,7 @@ const Team = () => {
                 <img
                   src={barber.image}
                   alt={`${barber.name} - ${barber.role} at Clip & Chill Barbershop`}
-                  className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-1000"
+                  className="w-full h-full object-cover object-top scale-100 group-hover:scale-110 transition-transform duration-1000"
                   loading="lazy"
                   decoding="async"
                   referrerPolicy="no-referrer"
