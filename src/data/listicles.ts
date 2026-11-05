@@ -55,14 +55,14 @@ const clipAndChill: Barbershop = {
   neighborhood: 'Erin Mills',
   phone: '(905) 606-2212',
   rating: 5.0,
-  reviewCount: 406,
+  reviewCount: 808,
   priceRange: '$$',
   hours: 'Mon–Sat 10am–8pm · Sun 11am–7pm',
   specialties: ['Precision Fades', 'Beard Sculpting', 'Hot Towel Shave', 'Skin Fade', 'Kids Cuts', 'Facials'],
   description:
-    "Clip & Chill is Erin Mills' standout barbershop — a modern, premium studio where every cut is treated as craft. With 400+ five-star Google reviews and a team of skilled barbers, it consistently ranks as Mississauga's top-rated barbershop.",
+    "Clip & Chill is Erin Mills' standout barbershop — a modern, premium studio where every cut is treated as craft. With 800+ five-star Google reviews and a team of skilled barbers, it consistently ranks as Mississauga's top-rated barbershop.",
   highlights: [
-    '5-star rated with 400+ Google reviews',
+    '5-star rated with 800+ Google reviews',
     'Precision fades & signature beard sculpts',
     'Hot towel shaves & grooming facials',
     'Easy online booking via Squire',
@@ -103,7 +103,7 @@ export const bestBarberErinMills: ListicleData = {
   slug: 'best-barber-erin-mills',
   metaTitle: 'Best Barber in Erin Mills (2026) — Top 5 Reviewed & Ranked',
   metaDescription:
-    'Looking for the best barber in Erin Mills, Mississauga? We ranked the top 5 barbershops by reviews, skill, and value. #1 rated: Clip & Chill — 400+ five-star Google reviews.',
+    'Looking for the best barber in Erin Mills, Mississauga? We ranked the top 5 barbershops by reviews, skill, and value. #1 rated: Clip & Chill — 800+ five-star Google reviews.',
   h1: 'Best Barber in Erin Mills, Mississauga (2026)',
   category: 'Barber',
   neighborhood: 'Erin Mills',
@@ -118,7 +118,7 @@ export const bestBarberErinMills: ListicleData = {
     {
       question: 'What is the best barbershop in Erin Mills?',
       answer:
-        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the highest-rated barbershop in Erin Mills, with a 5.0 Google rating across 400+ reviews. They offer precision fades, beard sculpting, hot towel shaves, and facial treatments.',
+        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the highest-rated barbershop in Erin Mills, with a 5.0 Google rating across 800+ reviews. They offer precision fades, beard sculpting, hot towel shaves, and facial treatments.',
     },
     {
       question: 'How much does a haircut cost in Erin Mills?',
@@ -296,7 +296,7 @@ export const bestHaircutMississauga: ListicleData = {
   slug: 'best-haircut-mississauga',
   metaTitle: 'Best Haircut in Mississauga (2026) — Top 5 Barbershops Reviewed',
   metaDescription:
-    'Where to get the best haircut in Mississauga? We ranked the top 5 barbershops by reviews, skill, and value. Clip & Chill leads with 400+ five-star reviews.',
+    'Where to get the best haircut in Mississauga? We ranked the top 5 barbershops by reviews, skill, and value. Clip & Chill leads with 800+ five-star reviews.',
   h1: 'Best Haircut in Mississauga (2026) — Top 5 Ranked',
   category: 'Haircut',
   neighborhood: 'Mississauga',
@@ -311,7 +311,7 @@ export const bestHaircutMississauga: ListicleData = {
     {
       question: 'Where can I get the best haircut in Mississauga?',
       answer:
-        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is Mississauga\'s top-rated barbershop with a 5.0 Google rating and 400+ reviews. They offer precision cuts, fades, beard sculpting, and hot towel shaves.',
+        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is Mississauga\'s top-rated barbershop with a 5.0 Google rating and 800+ reviews. They offer precision cuts, fades, beard sculpting, and hot towel shaves.',
     },
     {
       question: 'How much does a haircut cost in Mississauga?',
@@ -489,7 +489,7 @@ export const bestBarberStreetsville: ListicleData = {
   slug: 'best-barber-streetsville',
   metaTitle: 'Best Barber in Streetsville, Mississauga (2026) — Top 5 Ranked',
   metaDescription:
-    'Searching for the best barber in Streetsville? We ranked the top 5 barbershops by reviews, skill, and value. Clip & Chill leads with 400+ five-star Google reviews.',
+    'Searching for the best barber in Streetsville? We ranked the top 5 barbershops by reviews, skill, and value. Clip & Chill leads with 800+ five-star Google reviews.',
   h1: 'Best Barber in Streetsville, Mississauga (2026)',
   category: 'Barber',
   neighborhood: 'Streetsville',
@@ -504,7 +504,7 @@ export const bestBarberStreetsville: ListicleData = {
     {
       question: 'What is the best barbershop near Streetsville?',
       answer:
-        "Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the closest 5-star rated barbershop to Streetsville, just minutes away. It holds a 5.0 Google rating with 400+ reviews and offers precision fades, beard sculpts, and hot towel shaves.",
+        "Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the closest 5-star rated barbershop to Streetsville, just minutes away. It holds a 5.0 Google rating with 800+ reviews and offers precision fades, beard sculpts, and hot towel shaves.",
     },
     {
       question: 'How much does a haircut cost near Streetsville?',
@@ -528,7 +528,7 @@ export const bestBarberStreetsville: ListicleData = {
     },
   ],
   shops: [
-    { ...clipAndChill, neighborhood: 'Erin Mills (near Streetsville)', description: "Only a short drive from Streetsville's village centre, Clip & Chill is consistently rated the best barbershop in western Mississauga. With 400+ five-star reviews, precision fades, and a full grooming menu, it's the obvious first choice for Streetsville residents." },
+    { ...clipAndChill, neighborhood: 'Erin Mills (near Streetsville)', description: "Only a short drive from Streetsville's village centre, Clip & Chill is consistently rated the best barbershop in western Mississauga. With 800+ five-star reviews, precision fades, and a full grooming menu, it's the obvious first choice for Streetsville residents." },
     {
       rank: 2,
       name: 'Classic Touch Barbershop',
@@ -649,7 +649,7 @@ export const bestBarberMeadowvale: ListicleData = {
     {
       question: 'What is the best barbershop near Meadowvale?',
       answer:
-        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the top-rated barbershop closest to Meadowvale, with a 5.0 Google rating and 400+ reviews. It offers fades, beard sculpting, hot towel shaves, and kids cuts.',
+        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the top-rated barbershop closest to Meadowvale, with a 5.0 Google rating and 800+ reviews. It offers fades, beard sculpting, hot towel shaves, and kids cuts.',
     },
     {
       question: 'Is there a barber in Meadowvale itself?',
@@ -794,7 +794,7 @@ export const bestBarberPortCredit: ListicleData = {
     {
       question: 'What is the best barbershop near Port Credit?',
       answer:
-        'For the highest-rated experience, Clip & Chill at 4099 Erin Mills Pkwy is the top choice — a 5-star rated barbershop with 400+ Google reviews. It is about a 15-minute drive from Port Credit.',
+        'For the highest-rated experience, Clip & Chill at 4099 Erin Mills Pkwy is the top choice — a 5-star rated barbershop with 800+ Google reviews. It is about a 15-minute drive from Port Credit.',
     },
     {
       question: 'Is there a barber in Port Credit village itself?',
@@ -818,7 +818,7 @@ export const bestBarberPortCredit: ListicleData = {
     },
   ],
   shops: [
-    { ...clipAndChill, neighborhood: 'Erin Mills (~15 min from Port Credit)', description: "Port Credit locals regularly make the short drive to Clip & Chill for good reason — it's Mississauga's top-rated barbershop with 400+ five-star reviews. Precision fades, beard sculpting, hot towel shaves, and a premium atmosphere set it apart." },
+    { ...clipAndChill, neighborhood: 'Erin Mills (~15 min from Port Credit)', description: "Port Credit locals regularly make the short drive to Clip & Chill for good reason — it's Mississauga's top-rated barbershop with 800+ five-star reviews. Precision fades, beard sculpting, hot towel shaves, and a premium atmosphere set it apart." },
     {
       rank: 2,
       name: 'Kings & Queens Grooming',
@@ -924,7 +924,7 @@ export const bestBarberOakville: ListicleData = {
   slug: 'best-barber-oakville',
   metaTitle: 'Best Barber in Oakville (2026) — Top 5 Barbershops Reviewed',
   metaDescription:
-    'Where to get the best haircut in Oakville? We ranked the top 5 barbershops by reviews and quality. Clip & Chill just across the border leads with 400+ five-star reviews.',
+    'Where to get the best haircut in Oakville? We ranked the top 5 barbershops by reviews and quality. Clip & Chill just across the border leads with 800+ five-star reviews.',
   h1: 'Best Barber in Oakville (2026) — Top 5 Ranked',
   category: 'Barber',
   neighborhood: 'Oakville',
@@ -939,7 +939,7 @@ export const bestBarberOakville: ListicleData = {
     {
       question: 'What is the best barbershop in Oakville?',
       answer:
-        "Clip & Chill Barbershop in Erin Mills, Mississauga — right at the Oakville border — is the highest-rated option in the area with a 5.0 Google rating and 400+ reviews. North Oakville residents are just minutes away.",
+        "Clip & Chill Barbershop in Erin Mills, Mississauga — right at the Oakville border — is the highest-rated option in the area with a 5.0 Google rating and 800+ reviews. North Oakville residents are just minutes away.",
     },
     {
       question: 'How much does a haircut cost in Oakville?',
@@ -963,7 +963,7 @@ export const bestBarberOakville: ListicleData = {
     },
   ],
   shops: [
-    { ...clipAndChill, neighborhood: 'Erin Mills, Mississauga (near North Oakville)', description: "Just minutes from North Oakville, Clip & Chill is the top-rated barbershop in the entire corridor. With a 5-star Google rating and 400+ reviews, it draws clients from across Oakville and Mississauga for precision fades, beard sculpts, and hot towel shaves." },
+    { ...clipAndChill, neighborhood: 'Erin Mills, Mississauga (near North Oakville)', description: "Just minutes from North Oakville, Clip & Chill is the top-rated barbershop in the entire corridor. With a 5-star Google rating and 800+ reviews, it draws clients from across Oakville and Mississauga for precision fades, beard sculpts, and hot towel shaves." },
     {
       rank: 2,
       name: 'The Barber Project',
@@ -1084,7 +1084,7 @@ export const bestBarberBrampton: ListicleData = {
     {
       question: 'What is the best barbershop in Brampton?',
       answer:
-        "The highest-rated barbershop serving the Brampton area is Clip & Chill at 4099 Erin Mills Pkwy, Mississauga — just minutes from the Brampton border. It holds a 5.0 Google rating with 400+ reviews.",
+        "The highest-rated barbershop serving the Brampton area is Clip & Chill at 4099 Erin Mills Pkwy, Mississauga — just minutes from the Brampton border. It holds a 5.0 Google rating with 800+ reviews.",
     },
     {
       question: 'How much does a haircut cost in Brampton?',
@@ -1108,7 +1108,7 @@ export const bestBarberBrampton: ListicleData = {
     },
   ],
   shops: [
-    { ...clipAndChill, neighborhood: 'Erin Mills, Mississauga (near Brampton border)', description: "Just over the border from south Brampton, Clip & Chill is the area's most-reviewed and highest-rated barbershop. With 400+ five-star Google reviews, it consistently outperforms every other shop in the corridor for precision fades, beard work, and the overall grooming experience." },
+    { ...clipAndChill, neighborhood: 'Erin Mills, Mississauga (near Brampton border)', description: "Just over the border from south Brampton, Clip & Chill is the area's most-reviewed and highest-rated barbershop. With 800+ five-star Google reviews, it consistently outperforms every other shop in the corridor for precision fades, beard work, and the overall grooming experience." },
     {
       rank: 2,
       name: 'Prestige Cuts Barbershop',
@@ -1229,7 +1229,7 @@ export const bestBarberChurchillMeadows: ListicleData = {
     {
       question: 'What is the best barbershop in Churchill Meadows?',
       answer:
-        "The top-rated shop closest to Churchill Meadows is Clip & Chill at 4099 Erin Mills Pkwy — just minutes north via Tenth Line or Erin Mills Pkwy. It holds a 5.0 Google rating with 400+ reviews.",
+        "The top-rated shop closest to Churchill Meadows is Clip & Chill at 4099 Erin Mills Pkwy — just minutes north via Tenth Line or Erin Mills Pkwy. It holds a 5.0 Google rating with 800+ reviews.",
     },
     {
       question: 'Is there a barber open on Sundays near Churchill Meadows?',
@@ -1253,7 +1253,7 @@ export const bestBarberChurchillMeadows: ListicleData = {
     },
   ],
   shops: [
-    { ...clipAndChill, neighborhood: 'Erin Mills (near Churchill Meadows)', description: "Churchill Meadows residents are just minutes from Clip & Chill on Erin Mills Pkwy — the highest-rated barbershop in all of western Mississauga. With 400+ five-star reviews, a full grooming menu, and convenient online booking, it's the obvious first choice." },
+    { ...clipAndChill, neighborhood: 'Erin Mills (near Churchill Meadows)', description: "Churchill Meadows residents are just minutes from Clip & Chill on Erin Mills Pkwy — the highest-rated barbershop in all of western Mississauga. With 800+ five-star reviews, a full grooming menu, and convenient online booking, it's the obvious first choice." },
     {
       rank: 2,
       name: 'The Sharp Gentleman',
@@ -1374,7 +1374,7 @@ export const bestBarberClarkson: ListicleData = {
     {
       question: 'What is the best barbershop in Clarkson?',
       answer:
-        "Kings & Queens Grooming on Clarkson Rd N is the top-rated in-neighbourhood shop. For the absolute best in the area, Clip & Chill in Erin Mills — a short drive via QEW — holds a 5.0 Google rating with 400+ reviews.",
+        "Kings & Queens Grooming on Clarkson Rd N is the top-rated in-neighbourhood shop. For the absolute best in the area, Clip & Chill in Erin Mills — a short drive via QEW — holds a 5.0 Google rating with 800+ reviews.",
     },
     {
       question: 'How much is a haircut in Clarkson, Mississauga?',
@@ -1398,7 +1398,7 @@ export const bestBarberClarkson: ListicleData = {
     },
   ],
   shops: [
-    { ...clipAndChill, neighborhood: 'Erin Mills (10 min from Clarkson via QEW)', description: "Just a quick drive up the QEW from Clarkson, Clip & Chill is by far the most-reviewed and highest-rated barbershop in western Mississauga. With 400+ five-star reviews and a full grooming menu, it sets the standard for the entire area." },
+    { ...clipAndChill, neighborhood: 'Erin Mills (10 min from Clarkson via QEW)', description: "Just a quick drive up the QEW from Clarkson, Clip & Chill is by far the most-reviewed and highest-rated barbershop in western Mississauga. With 800+ five-star reviews and a full grooming menu, it sets the standard for the entire area." },
     {
       rank: 2,
       name: 'Kings & Queens Grooming',
@@ -1519,7 +1519,7 @@ export const bestFadeHaircutMississauga: ListicleData = {
     {
       question: 'Where can I get the best fade haircut in Mississauga?',
       answer:
-        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the top-rated fade barbershop in Mississauga with a 5.0 Google rating and 400+ reviews — many of which specifically praise their skin fades and taper fades.',
+        'Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the top-rated fade barbershop in Mississauga with a 5.0 Google rating and 800+ reviews — many of which specifically praise their skin fades and taper fades.',
     },
     {
       question: 'What is the difference between a skin fade and a taper fade?',
@@ -1543,7 +1543,7 @@ export const bestFadeHaircutMississauga: ListicleData = {
     },
   ],
   shops: [
-    { ...clipAndChill, description: "Clip & Chill is Mississauga's undisputed fade king. Review after review highlights the precision and consistency of their skin fades, taper fades, and high fades across all hair textures. 400+ five-star Google reviews don't lie." },
+    { ...clipAndChill, description: "Clip & Chill is Mississauga's undisputed fade king. Review after review highlights the precision and consistency of their skin fades, taper fades, and high fades across all hair textures. 800+ five-star Google reviews don't lie." },
     {
       rank: 2,
       name: 'Prestige Cuts Barbershop',
@@ -1664,7 +1664,7 @@ export const bestBeardTrimMississauga: ListicleData = {
     {
       question: 'Where can I get the best beard trim in Mississauga?',
       answer:
-        "Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the top-rated shop for beard services in Mississauga, with 400+ five-star Google reviews. Their barbers specialize in full beard sculpts, line-ups, and hot towel shave finishes.",
+        "Clip & Chill Barbershop at 4099 Erin Mills Pkwy is the top-rated shop for beard services in Mississauga, with 800+ five-star Google reviews. Their barbers specialize in full beard sculpts, line-ups, and hot towel shave finishes.",
     },
     {
       question: 'What is included in a beard sculpt vs a beard trim?',

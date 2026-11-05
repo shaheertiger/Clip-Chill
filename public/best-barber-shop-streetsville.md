@@ -53,7 +53,7 @@ There's **free parking directly in front** — no meters, no circling the block.
 
 ## Why Streetsville Locals Make the Drive
 
-The short version: results. Clip & Chill carries a **5.0 Google rating across 406+ reviews** — not a handful of friends, but four hundred-plus people who had a good enough experience to say so publicly. Read through them and the same barber names keep surfacing, which is exactly the consistency signal you want.
+The short version: results. Clip & Chill carries a **5.0 Google rating across 808+ reviews** — not a handful of friends, but four hundred-plus people who had a good enough experience to say so publicly. Read through them and the same barber names keep surfacing, which is exactly the consistency signal you want.
 
 **Clark R.** is known for skin fades and classic cuts — the steady-hand work that lives or dies on symmetry. **Ahmad F.** handles beard sculpting and precision fades, which matters if your beard is as much a part of your look as the hair on top. **Sido** specializes in textured cuts and hot towel shaves, so if your hair has natural texture or you want a proper straight-razor finish, that's the chair to ask for.
 

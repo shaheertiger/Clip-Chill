@@ -138,7 +138,7 @@ const QuickLinks = () => {
 
 const TrustBar = () => {
   const items = [
-    { icon: Star,      label: '5.0 Google Rating',          sub: '406 verified reviews' },
+    { icon: Star,      label: '5.0 Google Rating',          sub: '808 verified reviews' },
     { icon: MapPin,    label: '4099 Erin Mills Pkwy #4',     sub: 'Mississauga, ON L5L 3P9' },
     { icon: Car,       label: 'Free Parking On-Site',        sub: 'Plaza lot, right out front' },
     { icon: Building2, label: '2 Min from Town Centre',      sub: 'Near Erin Mills Town Centre' },
@@ -401,7 +401,7 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-10 md:mb-12"
           >
             {[
-              { icon: Star, label: '5.0 Google Rating · 406 Reviews' },
+              { icon: Star, label: '5.0 Google Rating · 808 Reviews' },
               { icon: MapPin, label: '4099 Erin Mills Pkwy #4' },
               { icon: Phone, label: 'Walk-ins Welcome · Open Daily' },
             ].map(({ icon: Icon, label }, i) => (
@@ -921,7 +921,7 @@ const Reviews = () => {
               <div className="flex text-gold mb-1">
                 {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="currentColor" stroke="none" />)}
               </div>
-              <div className="text-[10px] text-dark/40 uppercase tracking-[0.3em] font-bold">406 reviews</div>
+              <div className="text-[10px] text-dark/40 uppercase tracking-[0.3em] font-bold">808 reviews</div>
             </div>
           </div>
           <a 
@@ -994,7 +994,7 @@ const Reviews = () => {
 const HOME_FAQS = [
   {
     q: 'What is the best barbershop in Mississauga?',
-    a: "By Google rating and review count, Clip & Chill at 4099 Erin Mills Pkwy #4 is the top-rated barbershop in Mississauga — a perfect 5.0 stars across 406+ reviews. It serves Erin Mills, Central Erin Mills, Streetsville, Meadowvale and the wider Mississauga area.",
+    a: "By Google rating and review count, Clip & Chill at 4099 Erin Mills Pkwy #4 is the top-rated barbershop in Mississauga — a perfect 5.0 stars across 808+ reviews. It serves Erin Mills, Central Erin Mills, Streetsville, Meadowvale and the wider Mississauga area.",
   },
   {
     q: 'How much does a haircut cost at Clip & Chill?',
@@ -1293,7 +1293,7 @@ export default function App() {
               }}
               className="text-white/50 text-lg mb-6 leading-relaxed font-light"
             >
-              We're at <strong className="text-white/70 font-medium">4099 Erin Mills Pkwy #4</strong>, Mississauga — two minutes from Erin Mills Town Centre with free parking right out front. Clip &amp; Chill is Erin Mills' most-reviewed barbershop, with a perfect 5.0 rating across 406+ Google reviews.
+              We're at <strong className="text-white/70 font-medium">4099 Erin Mills Pkwy #4</strong>, Mississauga — two minutes from Erin Mills Town Centre with free parking right out front. Clip &amp; Chill is Erin Mills' most-reviewed barbershop, with a perfect 5.0 rating across 808+ Google reviews.
             </m.p>
             <m.p
               variants={{

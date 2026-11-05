@@ -41,7 +41,7 @@ There's a difference between someone who cuts hair and someone who understands h
 
 Clip & Chill Barbershop sits at **4099 Erin Mills Pkwy #4** — two minutes from Erin Mills Town Centre, with free plaza parking right out front. No meters, no time pressure. You can park, get your cut, and run errands without moving your car.
 
-The shop carries a **5.0 Google rating from over 406 reviews**. That's not a handful of friends leaving reviews — that's four hundred-plus people who had a good enough experience to open Google and say so. Read through them and you'll find the same names coming up: Clark R., Ahmad F., Sido. That consistency is intentional.
+The shop carries a **5.0 Google rating from over 808 reviews**. That's not a handful of friends leaving reviews — that's four hundred-plus people who had a good enough experience to open Google and say so. Read through them and you'll find the same names coming up: Clark R., Ahmad F., Sido. That consistency is intentional.
 
 **Clark R.** specializes in skin fades and classic cuts — the kind of work that requires a steady hand and an eye for symmetry. **Ahmad F.** is known for beard sculpting and precision fades, which matters if your beard is as important to you as the cut on top. **Sido** handles textured cuts and hot towel shaves — if your hair has natural texture or you want a traditional straight-razor experience, Sido knows exactly what to do with it.
 

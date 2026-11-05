@@ -45,7 +45,7 @@ At $25–$40, you're into independent barbershops with experienced barbers who s
 
 At this tier, the consultation is real. The barber asks about your hair type, your schedule, your styling habits, and what you didn't like about your last cut. The fade — if that's what you're getting — is executed with the right technique and blended properly. The neckline is defined with a blade, not just a trimmer edge. The cut holds its shape for two to three weeks, not one.
 
-**Clip & Chill sits in this tier at $30 for a haircut.** That's a deliberate choice by the shop — pricing that keeps quality barbering accessible to the neighbourhood without compromising on the service. The barbers here — Clark R., Ahmad F., and Sido — are senior barbers. They're not cutting hair at $30 because they can't command more. They're doing it because that's how they built a shop with 406 five-star reviews from actual Erin Mills residents.
+**Clip & Chill sits in this tier at $30 for a haircut.** That's a deliberate choice by the shop — pricing that keeps quality barbering accessible to the neighbourhood without compromising on the service. The barbers here — Clark R., Ahmad F., and Sido — are senior barbers. They're not cutting hair at $30 because they can't command more. They're doing it because that's how they built a shop with 808 five-star reviews from actual Erin Mills residents.
 
 ## The Premium Tier: Is It Worth It?
 
@@ -65,8 +65,8 @@ At Clip & Chill, the pricing is posted and straightforward. A $30 haircut is a $
 
 This is a real concern some men bring in. The logic is understandable: if it's that cheap, is something being cut on quality?
 
-The short answer is no — and 406 five-star Google reviews from real clients make that case far better than anything we could say here. A rating of 5.0 across that volume of reviews is not luck. It's the result of a shop that has consistently delivered at a level that keeps people coming back and prompting them to leave a public review.
+The short answer is no — and 808 five-star Google reviews from real clients make that case far better than anything we could say here. A rating of 5.0 across that volume of reviews is not luck. It's the result of a shop that has consistently delivered at a level that keeps people coming back and prompting them to leave a public review.
 
-The $30 price point at Clip & Chill is intentional. The shop is in Erin Mills, serving an Erin Mills neighbourhood. The barbers built it to be the barbershop they'd want in their own area — skilled, consistent, accessible, and priced fairly. The 406 reviews are the proof point.
+The $30 price point at Clip & Chill is intentional. The shop is in Erin Mills, serving an Erin Mills neighbourhood. The barbers built it to be the barbershop they'd want in their own area — skilled, consistent, accessible, and priced fairly. The 808 reviews are the proof point.
 
 If you're in Mississauga and looking for a haircut that actually looks like you meant it, book at [getsquire.com/discover/barbershop/clip-and-chill-mississauga](https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services) or call **(905) 606-2212**. Clip & Chill is at 4099 Erin Mills Pkwy #4, open Monday to Saturday 10am–8pm and Sunday 11am–7pm. Walk-ins are welcome. Free parking out front.

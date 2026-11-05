@@ -21,9 +21,9 @@ export const services: Record<string, ServicePageData> = {
     slug: 'barber-shop-mississauga',
     metaTitle: 'Barber Shop Mississauga | Clip & Chill — 5-Star Rated',
     metaDescription:
-      'Top-rated barber shop in Mississauga. Precision haircuts, skin fades, beard trims & more. 406 five-star Google reviews. Walk-ins welcome — book online today.',
+      'Top-rated barber shop in Mississauga. Precision haircuts, skin fades, beard trims & more. 808 five-star Google reviews. Walk-ins welcome — book online today.',
     h1: 'Barber Shop in Mississauga',
-    tagline: "Mississauga's most-reviewed barbershop — 406 five-star Google reviews.",
+    tagline: "Mississauga's most-reviewed barbershop — 808 five-star Google reviews.",
     intro:
       "Clip & Chill is a modern barbershop at 4099 Erin Mills Pkwy in Mississauga. We specialize in precision fades, classic men's haircuts, beard sculpting, and hot towel shaves — all in a relaxed, welcoming atmosphere. Whether you walk in or book ahead, you'll leave looking sharp.",
     price: 'From $30',
@@ -68,9 +68,9 @@ export const services: Record<string, ServicePageData> = {
     slug: 'barbershop-erin-mills',
     metaTitle: 'Barber Shop Erin Mills | Clip & Chill — #1 Rated',
     metaDescription:
-      'Best barbershop in Erin Mills, Mississauga. Precision fades, beard trims & hot towel shaves. 406 five-star Google reviews. Walk-ins welcome — book online.',
+      'Best barbershop in Erin Mills, Mississauga. Precision fades, beard trims & hot towel shaves. 808 five-star Google reviews. Walk-ins welcome — book online.',
     h1: 'Barber Shop in Erin Mills',
-    tagline: "Erin Mills' #1 rated barbershop — 400+ five-star Google reviews.",
+    tagline: "Erin Mills' #1 rated barbershop — 800+ five-star Google reviews.",
     intro:
       'Located right on Erin Mills Pkwy, Clip & Chill is the neighbourhood barbershop that Erin Mills residents trust. We deliver precision cuts and grooming services in a relaxed, modern atmosphere — every single time.',
     price: 'From $30',
@@ -87,7 +87,7 @@ export const services: Record<string, ServicePageData> = {
       {
         question: 'Is Clip & Chill the best barber in Erin Mills?',
         answer:
-          'With a 5.0 Google rating across 406+ reviews, Clip & Chill consistently ranks as the top-rated barbershop in Erin Mills. Clients travel from across Mississauga to visit us.',
+          'With a 5.0 Google rating across 808+ reviews, Clip & Chill consistently ranks as the top-rated barbershop in Erin Mills. Clients travel from across Mississauga to visit us.',
       },
       {
         question: 'Where exactly is the barbershop in Erin Mills?',
@@ -116,7 +116,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'mens-haircut-mississauga',
     metaTitle: "Men's Haircut Mississauga | Clip & Chill Barbershop",
     metaDescription:
-      "Professional men's haircuts in Mississauga from $30. Precision cuts, fades & classic styles. 406 five-star Google reviews. Walk-ins welcome — book at Clip & Chill.",
+      "Professional men's haircuts in Mississauga from $30. Precision cuts, fades & classic styles. 808 five-star Google reviews. Walk-ins welcome — book at Clip & Chill.",
     h1: "Men's Haircut in Mississauga",
     tagline: "Sharp, precise, every time. Mississauga's favourite men's cut studio.",
     intro:
@@ -164,7 +164,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'skin-fade-mississauga',
     metaTitle: 'Skin Fade Mississauga | Expert Fades at Clip & Chill',
     metaDescription:
-      'Precision skin fade in Mississauga at Clip & Chill. Rated 5.0 ⭐ with 406 reviews. Low, mid & high fades. All hair textures. Walk-ins welcome — book online.',
+      'Precision skin fade in Mississauga at Clip & Chill. Rated 5.0 ⭐ with 808 reviews. Low, mid & high fades. All hair textures. Walk-ins welcome — book online.',
     h1: 'Skin Fade in Mississauga',
     tagline: 'Precision skin fades, taper fades & drop fades — dialled in every time.',
     intro:
@@ -212,7 +212,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'beard-trim-mississauga',
     metaTitle: 'Beard Trim Mississauga | Clip & Chill Barbershop',
     metaDescription:
-      'Professional beard trim & sculpting in Mississauga from $25. Hot towel & straight razor finish. 406 five-star Google reviews. Walk-ins welcome — book now.',
+      'Professional beard trim & sculpting in Mississauga from $25. Hot towel & straight razor finish. 808 five-star Google reviews. Walk-ins welcome — book now.',
     h1: 'Beard Trim in Mississauga',
     tagline: 'From stubble to full beard — sculpted to complement your face shape.',
     intro:
@@ -308,7 +308,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'haircut-erin-mills-town-centre',
     metaTitle: 'Haircut near Erin Mills Town Centre | Clip & Chill',
     metaDescription:
-      'Haircut near Erin Mills Town Centre, Mississauga. Clip & Chill Barbershop is a 2-min drive away — 5.0 stars, 406 reviews. Walk in or book online today.',
+      'Haircut near Erin Mills Town Centre, Mississauga. Clip & Chill Barbershop is a 2-min drive away — 5.0 stars, 808 reviews. Walk in or book online today.',
     h1: 'Haircut near Erin Mills Town Centre',
     tagline: 'The top-rated barbershop closest to Erin Mills Town Centre.',
     intro:
@@ -320,7 +320,7 @@ export const services: Record<string, ServicePageData> = {
       'Free parking in the plaza lot — no stress',
       'Walk-ins welcome Monday through Sunday',
       'Precision fades, beard trims & classic cuts',
-      '5.0 Google rating with 400+ reviews',
+      '5.0 Google rating with 800+ reviews',
       'Open 7 days a week — long hours',
     ],
     faqs: [
@@ -356,7 +356,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'walk-in-barber-mississauga',
     metaTitle: 'Walk-In Barber Mississauga | Clip & Chill — Open Daily',
     metaDescription:
-      'Walk-in barber in Mississauga at Clip & Chill. No appointment needed — open 7 days a week. Expert fades & precision cuts. 406 five-star reviews. Visit today.',
+      'Walk-in barber in Mississauga at Clip & Chill. No appointment needed — open 7 days a week. Expert fades & precision cuts. 808 five-star reviews. Visit today.',
     h1: 'Walk-In Barber in Mississauga',
     tagline: 'No appointment? No problem. Walk in any day and get a great cut.',
     intro:
@@ -416,7 +416,7 @@ export const services: Record<string, ServicePageData> = {
       'Accessible by MiWay transit via Erin Mills Pkwy',
       'Skin fades, textured cuts & classic styles',
       'Walk-ins welcome every day — no booking required',
-      '5.0 Google rating with 400+ reviews',
+      '5.0 Google rating with 800+ reviews',
       'Affordable pricing starting at $30',
     ],
     faqs: [
@@ -452,7 +452,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'taper-fade-mississauga',
     metaTitle: 'Taper Fade Mississauga | Clip & Chill Barbershop',
     metaDescription:
-      'Clean taper fade in Mississauga at Clip & Chill — low, mid & high tapers blended by expert barbers. $30, walk-ins welcome. 406 five-star reviews. Book online.',
+      'Clean taper fade in Mississauga at Clip & Chill — low, mid & high tapers blended by expert barbers. $30, walk-ins welcome. 808 five-star reviews. Book online.',
     h1: 'Taper Fade in Mississauga',
     tagline: 'A sharp, grown-out-friendly taper — blended seamlessly every time.',
     intro:
@@ -491,7 +491,7 @@ export const services: Record<string, ServicePageData> = {
       {
         question: 'Where can I get a taper fade in Mississauga?',
         answer:
-          'Clip & Chill at 4099 Erin Mills Pkwy #4, Mississauga specializes in taper and skin fades. We are 5.0-rated with 406 Google reviews, open 7 days, with free parking and walk-ins welcome.',
+          'Clip & Chill at 4099 Erin Mills Pkwy #4, Mississauga specializes in taper and skin fades. We are 5.0-rated with 808 Google reviews, open 7 days, with free parking and walk-ins welcome.',
       },
     ],
   },
@@ -548,7 +548,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'buzz-cut-mississauga',
     metaTitle: 'Buzz Cut Mississauga | Clip & Chill Barbershop',
     metaDescription:
-      'Clean buzz cut in Mississauga at Clip & Chill — even, sharp, $30. Choose your guard length with expert barbers. Walk-ins welcome, 406 five-star reviews. Book now.',
+      'Clean buzz cut in Mississauga at Clip & Chill — even, sharp, $30. Choose your guard length with expert barbers. Walk-ins welcome, 808 five-star reviews. Book now.',
     h1: 'Buzz Cut in Mississauga',
     tagline: 'Low-maintenance, sharp and even — the buzz cut done right.',
     intro:
@@ -596,7 +596,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'mens-haircut-erin-mills',
     metaTitle: "Men's Haircut Erin Mills | Clip & Chill Barbershop",
     metaDescription:
-      "Men's haircut in Erin Mills from $30 at Clip & Chill — precision cuts, fades & classic styles right on Erin Mills Pkwy. 406 five-star reviews. Walk-ins welcome.",
+      "Men's haircut in Erin Mills from $30 at Clip & Chill — precision cuts, fades & classic styles right on Erin Mills Pkwy. 808 five-star reviews. Walk-ins welcome.",
     h1: "Men's Haircut in Erin Mills",
     tagline: "Your neighbourhood men's cut — precise, consistent, right on Erin Mills Pkwy.",
     intro:
@@ -620,7 +620,7 @@ export const services: Record<string, ServicePageData> = {
       {
         question: "Where is the best men's barber in Erin Mills?",
         answer:
-          'Clip & Chill at 4099 Erin Mills Pkwy #4 is the highest-rated barbershop in Erin Mills — a perfect 5.0 across 406 Google reviews — and is located directly on Erin Mills Pkwy.',
+          'Clip & Chill at 4099 Erin Mills Pkwy #4 is the highest-rated barbershop in Erin Mills — a perfect 5.0 across 808 Google reviews — and is located directly on Erin Mills Pkwy.',
       },
       {
         question: 'Do I need to book or can I walk in?',
@@ -644,7 +644,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'beard-lineup-mississauga',
     metaTitle: 'Beard Lineup & Edge Up Mississauga | Clip & Chill',
     metaDescription:
-      'Sharp beard lineup and edge up in Mississauga at Clip & Chill — razor-clean lines on cheeks & neck. From $25. Walk-ins welcome. 406 five-star reviews. Book online.',
+      'Sharp beard lineup and edge up in Mississauga at Clip & Chill — razor-clean lines on cheeks & neck. From $25. Walk-ins welcome. 808 five-star reviews. Book online.',
     h1: 'Beard Lineup & Edge Up in Mississauga',
     tagline: 'Razor-sharp lines on the cheeks, neck and edges — definition that lasts.',
     intro:
@@ -692,7 +692,7 @@ export const services: Record<string, ServicePageData> = {
     slug: 'barber-near-me',
     metaTitle: 'Barber Near Me | Clip & Chill — Mississauga & Erin Mills',
     metaDescription:
-      'Searching for a barber near you in Mississauga? Clip & Chill on Erin Mills Pkwy is 5.0-rated with 406 reviews — open 7 days, walk-ins welcome, free parking. Book now.',
+      'Searching for a barber near you in Mississauga? Clip & Chill on Erin Mills Pkwy is 5.0-rated with 808 reviews — open 7 days, walk-ins welcome, free parking. Book now.',
     h1: 'Looking for a Barber Near You?',
     tagline: "If you're in Mississauga, Clip & Chill is the barber near you worth driving to.",
     intro:
@@ -704,7 +704,7 @@ export const services: Record<string, ServicePageData> = {
       'Open 7 days: Mon–Sat 10am–8pm · Sun 11am–7pm',
       'Walk-ins welcome — no appointment needed',
       'Free parking directly in front of the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Online booking via Squire in under 60 seconds',
     ],
     faqs: [
