@@ -67,7 +67,7 @@ Local community groups for Mississauga neighbourhoods are also useful, with the 
 
 ## What Clip & Chill Is
 
-For context on where we fit: Clip & Chill is at **4099 Erin Mills Pkwy #4**, in the Erin Mills area, in the plaza just south of Folkway Drive and about two minutes from Erin Mills Town Centre. We hold a **5.0 rating across 406+ Google reviews**.
+For context on where we fit: Clip & Chill is at **4099 Erin Mills Pkwy #4**, in the Erin Mills area, in the plaza just south of Folkway Drive and about two minutes from Erin Mills Town Centre. We hold a **5.0 rating across 808+ Google reviews**.
 
 The relevant details if you're evaluating:
 

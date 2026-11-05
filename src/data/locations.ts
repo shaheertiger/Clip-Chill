@@ -53,7 +53,7 @@ export const locations: Record<string, LocationPageData> = {
       "We're at 4099 Erin Mills Pkwy #4, in the plaza on the east side of Erin Mills Pkwy just south of Folkway Dr. Free parking is directly in front. From most parts of Erin Mills, it's a 3–7 minute drive.",
     highlights: [
       'Located directly on Erin Mills Pkwy — heart of the neighbourhood',
-      '5.0 Google rating with 406 reviews from Erin Mills residents and beyond',
+      '5.0 Google rating with 808 reviews from Erin Mills residents and beyond',
       'Walk-ins welcome — no appointment needed',
       'Open 7 days: Mon–Sat 10am–8pm, Sun 11am–7pm',
       'Free parking in the plaza lot',
@@ -92,20 +92,20 @@ export const locations: Record<string, LocationPageData> = {
     slug: 'barber-mississauga',
     metaTitle: 'Barber in Mississauga | Clip & Chill — Rated #1 in the City',
     metaDescription:
-      'Looking for a barber in Mississauga? Clip & Chill is the city\'s top-rated barbershop — 406 five-star reviews. Erin Mills Pkwy. Walk-ins welcome.',
+      'Looking for a barber in Mississauga? Clip & Chill is the city\'s top-rated barbershop — 808 five-star reviews. Erin Mills Pkwy. Walk-ins welcome.',
     h1: 'Barber in Mississauga',
     neighborhood: 'Mississauga',
-    tagline: "Mississauga's top-rated barbershop — 406 five-star reviews and counting.",
+    tagline: "Mississauga's top-rated barbershop — 808 five-star reviews and counting.",
     driveTime: 'Central Mississauga location',
     distanceNote: 'Serving all of Mississauga',
     intro:
-      "Clip & Chill is Mississauga's most-reviewed barbershop, with a perfect 5.0 Google rating across 406+ reviews. We're based in Erin Mills — a central, accessible location that clients from Streetsville, Churchill Meadows, Meadowvale, Port Credit, and beyond make the trip for.",
+      "Clip & Chill is Mississauga's most-reviewed barbershop, with a perfect 5.0 Google rating across 808+ reviews. We're based in Erin Mills — a central, accessible location that clients from Streetsville, Churchill Meadows, Meadowvale, Port Credit, and beyond make the trip for.",
     localContext:
       "Mississauga is a city of neighbourhoods, each with its own character. Whether you're coming from the east end near Square One, from the west near Streetsville, or from the north near Meadowvale — we're centrally located on Erin Mills Pkwy with easy access from Eglinton Ave, The Collegeway, and Dundas St W.",
     directions:
       "Find us at 4099 Erin Mills Pkwy #4. From the QEW or Hwy 403, take the Erin Mills Pkwy exit and head north — we're in the plaza just south of Folkway Dr. From the 401, take Erin Mills Pkwy south. Free parking on-site.",
     highlights: [
-      'Most-reviewed barbershop in Mississauga — 406 Google reviews',
+      'Most-reviewed barbershop in Mississauga — 808 Google reviews',
       'Perfect 5.0 star rating — consistent, repeatable quality',
       'Central Erin Mills location — accessible from across the city',
       'Walk-ins welcome, appointments preferred on weekends',
@@ -116,7 +116,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'What is the best barbershop in Mississauga?',
         answer:
-          'By Google review count and rating, Clip & Chill at 4099 Erin Mills Pkwy is the top-rated barbershop in Mississauga — 406 reviews at a perfect 5.0.',
+          'By Google review count and rating, Clip & Chill at 4099 Erin Mills Pkwy is the top-rated barbershop in Mississauga — 808 reviews at a perfect 5.0.',
       },
       {
         question: 'Where in Mississauga is Clip & Chill?',
@@ -161,7 +161,7 @@ export const locations: Record<string, LocationPageData> = {
       '~8 minute drive from Streetsville village centre',
       'Easy route: Eglinton Ave W to Erin Mills Pkwy',
       'Free parking directly at the shop',
-      'Rated 5.0 with 406 Google reviews',
+      'Rated 5.0 with 808 Google reviews',
       'Precision fades, beard sculpting & classic cuts',
       'Walk-ins welcome Mon–Sun',
     ],
@@ -174,7 +174,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a good barbershop in Streetsville itself?',
         answer:
-          "There are a few options in Streetsville, but Clip & Chill — just 8 minutes away on Erin Mills Pkwy — is consistently the highest-rated barbershop in the area with 406 five-star Google reviews.",
+          "There are a few options in Streetsville, but Clip & Chill — just 8 minutes away on Erin Mills Pkwy — is consistently the highest-rated barbershop in the area with 808 five-star Google reviews.",
       },
       {
         question: 'Can I walk in from Streetsville without an appointment?',
@@ -214,7 +214,7 @@ export const locations: Record<string, LocationPageData> = {
       '~10 minute drive from Churchill Meadows',
       'Simple route: Eglinton Ave W west to Erin Mills Pkwy',
       'Precision fades, beard sculpting & kids\' cuts',
-      '5.0 Google rating — 406 verified reviews',
+      '5.0 Google rating — 808 verified reviews',
       'Walk-ins welcome every day of the week',
       'Free parking — no stress, no meters',
     ],
@@ -227,7 +227,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a barbershop closer to Churchill Meadows?',
         answer:
-          "There are some options in the area, but Clip & Chill — 10 minutes west — is the highest-rated barbershop in this part of Mississauga, with 406 five-star Google reviews.",
+          "There are some options in the area, but Clip & Chill — 10 minutes west — is the highest-rated barbershop in this part of Mississauga, with 808 five-star Google reviews.",
       },
       {
         question: 'Do you do kids\' haircuts for Churchill Meadows families?',
@@ -269,7 +269,7 @@ export const locations: Record<string, LocationPageData> = {
       'Precision fades, textured cuts & classic styles',
       'Haircuts from $30 — fair and transparent pricing',
       'Walk-ins welcome — no membership or loyalty card needed',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
     ],
     faqs: [
       {
@@ -319,7 +319,7 @@ export const locations: Record<string, LocationPageData> = {
     highlights: [
       '~15 minute drive from north Oakville via Erin Mills Pkwy',
       'Free parking on-site — no hassle',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Walk-ins welcome Mon–Sun',
       'Open late: Mon–Sat until 8pm',
@@ -333,7 +333,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Oakville clients drive to Clip & Chill?',
         answer:
-          "Our 406 five-star Google reviews speak for themselves. Clients from Oakville regularly tell us it's worth the short drive for the consistency and quality they can't find closer to home.",
+          "Our 808 five-star Google reviews speak for themselves. Clients from Oakville regularly tell us it's worth the short drive for the consistency and quality they can't find closer to home.",
       },
       {
         question: 'What route should I take from Oakville to Clip & Chill?',
@@ -373,7 +373,7 @@ export const locations: Record<string, LocationPageData> = {
       '~10 minute straight drive south on Erin Mills Pkwy',
       'No highway — simple, direct route',
       'Free parking directly in front of the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Skin fades, beard trims, kids\' cuts & more',
       'Open 7 days a week — early morning to 8pm',
     ],
@@ -386,7 +386,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a good barbershop in Meadowvale itself?',
         answer:
-          "There are a few options in the Meadowvale area, but Clip & Chill — 10 minutes south — is the highest-rated barbershop in this part of Mississauga with 406 five-star Google reviews.",
+          "There are a few options in the Meadowvale area, but Clip & Chill — 10 minutes south — is the highest-rated barbershop in this part of Mississauga with 808 five-star Google reviews.",
       },
       {
         question: 'Can Meadowvale clients walk in?',
@@ -425,7 +425,7 @@ export const locations: Record<string, LocationPageData> = {
     highlights: [
       'In the heart of Central Erin Mills on Erin Mills Pkwy',
       'Minutes from Erin Mills Town Centre & Credit Valley Hospital',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Walk-ins welcome — no appointment needed',
       'Open 7 days: Mon–Sat 10am–8pm, Sun 11am–7pm',
       'Free parking in the plaza lot out front',
@@ -434,7 +434,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Where is the closest barbershop in Central Erin Mills?',
         answer:
-          "Clip & Chill at 4099 Erin Mills Pkwy #4 is right in Central Erin Mills, minutes from Erin Mills Town Centre. It's the highest-rated barbershop in the neighbourhood with 406 five-star Google reviews.",
+          "Clip & Chill at 4099 Erin Mills Pkwy #4 is right in Central Erin Mills, minutes from Erin Mills Town Centre. It's the highest-rated barbershop in the neighbourhood with 808 five-star Google reviews.",
       },
       {
         question: 'How close is Clip & Chill to Erin Mills Town Centre?',
@@ -479,7 +479,7 @@ export const locations: Record<string, LocationPageData> = {
       '~4 minute drive from Sawmill Valley',
       'Short, simple route via Erin Mills Pkwy',
       'Free parking directly at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & kids\' cuts',
       'Walk-ins welcome every day of the week',
     ],
@@ -492,7 +492,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is Clip & Chill the closest good barber to Sawmill Valley?',
         answer:
-          "Yes — at roughly 4 minutes away, Clip & Chill is the closest 5.0-rated barbershop to Sawmill Valley, with 406 five-star Google reviews.",
+          "Yes — at roughly 4 minutes away, Clip & Chill is the closest 5.0-rated barbershop to Sawmill Valley, with 808 five-star Google reviews.",
       },
       {
         question: 'Can I walk in from Sawmill Valley?',
@@ -532,7 +532,7 @@ export const locations: Record<string, LocationPageData> = {
       '~5 minute drive from Sheridan Homelands',
       'Direct route via Erin Mills Pkwy',
       'Free on-site parking',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Skin fades, beard trims, hot towel shaves',
       'Walk-ins welcome 7 days a week',
     ],
@@ -545,7 +545,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a highly rated barber near Sheridan Homelands?',
         answer:
-          'Yes — Clip & Chill, about 5 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 406 Google reviews.',
+          'Yes — Clip & Chill, about 5 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 808 Google reviews.',
       },
       {
         question: 'Do I need an appointment from Sheridan Homelands?',
@@ -585,7 +585,7 @@ export const locations: Record<string, LocationPageData> = {
       '~7 minute drive from The Credit Woodlands',
       'Easy route via Dundas St W to Erin Mills Pkwy',
       'Free parking directly at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -613,7 +613,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Credit Woodlands clients choose Clip & Chill?',
         answer:
-          'A perfect 5.0 rating across 406 reviews, consistent quality, free parking, and a short drive make it an easy choice for local residents.',
+          'A perfect 5.0 rating across 808 reviews, consistent quality, free parking, and a short drive make it an easy choice for local residents.',
       },
     ],
   },
@@ -638,7 +638,7 @@ export const locations: Record<string, LocationPageData> = {
       '~5 minute drive from the Glen Erin corridor',
       'Easy connection to Erin Mills Pkwy',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Skin fades, taper fades & classic cuts',
       'Walk-ins welcome daily',
     ],
@@ -651,7 +651,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is Clip & Chill a good barber near Glen Erin?',
         answer:
-          "It's the highest-rated barbershop in the Erin Mills area — a perfect 5.0 across 406 Google reviews — and only about 5 minutes from Glen Erin Dr.",
+          "It's the highest-rated barbershop in the Erin Mills area — a perfect 5.0 across 808 Google reviews — and only about 5 minutes from Glen Erin Dr.",
       },
       {
         question: 'Do you take walk-ins from the Glen Erin area?',
@@ -691,7 +691,7 @@ export const locations: Record<string, LocationPageData> = {
       '~4 minute drive from The Collegeway',
       'Direct route via Erin Mills Pkwy',
       'Free parking right at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard trims & hot towel shaves',
       'Walk-ins welcome 7 days a week',
     ],
@@ -704,7 +704,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near The Collegeway?',
         answer:
-          'Yes — Clip & Chill, about 4 minutes away, holds a perfect 5.0 Google rating across 406 reviews.',
+          'Yes — Clip & Chill, about 4 minutes away, holds a perfect 5.0 Google rating across 808 reviews.',
       },
       {
         question: 'Can I walk in from The Collegeway?',
@@ -744,7 +744,7 @@ export const locations: Record<string, LocationPageData> = {
       '~10 minute straight drive south on Erin Mills Pkwy',
       'No highway — simple, direct route',
       'Free parking directly in front of the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Skin fades, beard trims, kids\' cuts & more',
       'Open 7 days — walk-ins welcome',
     ],
@@ -797,7 +797,7 @@ export const locations: Record<string, LocationPageData> = {
       '~10 minute drive from Creditview',
       'Simple route via Eglinton Ave W to Erin Mills Pkwy',
       'Free on-site parking',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Walk-ins welcome every day',
     ],
@@ -810,7 +810,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near Creditview?',
         answer:
-          'Yes — Clip & Chill, about 10 minutes west, holds a perfect 5.0 rating across 406 Google reviews.',
+          'Yes — Clip & Chill, about 10 minutes west, holds a perfect 5.0 rating across 808 Google reviews.',
       },
       {
         question: 'Can I walk in from the Creditview area?',
@@ -850,7 +850,7 @@ export const locations: Record<string, LocationPageData> = {
       '~13 minute drive north from Port Credit',
       'Easy route via Mississauga Rd to Erin Mills Pkwy',
       'Free parking at the shop — no waterfront meters',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -863,7 +863,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Port Credit residents drive to Clip & Chill?',
         answer:
-          "Our 406 five-star reviews and consistent quality make the short drive worth it — clients tell us they can't find the same standard closer to the lake.",
+          "Our 808 five-star reviews and consistent quality make the short drive worth it — clients tell us they can't find the same standard closer to the lake.",
       },
       {
         question: 'Can I walk in from Port Credit?',
@@ -903,7 +903,7 @@ export const locations: Record<string, LocationPageData> = {
       '~12 minute drive from Clarkson',
       'Direct route north via Erin Mills Pkwy',
       'Free parking right at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Walk-ins welcome 7 days a week',
     ],
@@ -916,7 +916,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a highly rated barber near Clarkson?',
         answer:
-          'Yes — Clip & Chill, about 12 minutes north, is the top-rated barbershop in the area with a perfect 5.0 across 406 Google reviews.',
+          'Yes — Clip & Chill, about 12 minutes north, is the top-rated barbershop in the area with a perfect 5.0 across 808 Google reviews.',
       },
       {
         question: 'Can I walk in from Clarkson?',
@@ -956,7 +956,7 @@ export const locations: Record<string, LocationPageData> = {
       '~12 minute drive from Lorne Park',
       'Easy route north via Erin Mills Pkwy',
       'Free on-site parking',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -969,7 +969,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Lorne Park clients choose Clip & Chill?',
         answer:
-          'Consistent, high-quality cuts, a perfect 5.0 rating across 406 reviews, and free parking make the short drive worthwhile.',
+          'Consistent, high-quality cuts, a perfect 5.0 rating across 808 reviews, and free parking make the short drive worthwhile.',
       },
       {
         question: 'Can I walk in from Lorne Park?',
@@ -1009,7 +1009,7 @@ export const locations: Record<string, LocationPageData> = {
       '~18 minute drive west from Lakeview',
       'Accessible via Eglinton Ave W or the QEW',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1022,7 +1022,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is it worth the drive from Lakeview?',
         answer:
-          "Clients from across Mississauga tell us it is — our 406 five-star reviews reflect the consistency and quality that keep them coming back.",
+          "Clients from across Mississauga tell us it is — our 808 five-star reviews reflect the consistency and quality that keep them coming back.",
       },
       {
         question: 'Can I walk in from Lakeview?',
@@ -1062,7 +1062,7 @@ export const locations: Record<string, LocationPageData> = {
       '~9 minute drive from Sheridan',
       'Direct route via Erin Mills Pkwy',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Skin fades, beard trims & hot towel shaves',
       'Walk-ins welcome every day',
     ],
@@ -1075,7 +1075,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near Sheridan?',
         answer:
-          'Yes — Clip & Chill, about 9 minutes away, holds a perfect 5.0 Google rating across 406 reviews.',
+          'Yes — Clip & Chill, about 9 minutes away, holds a perfect 5.0 Google rating across 808 reviews.',
       },
       {
         question: 'Can I walk in from Sheridan?',
@@ -1115,7 +1115,7 @@ export const locations: Record<string, LocationPageData> = {
       '~12 minute drive from Cooksville',
       'Simple route via Dundas St W to Erin Mills Pkwy',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1128,7 +1128,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a highly rated barber near Cooksville?',
         answer:
-          'Yes — Clip & Chill, about 12 minutes west, holds a perfect 5.0 across 406 Google reviews.',
+          'Yes — Clip & Chill, about 12 minutes west, holds a perfect 5.0 across 808 Google reviews.',
       },
       {
         question: 'Can I walk in from Cooksville?',
@@ -1168,7 +1168,7 @@ export const locations: Record<string, LocationPageData> = {
       '~12 minute drive from Square One / City Centre',
       'Easy route via Burnhamthorpe Rd or Hwy 403',
       'Free parking — no mall parking hassle',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1181,7 +1181,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why go to Clip & Chill instead of a Square One barber?',
         answer:
-          'You get a full consultation and an unhurried, precise cut — backed by 406 five-star reviews — instead of a rushed mall trim, plus free parking out front.',
+          'You get a full consultation and an unhurried, precise cut — backed by 808 five-star reviews — instead of a rushed mall trim, plus free parking out front.',
       },
       {
         question: 'Can I walk in from the City Centre?',
@@ -1221,7 +1221,7 @@ export const locations: Record<string, LocationPageData> = {
       '~13 minute drive west from Hurontario',
       'Easy route via Eglinton Ave W or Dundas St W',
       'Free parking right at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Walk-ins welcome 7 days a week',
     ],
@@ -1234,7 +1234,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near Hurontario?',
         answer:
-          'Yes — Clip & Chill, about 13 minutes west, holds a perfect 5.0 Google rating across 406 reviews.',
+          'Yes — Clip & Chill, about 13 minutes west, holds a perfect 5.0 Google rating across 808 reviews.',
       },
       {
         question: 'Can I walk in?',
@@ -1274,7 +1274,7 @@ export const locations: Record<string, LocationPageData> = {
       '~12 minute drive from Mississauga Valley',
       'Direct route via Burnhamthorpe Rd W',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1287,7 +1287,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a highly rated barber near Mississauga Valley?',
         answer:
-          'Yes — Clip & Chill, about 12 minutes west, holds a perfect 5.0 across 406 Google reviews.',
+          'Yes — Clip & Chill, about 12 minutes west, holds a perfect 5.0 across 808 Google reviews.',
       },
       {
         question: 'Can I walk in?',
@@ -1327,7 +1327,7 @@ export const locations: Record<string, LocationPageData> = {
       '~12 minute drive from East Credit',
       'Simple route via Eglinton Ave W',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & kids\' cuts',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1340,7 +1340,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near East Credit?',
         answer:
-          'Yes — Clip & Chill, about 12 minutes west, holds a perfect 5.0 across 406 Google reviews.',
+          'Yes — Clip & Chill, about 12 minutes west, holds a perfect 5.0 across 808 Google reviews.',
       },
       {
         question: 'Do you cut kids\' hair for East Credit families?',
@@ -1380,7 +1380,7 @@ export const locations: Record<string, LocationPageData> = {
       '~10 minute drive along Burnhamthorpe Rd W',
       'Direct east–west route to Erin Mills Pkwy',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Walk-ins welcome 7 days a week',
     ],
@@ -1393,7 +1393,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near Burnhamthorpe?',
         answer:
-          'Yes — Clip & Chill, about 10 minutes west, holds a perfect 5.0 Google rating across 406 reviews.',
+          'Yes — Clip & Chill, about 10 minutes west, holds a perfect 5.0 Google rating across 808 reviews.',
       },
       {
         question: 'Can I walk in?',
@@ -1433,7 +1433,7 @@ export const locations: Record<string, LocationPageData> = {
       '~18 minute drive west from Applewood',
       'Accessible via Burnhamthorpe Rd W or Hwy 403',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1446,7 +1446,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is it worth the drive from Applewood?',
         answer:
-          "Clients from across Mississauga make the trip — our 406 five-star reviews reflect the consistency that keeps them coming back.",
+          "Clients from across Mississauga make the trip — our 808 five-star reviews reflect the consistency that keeps them coming back.",
       },
       {
         question: 'Can I walk in from Applewood?',
@@ -1486,7 +1486,7 @@ export const locations: Record<string, LocationPageData> = {
       '~18 minute drive west from Dixie',
       'Accessible via Dundas St W or Hwy 403',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1499,7 +1499,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is it worth the drive from Dixie?',
         answer:
-          "Our 406 five-star reviews say it is — clients across Mississauga make the trip for the consistent quality.",
+          "Our 808 five-star reviews say it is — clients across Mississauga make the trip for the consistent quality.",
       },
       {
         question: 'Can I walk in?',
@@ -1539,7 +1539,7 @@ export const locations: Record<string, LocationPageData> = {
       '~15 minute drive from Rathwood',
       'Direct route via Burnhamthorpe Rd W',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Walk-ins welcome 7 days a week',
     ],
@@ -1552,7 +1552,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near Rathwood?',
         answer:
-          'Yes — Clip & Chill, about 15 minutes west, holds a perfect 5.0 across 406 Google reviews.',
+          'Yes — Clip & Chill, about 15 minutes west, holds a perfect 5.0 across 808 Google reviews.',
       },
       {
         question: 'Can I walk in?',
@@ -1592,7 +1592,7 @@ export const locations: Record<string, LocationPageData> = {
       '~22 minute drive from south Brampton',
       'Accessible via Mississauga Rd or Hwy 403',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1605,7 +1605,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Brampton clients drive to Clip & Chill?',
         answer:
-          "Our 406 five-star reviews and consistent quality make the drive worth it — many regulars come specifically for the precision and reliability.",
+          "Our 808 five-star reviews and consistent quality make the drive worth it — many regulars come specifically for the precision and reliability.",
       },
       {
         question: 'Can I walk in from Brampton?',
@@ -1645,7 +1645,7 @@ export const locations: Record<string, LocationPageData> = {
       '~20 minute drive west from Etobicoke',
       'Accessible via the QEW or Dundas St W',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1658,7 +1658,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is it worth the drive from Etobicoke?',
         answer:
-          "Our 406 five-star reviews reflect the quality that draws clients from across the GTA — many tell us it's worth the trip.",
+          "Our 808 five-star reviews reflect the quality that draws clients from across the GTA — many tell us it's worth the trip.",
       },
       {
         question: 'Can I walk in from Etobicoke?',
@@ -1698,7 +1698,7 @@ export const locations: Record<string, LocationPageData> = {
       '~22 minute drive east from Milton',
       'Accessible via Hwy 403 or Britannia Rd',
       'Free parking at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1711,7 +1711,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Milton clients drive to Clip & Chill?',
         answer:
-          "Our 406 five-star reviews and consistent quality make the drive worth it for clients who want a reliable, precise cut.",
+          "Our 808 five-star reviews and consistent quality make the drive worth it for clients who want a reliable, precise cut.",
       },
       {
         question: 'Can I walk in from Milton?',
@@ -1751,7 +1751,7 @@ export const locations: Record<string, LocationPageData> = {
       '~7 minute drive from Erindale',
       'Easy route via Dundas St W to Erin Mills Pkwy',
       'Free parking directly at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1764,7 +1764,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near Erindale?',
         answer:
-          'Yes — Clip & Chill, about 7 minutes away, holds a perfect 5.0 Google rating across 406 reviews and is the highest-rated barbershop in the area.',
+          'Yes — Clip & Chill, about 7 minutes away, holds a perfect 5.0 Google rating across 808 reviews and is the highest-rated barbershop in the area.',
       },
       {
         question: 'Can I walk in from Erindale?',
@@ -1804,7 +1804,7 @@ export const locations: Record<string, LocationPageData> = {
       '~5 minute drive from Credit Valley',
       'Minutes from Credit Valley Hospital',
       'Free on-site parking',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Skin fades, beard trims & hot towel shaves',
       'Walk-ins welcome 7 days a week',
     ],
@@ -1817,7 +1817,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a good barber near Credit Valley Hospital?',
         answer:
-          'Yes — Clip & Chill, about 5 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 406 Google reviews. It is a convenient stop for hospital staff and nearby residents.',
+          'Yes — Clip & Chill, about 5 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 808 Google reviews. It is a convenient stop for hospital staff and nearby residents.',
       },
       {
         question: 'Can I walk in from Credit Valley?',
@@ -1857,7 +1857,7 @@ export const locations: Record<string, LocationPageData> = {
       '~13 minute drive west from Mineola',
       'Easy route via Mississauga Rd or the QEW',
       'Free parking right at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1870,7 +1870,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Mineola clients choose Clip & Chill?',
         answer:
-          'Consistent, high-quality cuts, a perfect 5.0 rating across 406 reviews, and free parking make the short drive worthwhile for Mineola residents.',
+          'Consistent, high-quality cuts, a perfect 5.0 rating across 808 reviews, and free parking make the short drive worthwhile for Mineola residents.',
       },
       {
         question: 'Can I walk in from Mineola?',
@@ -1910,7 +1910,7 @@ export const locations: Record<string, LocationPageData> = {
       '~8 minute drive from the Britannia corridor',
       'Direct route south on Erin Mills Pkwy',
       'Free parking right at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Skin fades, beard trims, kids\' cuts & more',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1923,7 +1923,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a highly rated barber near Britannia?',
         answer:
-          'Yes — Clip & Chill, about 8 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 406 Google reviews.',
+          'Yes — Clip & Chill, about 8 minutes away, is the top-rated barbershop in the area with a perfect 5.0 across 808 Google reviews.',
       },
       {
         question: 'Can I walk in from the Britannia area?',
@@ -1963,7 +1963,7 @@ export const locations: Record<string, LocationPageData> = {
       '~15 minute drive west from Heartland',
       'Easy route via Britannia Rd or Hwy 403',
       'Free parking right at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -1976,7 +1976,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Is there a top-rated barber near Heartland Town Centre?',
         answer:
-          'Yes — Clip & Chill, a short drive west, holds a perfect 5.0 rating across 406 Google reviews and is one of Mississauga\'s highest-rated barbershops.',
+          'Yes — Clip & Chill, a short drive west, holds a perfect 5.0 rating across 808 Google reviews and is one of Mississauga\'s highest-rated barbershops.',
       },
       {
         question: 'Can I walk in from Heartland?',
@@ -2016,7 +2016,7 @@ export const locations: Record<string, LocationPageData> = {
       '~20 minute drive southwest from Malton',
       'Accessible via Hwy 403 or Eglinton Ave W',
       'Free parking right at the shop',
-      '5.0 Google rating with 406 reviews',
+      '5.0 Google rating with 808 reviews',
       'Precision fades, beard sculpting & hot towel shaves',
       'Open 7 days — walk-ins welcome',
     ],
@@ -2029,7 +2029,7 @@ export const locations: Record<string, LocationPageData> = {
       {
         question: 'Why do Malton clients drive to Clip & Chill?',
         answer:
-          "Our 406 five-star reviews and consistent quality make the drive worth it for clients who want a reliable, precise cut they can count on.",
+          "Our 808 five-star reviews and consistent quality make the drive worth it for clients who want a reliable, precise cut they can count on.",
       },
       {
         question: 'Can I walk in from Malton?',

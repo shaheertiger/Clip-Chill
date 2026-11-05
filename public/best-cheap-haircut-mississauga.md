@@ -31,13 +31,13 @@ We completely shattered the myth that affordable means low quality. With our **S
 
 ## Why Clip & Chill Offers the Best Affordable Haircut in Mississauga
 
-We don't just claim to be the best; our clients back it up. With a **perfect 5.0 Star Rating from over 400 reviews**, we have proven time and time again that you don't need to overpay to look your absolute best. Here is why Clip & Chill is your top choice for a cheap haircut in Mississauga:
+We don't just claim to be the best; our clients back it up. With a **perfect 5.0 Star Rating from over 800 reviews**, we have proven time and time again that you don't need to overpay to look your absolute best. Here is why Clip & Chill is your top choice for a cheap haircut in Mississauga:
 
 ### 1. Unbeatable Value at Just $30
 Let’s talk numbers. Our standard haircut is **$30 CAD**. For this price, you aren't just getting pushed in and out of the chair. You are getting a comprehensive consultation, a precision cut tailored to your head shape and personal style, and a sharp style finish. From skin fades to textured crops, our Senior Barbers—like Clark R., Ahmad F., and Sido—execute every style flawlessly.
 
 ### 2. Perfect 5-Star Reputation
-Don't just take our word for it. Search for our reviews on Google. With **406+ 5-star reviews**, clients consistently praise our attention to detail, the welcoming atmosphere, and, most importantly, the incredible value. It’s exceedingly rare for a barbershop to maintain a perfect 5.0 rating with hundreds of reviews, but we manage it by treating every single $30 haircut like a million-dollar VIP service.
+Don't just take our word for it. Search for our reviews on Google. With **808+ 5-star reviews**, clients consistently praise our attention to detail, the welcoming atmosphere, and, most importantly, the incredible value. It’s exceedingly rare for a barbershop to maintain a perfect 5.0 rating with hundreds of reviews, but we manage it by treating every single $30 haircut like a million-dollar VIP service.
 
 ### 3. Comprehensive Grooming Without the "Luxury" Markup
 Usually, affordable shops only offer basic cuts. At Clip & Chill, we offer a full menu of grooming services that are just as budget-friendly as our haircuts:

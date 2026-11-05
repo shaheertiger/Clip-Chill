@@ -152,7 +152,7 @@ export default function LocationPage() {
             </span>
             <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/50 text-sm">
               <Star size={13} className="fill-gold text-gold" />
-              5.0 · 406 reviews
+              5.0 · 808 reviews
             </span>
           </div>
 
@@ -360,7 +360,7 @@ export default function LocationPage() {
               ))}
             </div>
             <span className="text-gold font-bold">5.0</span>
-            <span className="text-white/30 text-sm">406 Google reviews</span>
+            <span className="text-white/30 text-sm">808 Google reviews</span>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {REVIEWS.map((review, i) => (

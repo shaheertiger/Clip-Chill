@@ -25,7 +25,7 @@ Country / locale:         {{CA / en-CA}}
 Lat, long:                {{43.5352458, -79.6976644}}
 Phone (display + E.164):  {{(905) 606-2212 / +19056062212}}
 Hours:                    {{Mon–Sat 10:00–20:00, Sun 11:00–19:00}}
-Rating / review count:    {{5.0 / 406}}   (real Google numbers only)
+Rating / review count:    {{5.0 / 808}}   (real Google numbers only)
 Price list:               {{service: price: duration, …}}
 Price range symbol:       {{$$}}
 Payment / currency:       {{Cash, Credit, Debit / CAD}}
@@ -160,7 +160,7 @@ Before writing any article, check existing slugs and titles to **avoid keyword c
 - Blog: `{Article Title} | {Brand}`
 - Blog index: `{Category} & {Topic} Blog | {Brand} {City}`
 
-**Meta description formula** (140–160 characters): `{primary keyword + location}. {offer / price}. {proof: "406 five-star Google reviews"}. {differentiator}. {CTA: "Walk-ins welcome — book online today."}`
+**Meta description formula** (140–160 characters): `{primary keyword + location}. {offer / price}. {proof: "808 five-star Google reviews"}. {differentiator}. {CTA: "Walk-ins welcome — book online today."}`
 
 **Every page:**
 - Exactly one H1 containing the primary keyword and location. Logical H2s, each section with `aria-labelledby`.

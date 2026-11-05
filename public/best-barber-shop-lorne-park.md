@@ -53,7 +53,7 @@ If you'd like more detail on directions and timing, see our page for [barbers se
 
 ## Why Lorne Park Locals Make the Drive
 
-It comes down to results you can see. Clip & Chill holds a **5.0 Google rating across 406+ reviews**. Read through them and the same names keep coming up, which tells you the quality isn't down to luck on the day.
+It comes down to results you can see. Clip & Chill holds a **5.0 Google rating across 808+ reviews**. Read through them and the same names keep coming up, which tells you the quality isn't down to luck on the day.
 
 **Clark R.** focuses on skin fades and classic cuts, the kind of clean, balanced work that depends on a steady hand and a good eye. **Ahmad F.** is known for beard sculpting and precision fades, which is the chair to ask for if your beard matters as much as your haircut. **Sido** handles textured cuts and hot towel shaves, so if your hair has natural wave or curl, or you want a proper straight-razor finish, that's a good fit.
 

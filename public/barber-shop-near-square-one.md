@@ -61,7 +61,7 @@ Downtown schedules are tight, so timing matters as much as location.
 
 ## Who You'll See in the Chair
 
-Clip & Chill holds a **5.0 Google rating across 406+ reviews**. A lot of those reviews mention barbers by name, which is a good sign that people come back to the same chair.
+Clip & Chill holds a **5.0 Google rating across 808+ reviews**. A lot of those reviews mention barbers by name, which is a good sign that people come back to the same chair.
 
 **Clark R.** specialises in skin fades and classic cuts, ideal if you want something sharp and office-ready. **Ahmad F.** is known for beard sculpting and precision fades, a strong choice if your beard needs as much attention as your hair. **Sido** focuses on textured cuts and hot towel shaves, so if your hair has natural texture or you want a proper straight-razor finish, that's the chair to ask for.
 
@@ -81,7 +81,7 @@ Prices are posted and don't change on weekends. If you want a full reset after a
 ## Frequently Asked Questions
 
 **Is there a good barber shop near Square One?**
-There are several options around City Centre, including shops inside and near the mall. If you're happy to drive about 12 minutes west, Clip & Chill in Erin Mills offers free parking out front and a 5.0 Google rating across 406+ reviews.
+There are several options around City Centre, including shops inside and near the mall. If you're happy to drive about 12 minutes west, Clip & Chill in Erin Mills offers free parking out front and a 5.0 Google rating across 808+ reviews.
 
 **How do I get to Clip & Chill from City Centre?**
 Take Burnhamthorpe Rd west, or Hwy 403 west to Erin Mills Pkwy and then head south. The shop is at 4099 Erin Mills Pkwy #4, just south of Folkway Dr.

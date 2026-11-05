@@ -114,4 +114,4 @@ Walk-ins are welcome daily. For the package or any multi-service visit, especial
 
 Book online at [getsquire.com/discover/barbershop/clip-and-chill-mississauga](https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services), where you can pick your barber and service, or call **(905) 606-2212**.
 
-A men's haircut is **$30** with any fade included, a haircut and beard is **$50**, a hot towel shave is **$25**, and the full Clip & Chill Package is **$110**. We're at 4099 Erin Mills Pkwy #4 in Mississauga, rated **5.0 on Google across 406+ reviews**, with free parking out front and walk-ins welcome seven days a week.
+A men's haircut is **$30** with any fade included, a haircut and beard is **$50**, a hot towel shave is **$25**, and the full Clip & Chill Package is **$110**. We're at 4099 Erin Mills Pkwy #4 in Mississauga, rated **5.0 on Google across 808+ reviews**, with free parking out front and walk-ins welcome seven days a week.

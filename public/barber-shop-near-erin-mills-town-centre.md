@@ -61,7 +61,7 @@ Book at [getsquire.com/discover/barbershop/clip-and-chill-mississauga](https://g
 
 The Erin Mills area has options. What Clip & Chill offers that most of them don't is a combination of consistency, skill level, and a genuine consultation at every visit.
 
-The shop holds a **5.0 Google rating from over 406 reviews**. That volume of reviews at a perfect rating is not an accident — it reflects a shop that's been delivering at a consistent level long enough for hundreds of clients to come back and say so publicly. Read through the reviews and you'll find the same names (Clark, Ahmad, Sido) mentioned with specifics about the cut, the service, the experience. That detail signals regulars, not one-time visitors.
+The shop holds a **5.0 Google rating from over 808 reviews**. That volume of reviews at a perfect rating is not an accident — it reflects a shop that's been delivering at a consistent level long enough for hundreds of clients to come back and say so publicly. Read through the reviews and you'll find the same names (Clark, Ahmad, Sido) mentioned with specifics about the cut, the service, the experience. That detail signals regulars, not one-time visitors.
 
 The shop is not a chain. There's no corporate script, no upsell on products you don't need, no rotating roster of staff with inconsistent skill levels. The same three senior barbers are there, and each one takes the consultation seriously — asking about your hair, your lifestyle, what you want to do differently than last time.
 

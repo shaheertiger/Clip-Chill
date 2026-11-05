@@ -51,7 +51,7 @@ There's **free parking right in front** — no meters, no hunting for a spot. It
 
 ## Why Meadowvale Locals Make the Drive
 
-It comes down to results. Clip & Chill holds a **5.0 Google rating across 406+ reviews** — not friends and family, but hundreds of real clients who had a good enough experience to say so. Scroll through and the same barber names keep coming up, which is exactly the consistency you're looking for.
+It comes down to results. Clip & Chill holds a **5.0 Google rating across 808+ reviews** — not friends and family, but hundreds of real clients who had a good enough experience to say so. Scroll through and the same barber names keep coming up, which is exactly the consistency you're looking for.
 
 **Clark R.** is the go-to for skin fades and classic cuts — clean, symmetrical work that needs a steady hand. **Ahmad F.** handles beard sculpting and precision fades, ideal if your beard matters as much as the hair on top. **Sido** specializes in textured cuts and hot towel shaves, so if your hair has natural texture or you want a traditional straight-razor finish, that's the chair to request.
 

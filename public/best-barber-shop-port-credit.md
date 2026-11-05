@@ -51,7 +51,7 @@ There's **free parking directly in front** — no meters, no circling. Park, get
 
 ## Why Port Credit Locals Make the Trip
 
-The reason is simple: results. Clip & Chill carries a **5.0 Google rating across 406+ reviews** — hundreds of real clients who had a good enough experience to say so publicly. Read through them and the same barber names keep surfacing, which is exactly the consistency signal worth driving for.
+The reason is simple: results. Clip & Chill carries a **5.0 Google rating across 808+ reviews** — hundreds of real clients who had a good enough experience to say so publicly. Read through them and the same barber names keep surfacing, which is exactly the consistency signal worth driving for.
 
 **Clark R.** specializes in skin fades and classic cuts — precise, symmetrical work that lives on a steady hand. **Ahmad F.** is known for beard sculpting and precision fades, which matters if your beard is as much a part of your look as the cut on top. **Sido** handles textured cuts and hot towel shaves, so if your hair has natural texture or you want a proper straight-razor finish, that's the chair to ask for.
 

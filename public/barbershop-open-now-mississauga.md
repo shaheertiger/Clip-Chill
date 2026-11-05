@@ -117,4 +117,4 @@ It varies by shop and by holiday, and online listings aren't always updated. Cal
 
 Book a same-day slot at [getsquire.com/discover/barbershop/clip-and-chill-mississauga](https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services), or call **(905) 606-2212** to check the wait right now.
 
-A men's haircut is **$30** with skin and taper fades included, a beard trim is **$25**, and a haircut and beard together is **$50**. Clip & Chill is at 4099 Erin Mills Pkwy #4 in Mississauga, rated **5.0 on Google across 406+ reviews**, open seven days a week with free parking out front and walk-ins welcome every day.
+A men's haircut is **$30** with skin and taper fades included, a beard trim is **$25**, and a haircut and beard together is **$50**. Clip & Chill is at 4099 Erin Mills Pkwy #4 in Mississauga, rated **5.0 on Google across 808+ reviews**, open seven days a week with free parking out front and walk-ins welcome every day.

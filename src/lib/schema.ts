@@ -63,7 +63,7 @@ const OPENING_HOURS = [
   { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '11:00', closes: '19:00' },
 ];
 
-const AGGREGATE_RATING = { '@type': 'AggregateRating', ratingValue: '5.0', reviewCount: '406' };
+const AGGREGATE_RATING = { '@type': 'AggregateRating', ratingValue: '5.0', reviewCount: '808' };
 
 export function localBusinessSchema(opts: {
   slug: string;
