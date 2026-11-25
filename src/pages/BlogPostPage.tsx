@@ -7,6 +7,7 @@ import { trackBookingConversion } from '../analytics';
 import { blogs } from '../data/blogs';
 import { useSeo, useJsonLd } from '../lib/seo';
 import { blogPostingSchemas } from '../lib/schema';
+import { markdownComponents, remarkPlugins, headingId, extractFaqs } from '../lib/markdown';
 
 const BOOKING_URL = 'https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services';
 
@@ -58,7 +59,7 @@ function extractHeadings(markdown: string): { id: string; text: string; level: n
     if (match) {
       const level = match[1].length;
       const text = match[2].replace(/\*\*/g, '').replace(/"/g, '');
-      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const id = headingId(text);
       headings.push({ id, text, level });
     }
   }
@@ -87,7 +88,10 @@ export default function BlogPostPage() {
     type: 'article',
   });
 
-  useJsonLd('blog-ld', blogPostingSchemas(blogMeta));
+  useJsonLd(
+    'blog-ld',
+    blogPostingSchemas({ ...blogMeta, faqs: blogMeta.faqs ?? (content ? extractFaqs(content) : []) }),
+  );
 
   useEffect(() => {
     fetch(`/${slug}.md`)
@@ -186,7 +190,9 @@ export default function BlogPostPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar size={14} className="text-gold/60" />
-                  <span>{blogMeta.date}</span>
+                  <span>
+                    {blogMeta.updated ? `Updated ${blogMeta.updated}` : blogMeta.date}
+                  </span>
                 </div>
               </div>
             </>
@@ -252,24 +258,29 @@ export default function BlogPostPage() {
               <div className="text-center text-white/40 py-20">Loading article...</div>
             ) : (
               <div className="article-body prose prose-invert max-w-none">
-                <ReactMarkdown
-                  components={{
-                    h1: () => null,
-                    h2: ({ children }) => {
-                      const text = String(children).replace(/\*\*/g, '');
-                      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                      return <h2 id={id}>{children}</h2>;
-                    },
-                    h3: ({ children }) => {
-                      const text = String(children).replace(/\*\*/g, '');
-                      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                      return <h3 id={id}>{children}</h3>;
-                    },
-                  }}
-                >
+                <ReactMarkdown remarkPlugins={remarkPlugins} components={markdownComponents}>
                   {content}
                 </ReactMarkdown>
               </div>
+            )}
+
+            {/* FAQ (mirrors the FAQPage JSON-LD) */}
+            {!isLoading && blogMeta.faqs && blogMeta.faqs.length > 0 && (
+              <section className="mt-16 pt-10 border-t border-white/5">
+                <h2 id="faq" className="font-serif text-2xl md:text-3xl font-medium mb-6">
+                  Frequently Asked Questions
+                </h2>
+                <div className="flex flex-col gap-3">
+                  {blogMeta.faqs.map((f) => (
+                    <details key={f.q} className="glass-panel rounded-xl p-5 group">
+                      <summary className="cursor-pointer font-medium text-white/80 group-open:text-gold">
+                        {f.q}
+                      </summary>
+                      <p className="mt-3 text-white/50 leading-relaxed">{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </section>
             )}
 
             {/* Related service pages */}

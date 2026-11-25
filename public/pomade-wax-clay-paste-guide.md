@@ -11,7 +11,7 @@ Walk down any grooming aisle and you'll see dozens of tins that look the same an
 
 The good news is that the four main products are easy to tell apart once you know what to look for. Each one is a trade-off between **hold** (how firmly hair stays put) and **shine** (how much it reflects light). Match those two to your hair type and haircut, and the choice makes itself.
 
-## The Quick Comparison
+## Pomade vs wax vs clay vs paste: comparison chart
 
 | Product | Hold | Shine | Feel | Best for |
 |---|---|---|---|---|
@@ -21,6 +21,10 @@ The good news is that the four main products are easy to tell apart once you kno
 | Paste | Light to medium | Low to medium | Soft, pliable | Everyday styles, beginners, restyling |
 
 Labels like "putty," "fibre," and "molding cream" are marketing names. They all sit somewhere on this chart. Check the hold and shine rating on the label, and ignore the rest.
+
+## Clay or pomade: which is better?
+
+Clay if you want a **matte, textured, natural** look with strong hold, especially on fine or thin hair. Pomade if you want **shine and a smooth, polished** finish such as a side part or slick back. On thick hair, either works; choose by finish, not hold.
 
 ## Pomade: Water-Based vs Oil-Based
 

@@ -211,7 +211,11 @@ export function listicleSchemas(data: {
 
 export function blogPostingSchemas(meta: {
   slug: string; title: string; description: string; category: string; date: string;
+  updated?: string; faqs?: { q: string; a: string }[];
 }): Json[] {
+  const faq = meta.faqs?.length
+    ? [faqPageSchema(meta.faqs.map((f) => ({ question: f.q, answer: f.a })))]
+    : [];
   return [
     {
       '@context': 'https://schema.org',
@@ -220,7 +224,7 @@ export function blogPostingSchemas(meta: {
       description: meta.description,
       image: { '@type': 'ImageObject', url: LOGO, width: 1200, height: 1200 },
       datePublished: meta.date,
-      dateModified: meta.date,
+      dateModified: meta.updated ?? meta.date,
       inLanguage: 'en-CA',
       articleSection: meta.category,
       keywords: [meta.category, 'barbershop Mississauga', 'haircut', 'grooming', 'Erin Mills'],
@@ -245,6 +249,7 @@ export function blogPostingSchemas(meta: {
       { name: 'Blog', slug: '/blog' },
       { name: meta.title, slug: `/${meta.slug}` },
     ]),
+    ...faq,
   ];
 }
 

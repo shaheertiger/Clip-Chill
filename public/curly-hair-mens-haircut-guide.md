@@ -7,9 +7,11 @@ author: "Clip & Chill Barbershop"
 
 # Curly Hair Haircut Guide for Men: Cuts, Care and What to Ask For
 
+**The best haircuts for curly hair men are a curly top with a low, mid or drop fade, a curly crop, and a tapered cut with length on top, as long as the barber cuts for shrinkage.**
+
 If you have curly hair, you've probably had the experience of asking for an inch off and leaving with three. You weren't imagining it, and it usually wasn't carelessness. It's shrinkage — and it's the reason curly hair needs a different conversation in the chair than straight hair does.
 
-## Shrinkage Is the Whole Problem
+## Why curly hair gets cut too short (shrinkage)
 
 Wet curly hair hangs straight under its own weight. As it dries, each strand coils back on itself and pulls upward. Depending on how tight your pattern is, dry hair can sit 20% to 50% shorter than it looked wet.
 
@@ -22,7 +24,7 @@ There are two ways to solve this, and both are standard practice among barbers w
 
 The thing to say when you sit down: **"My hair shrinks a lot when it dries — can you cut it dry, or leave extra for the shrinkage?"** That one sentence prevents most curly haircut disasters.
 
-## Cuts That Work With Curls
+## Best haircuts for curly hair men
 
 **The curly top with a fade** is the most-requested curly men's cut, and for good reason. Tight or faded sides remove the bulk that makes curly hair grow outward instead of upward, while the curls on top keep their volume and pattern. A mid or low fade suits most people; a **drop fade** — where the fade line curves down behind the ear — follows the head's natural shape and tends to look better with curls than a straight fade line.
 
@@ -33,6 +35,15 @@ The thing to say when you sit down: **"My hair shrinks a lot when it dries — c
 **Longer curls with a shape-up** — anything past five inches — works if your curl pattern is loose to medium and your density isn't extreme. Very dense, tight curls at length become a full-time commitment.
 
 **Tapered sides with length on top but no hard fade** is the low-maintenance option. It grows out gradually, doesn't need a visit every fortnight, and looks intentional at every stage.
+
+## Curly hair fade: which fade works best?
+
+- **Low fade:** keeps the most weight at the sides. Best for looser curls and anyone growing their hair out.
+- **Mid fade:** the most popular curly fade. Clear contrast, and the curls on top stay the focus.
+- **Drop fade:** curves down behind the ear, following the head. It suits curls better than a straight fade line.
+- **High or skin fade:** maximum contrast, best with a tight curl pattern and a shorter top.
+
+Whatever the height, ask for the fade to be blended up into the curls rather than stopping at a hard line.
 
 ## The Layering Question
 

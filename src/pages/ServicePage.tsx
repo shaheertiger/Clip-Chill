@@ -196,6 +196,17 @@ export default function ServicePage() {
           <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-3xl">
             {data.intro}
           </p>
+          {data.guides && data.guides.length > 0 && (
+            <p className="mt-6 text-sm text-white/50">
+              Read the guide first:{' '}
+              {data.guides.map((g, i) => (
+                <span key={g.slug}>
+                  {i > 0 && ' · '}
+                  <Link to={`/${g.slug}`} className="text-gold hover:underline">{g.label}</Link>
+                </span>
+              ))}
+            </p>
+          )}
         </m.div>
 
         {/* Key Features */}

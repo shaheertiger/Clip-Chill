@@ -41,7 +41,7 @@ Contrast is what makes thinning visible. Three things drive it:
 
 That last point matters for fades. A skin fade looks great next to a dense top. Next to a visibly thin one, it can make the top look thinner by comparison. A **taper** or a **low fade** with a little more length at the bottom usually balances better. Our [skin fade vs taper fade](/skin-fade-vs-taper-fade) guide explains the difference.
 
-## Cuts That Work for Diffuse and Crown Thinning
+## Best haircuts for thinning hair and a receding hairline
 
 **Buzz cut, #2 to #4 all over.** The strongest option for diffuse thinning. At that length, density differences barely register, and the cut looks deliberate.
 

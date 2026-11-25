@@ -4,9 +4,20 @@ export interface BlogMeta {
   description: string;
   category: string;
   date: string;
+  /** Last substantive update; drives dateModified and the visible date. */
+  updated?: string;
+  /** Rendered under the post and emitted as FAQPage JSON-LD. */
+  faqs?: { q: string; a: string }[];
 }
 
 export const blogs: Record<string, BlogMeta> = {
+  'buzz-cut-guide': {
+    slug: 'buzz-cut-guide',
+    title: 'Buzz Cut Guide: Lengths, Styles and How to Keep It Sharp',
+    description: 'Buzz cut lengths from #0 to #8 in mm, which guard to pick, buzz cut styles from induction to fade buzz, and how to keep a buzz sharp. From a Mississauga barber.',
+    category: 'Style Guide',
+    date: '2026-11-25',
+  },
   'mens-facial-barbershop': {
     slug: 'mens-facial-barbershop',
     title: "Facial at the Barbershop: What a Men's Facial Actually Involves",
@@ -100,10 +111,17 @@ export const blogs: Record<string, BlogMeta> = {
   },
   'skin-fade-vs-taper-fade': {
     slug: 'skin-fade-vs-taper-fade',
-    title: "Skin Fade vs Taper Fade: What's the Difference and Which Should You Get?",
+    title: "Taper vs Fade: What's the Difference? (Skin Fade vs Taper Fade)",
     description: "Skin fade or taper fade? Most guys aren't sure what to ask for. Here's a clear breakdown of the difference — and how to pick the right one for your hair and lifestyle.",
     category: 'Grooming Guide',
     date: '2026-05-08',
+    faqs: [
+      { q: "What's the difference between a taper and a fade?", a: 'A fade takes the sides and back down short, often to bare skin. A taper only shortens the hair at the sideburns and neckline and keeps visible hair all the way down.' },
+      { q: 'Is a taper a skin fade?', a: 'No. A classic taper never reaches bare skin. A taper fade takes just the edges down to the skin while the rest of the side keeps its length.' },
+      { q: 'Which lasts longer, a taper or a skin fade?', a: 'A taper. It still looks tidy at three to four weeks, while a skin fade starts to look grown out after about two.' },
+      { q: 'Does a fade cost more than a taper at Clip & Chill?', a: 'No. Skin fades, taper fades and tapers are all included in the $30 haircut.' },
+    ],
+    updated: '2026-11-25',
   },
   'how-often-should-men-get-a-haircut': {
     slug: 'how-often-should-men-get-a-haircut',
@@ -149,10 +167,11 @@ export const blogs: Record<string, BlogMeta> = {
   },
   'clipper-guard-sizes-explained': {
     slug: 'clipper-guard-sizes-explained',
-    title: 'Clipper Guard Sizes Explained: What a #1 Through #8 Actually Looks Like',
+    title: 'Clipper Guard Sizes Chart: #1 to #8 in Inches and mm',
     description: "A #2 on the sides sounds specific until you see the result. Here's what every clipper guard size actually leaves behind, and how to combine them into the cut you want.",
     category: 'Grooming Guide',
     date: '2026-09-07',
+    updated: '2026-11-25',
   },
   'mens-hair-types-guide': {
     slug: 'mens-hair-types-guide',
@@ -167,6 +186,7 @@ export const blogs: Record<string, BlogMeta> = {
     description: "Curly hair gets cut wrong more than any other type. Here's how shrinkage works, which cuts hold, and the exact things to say so your barber doesn't take too much off.",
     category: 'Style Guide',
     date: '2026-09-03',
+    updated: '2026-11-25',
   },
   'best-haircuts-receding-hairline': {
     slug: 'best-haircuts-receding-hairline',
@@ -188,6 +208,7 @@ export const blogs: Record<string, BlogMeta> = {
     description: "A beard changes the shape of your face more than any haircut. Here's which styles balance which face shapes — round, square, oval, long, heart and diamond.",
     category: 'Style Guide',
     date: '2026-08-26',
+    updated: '2026-11-25',
   },
   'how-to-fix-a-patchy-beard': {
     slug: 'how-to-fix-a-patchy-beard',
@@ -405,6 +426,7 @@ export const blogs: Record<string, BlogMeta> = {
     description: 'Diffuse or crown thinning? The cuts that make thinning hair look fuller, the styles and products that make it worse, and when to see a doctor.',
     category: 'Grooming Guide',
     date: '2026-09-29',
+    updated: '2026-11-25',
   },
   'haircut-and-beard-combo-worth-it': {
     slug: 'haircut-and-beard-combo-worth-it',
@@ -433,6 +455,7 @@ export const blogs: Record<string, BlogMeta> = {
     description: 'Hold, shine, hair type and haircut: how to choose between pomade, wax, clay and paste, how much to use, how to apply it, and how to wash it out.',
     category: 'Grooming Guide',
     date: '2026-09-25',
+    updated: '2026-11-25',
   },
   'senior-haircut-mississauga': {
     slug: 'senior-haircut-mississauga',
