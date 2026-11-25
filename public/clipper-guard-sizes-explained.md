@@ -1,5 +1,5 @@
 ---
-title: "Clipper Guard Sizes Explained: What a #1 Through #8 Actually Looks Like"
+title: "Clipper Guard Sizes Chart: #1 to #8 in Inches and mm"
 description: "A #2 on the sides sounds specific until you see the result. Here's what every clipper guard size actually leaves behind, and how to combine them into the cut you want."
 keywords: "clipper guard sizes, number 2 haircut, clipper sizes explained, buzz cut mississauga, barber mississauga"
 author: "Clip & Chill Barbershop"
@@ -7,26 +7,39 @@ author: "Clip & Chill Barbershop"
 
 # Clipper Guard Sizes Explained: What a #1 Through #8 Actually Looks Like
 
+**A clipper guard number tells you how much hair is left: each number is that many eighths of an inch, so a #1 is 1/8" (3 mm), a #2 is 1/4" (6 mm) and a #3 is 3/8" (10 mm).**
+
 Clipper numbers are the closest thing men's grooming has to a universal measurement system. They're simple, they're consistent across brands, and knowing them turns a vague haircut request into an exact one.
 
 The catch is that most people know one number — usually whatever they've asked for since high school — and have no idea how it relates to the rest of the scale. Here's the full picture.
 
-## The Numbers Are Just Fractions of an Inch
+## Clipper guard sizes chart (inches and mm)
 
-Every guard number equals that many eighths of an inch of hair left behind. That's the entire system.
+Every guard number equals that many eighths of an inch of hair left behind. That's the entire system. In millimetres, add roughly 3 mm per number.
 
-| Guard | Length left | What it looks like |
-|---|---|---|
-| Bald / zero | 0 – 1/16" | Bare or near-bare skin |
-| #0.5 | 1/16" | A shadow of colour, scalp clearly visible |
-| #1 | 1/8" | Very short stubble, scalp visible |
-| #2 | 1/4" | Short and even, scalp faintly visible |
-| #3 | 3/8" | The classic short buzz, scalp mostly covered |
-| #4 | 1/2" | Short but soft, no scalp showing |
-| #5 | 5/8" | Long enough to have a direction |
-| #6 | 3/4" | Definitively styleable |
-| #7 | 7/8" | Long clipper length, close to scissor territory |
-| #8 | 1" | The longest standard guard |
+| Guard | Inches | Millimetres | What it looks like |
+|---|---|---|---|
+| Bald / zero | 0 – 1/16" | 0 – 1.5 mm | Bare or near-bare skin |
+| #0.5 | 1/16" | 1.5 mm | A shadow of colour, scalp clearly visible |
+| #1 | 1/8" | 3 mm | Very short stubble, scalp visible |
+| #1.5 | 3/16" | 4.5 mm | Between a 1 and a 2; common in fades |
+| #2 | 1/4" | 6 mm | Short and even, scalp faintly visible |
+| #3 | 3/8" | 10 mm | The classic short buzz, scalp mostly covered |
+| #4 | 1/2" | 13 mm | Short but soft, no scalp showing |
+| #5 | 5/8" | 16 mm | Long enough to have a direction |
+| #6 | 3/4" | 19 mm | Definitively styleable |
+| #7 | 7/8" | 22 mm | Long clipper length, close to scissor territory |
+| #8 | 1" | 25 mm | The longest standard guard |
+
+## What is a 1, 2 and 3 guard in mm?
+
+- **#1 guard = 3 mm (1/8").** Very short; the scalp shows clearly.
+- **#2 guard = 6 mm (1/4").** The most common number for the sides.
+- **#3 guard = 10 mm (3/8").** The most popular single-length buzz cut.
+
+## 1 guard vs 2 guard vs 3 guard: which should you get?
+
+Go a #1 if you want the sides to read as almost skin without a full fade. A #2 is the safe default for short sides that still look like hair. A #3 is the number to pick for an all-over buzz if it's your first time going short; you can always go down a number at the next visit.
 
 Two practical notes. First, the "zero" is the bare blade with no guard on it, and it still leaves a hair's width behind — a true skin finish usually needs a foil shaver or a razor over the top. Second, some clippers include a lever that shortens the blade slightly within each guard, which is how barbers create the in-between lengths (a "one and a half," a "two and a half") that make smooth fades possible.
 

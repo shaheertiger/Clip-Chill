@@ -14,6 +14,9 @@ export interface ServicePageData {
   duration: string;
   keyFeatures: string[];
   faqs: ServiceFAQ[];
+  /** In-depth blog guides linked from the page (the guide ↔ service pairing
+   *  that works on moesbarbershop.ca). */
+  guides?: { slug: string; label: string }[];
 }
 
 export const services: Record<string, ServicePageData> = {
@@ -179,6 +182,11 @@ export const services: Record<string, ServicePageData> = {
       'Can be combined with scissor work on top',
       'Included in the standard $30 haircut — no upcharge',
     ],
+    guides: [
+      { slug: 'skin-fade-vs-taper-fade', label: 'Taper vs fade: the difference' },
+      { slug: 'low-mid-high-fade-guide', label: 'Low, mid and high fades' },
+      { slug: 'burst-fade-guide', label: 'Burst fade guide' },
+    ],
     faqs: [
       {
         question: 'What is the difference between a skin fade and a taper fade?',
@@ -226,6 +234,10 @@ export const services: Record<string, ServicePageData> = {
       'Beard oil & moisturizer applied at finish',
       'Works for all beard lengths and densities',
       'Combine with a haircut for $50 — most popular pairing',
+    ],
+    guides: [
+      { slug: 'beard-styles-face-shape', label: 'Beard styles by face shape' },
+      { slug: 'beard-trim-guide', label: 'Beard trim guide' },
     ],
     faqs: [
       {
@@ -467,6 +479,10 @@ export const services: Record<string, ServicePageData> = {
       'Works on straight, wavy, curly & coily hair',
       'Included in the standard $30 haircut — no upcharge',
     ],
+    guides: [
+      { slug: 'skin-fade-vs-taper-fade', label: 'Taper vs fade: the difference' },
+      { slug: 'low-mid-high-fade-guide', label: 'Low, mid and high fades' },
+    ],
     faqs: [
       {
         question: 'What is a taper fade?',
@@ -562,6 +578,10 @@ export const services: Record<string, ServicePageData> = {
       'Fast, low-maintenance & travel-friendly style',
       'Great for thinning hair or a fresh reset',
       'Standard $30 haircut pricing',
+    ],
+    guides: [
+      { slug: 'buzz-cut-guide', label: 'Buzz cut lengths and styles' },
+      { slug: 'clipper-guard-sizes-explained', label: 'Clipper guard sizes in inches and mm' },
     ],
     faqs: [
       {
@@ -659,6 +679,10 @@ export const services: Record<string, ServicePageData> = {
       'Pairs with a haircut for a complete fresh look',
       'Natural or sculpted — shaped to your face',
     ],
+    guides: [
+      { slug: 'beard-styles-face-shape', label: 'Beard styles by face shape' },
+      { slug: 'beard-trim-guide', label: 'Beard trim guide' },
+    ],
     faqs: [
       {
         question: 'What is a beard lineup or edge up?',
@@ -754,6 +778,10 @@ export const services: Record<string, ServicePageData> = {
       'Cut to your natural curl pattern & shrinkage',
       'Product recommendations for at-home styling',
       'Great for high-top fades & textured crops',
+    ],
+    guides: [
+      { slug: 'curly-hair-mens-haircut-guide', label: 'Curly hair haircuts for men' },
+      { slug: 'pomade-wax-clay-paste-guide', label: 'Which product for curls' },
     ],
     faqs: [
       {

@@ -11,6 +11,17 @@ A beard is the most powerful shaping tool available to a man's face. It adds len
 
 The underlying principle is simple: **you're aiming for balance, and balance usually means moving toward an oval.** Whatever your face already has plenty of, the beard should provide less of. Whatever it lacks, the beard supplies.
 
+## Beard styles by face shape: quick chart
+
+| Face shape | Best beard | Avoid |
+|---|---|---|
+| Round | Longer at the chin, short and tight on the cheeks | Full width at the sides |
+| Square | Rounded corners, medium length | Hard, boxy edges |
+| Oval | Almost any style | Very long beards that stretch the face |
+| Long / rectangular | Fuller sides, shorter chin | Long, pointed chin beards |
+| Heart | Fuller beard along the jaw and chin | Very short stubble on a narrow chin |
+| Diamond | Fuller chin and sides to balance the cheekbones | Narrow chin styles |
+
 ## Working Out Your Face Shape
 
 Look straight into a mirror and compare four measurements: forehead width, cheekbone width, jaw width, and face length (hairline to chin).

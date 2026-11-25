@@ -29,6 +29,11 @@ import {
   blogIndexSchemas,
 } from '../src/lib/schema';
 import { SITE_URL } from '../src/lib/seo';
+import { createElement as h } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import ReactMarkdown from 'react-markdown';
+import { markdownComponents, remarkPlugins, stripFrontmatter, extractFaqs } from '../src/lib/markdown';
+import type { BlogMeta } from '../src/data/blogs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = join(__dirname, '..', 'dist');
@@ -45,6 +50,9 @@ interface Route {
    *  hydration updates these tags in place instead of duplicating them. */
   ldPrefix: string;
   schemas: Array<Record<string, unknown>>;
+  /** Static HTML placed inside #root so crawlers see the content without JS.
+   *  React's createRoot replaces it on mount. */
+  bodyHtml?: string;
   /** Optional sitemap metadata. */
   lastmod?: string;
   priority?: number;
@@ -119,7 +127,40 @@ function renderRoute(base: string, route: Route): string {
   // Replace the homepage's BarberShop JSON-LD with this route's structured data.
   html = stripJsonLd(html);
   html = html.replace('</head>', `${jsonLdBlock(route.ldPrefix, route.schemas)}\n  </head>`);
+  if (route.bodyHtml) {
+    html = html.replace('<div id="root"></div>', `<div id="root">${route.bodyHtml}</div>`);
+  }
   return html;
+}
+
+/** Server-render a post's article so the words are in the raw HTML response,
+ *  the way a static site (e.g. Astro) serves them. */
+function readPost(slug: string): string {
+  return stripFrontmatter(readFileSync(join(__dirname, '..', 'public', `${slug}.md`), 'utf8'));
+}
+
+function renderBlogBody(meta: BlogMeta): string {
+  const md = readPost(meta.slug);
+  const faqs = meta.faqs ?? [];
+  return renderToStaticMarkup(
+    h('main', { className: 'max-w-4xl mx-auto px-6 py-24' },
+      h('article', { className: 'article-body prose prose-invert max-w-none' },
+        h('p', null, h('a', { href: '/blog' }, 'Blog'), ` · ${meta.category}`),
+        h('h1', null, meta.title),
+        h('p', null, meta.description),
+        h('p', null, meta.updated ? `Updated ${meta.updated}` : meta.date),
+        h(ReactMarkdown, { remarkPlugins, components: markdownComponents }, md),
+        faqs.length > 0 &&
+          h('section', null,
+            h('h2', { id: 'faq' }, 'Frequently Asked Questions'),
+            ...faqs.map((f) => h('details', { key: f.q }, h('summary', null, f.q), h('p', null, f.a))),
+          ),
+        h('p', null,
+          h('a', { href: 'https://getsquire.com/discover/barbershop/clip-and-chill-mississauga#services' }, 'Book at Clip & Chill'),
+          ' · 4099 Erin Mills Pkwy #4, Mississauga · (905) 606-2212'),
+      ),
+    ),
+  );
 }
 
 // ─── Route collection ────────────────────────────────────────────────────────
@@ -182,8 +223,9 @@ function collectRoutes(): Route[] {
       description: meta.description,
       type: 'article',
       ldPrefix: 'blog-ld',
-      schemas: blogPostingSchemas(meta),
-      lastmod: meta.date,
+      schemas: blogPostingSchemas({ ...meta, faqs: meta.faqs ?? extractFaqs(readPost(meta.slug)) }),
+      bodyHtml: renderBlogBody(meta),
+      lastmod: meta.updated ?? meta.date,
       priority: 0.7,
       changefreq: 'monthly',
     });

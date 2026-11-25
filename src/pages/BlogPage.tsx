@@ -28,6 +28,7 @@ function estimateReadTime(slug: string): string {
     'mens-haircut-cost-mississauga': '5 min read',
     'how-to-ask-for-a-haircut': '7 min read',
     'clipper-guard-sizes-explained': '7 min read',
+    'buzz-cut-guide': '6 min read',
     'mens-hair-types-guide': '7 min read',
     'curly-hair-mens-haircut-guide': '7 min read',
     'best-haircuts-receding-hairline': '7 min read',
